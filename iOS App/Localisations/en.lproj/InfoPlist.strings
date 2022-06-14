@@ -5,4 +5,4 @@
 "CFBundleName" = "OTP Auth";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Этому приложению необходим доступ к вашей камере для сканирования QR-кода.";
+"NSCameraUsageDescription" = "This app needs access to your camera to scan a QR code.";

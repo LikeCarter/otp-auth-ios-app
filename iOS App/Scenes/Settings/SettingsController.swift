@@ -125,7 +125,9 @@ class SettingsController: SPDiffableTableController, MFMailComposeViewController
                 )
             ]
         )
-        sections.append(mediaSection)
+        if Locale.current.languageCode == "ru" || Locale.current.languageCode == "uk" || Locale.current.languageCode == "be" || Locale.current.languageCode == "kk" {
+            sections.append(mediaSection)
+        }
         
         let feedbackSection = SPDiffableSection(
             id: Section.feedback.id,
