@@ -4,6 +4,7 @@ import NativeUIKit
 import PermissionsKit
 import SPDiffable
 import SPAlert
+import OTPSwift
 
 extension RootController {
     
@@ -169,7 +170,28 @@ extension RootController {
                     return
                 }
                 
-                if issuer != nil && !name.isEmpty && secret != nil {
+                guard let url = URL(string: tranformedData) else {
+                    AlertService.alertIncorrectURL(controller: controller)
+                    return
+                }
+                guard let token = url.valueOf("secret") else {
+                    AlertService.alertNoToken(controller: controller)
+                    return
+                }
+                guard let secret = base32DecodeToData(token) else {
+                    AlertService.alertNoToken(controller: controller)
+                    return
+                }
+                guard let checkCode = OTPSwift.generateOTP(secret: secret) else {
+                    AlertService.alertNoToken(controller: controller)
+                    return
+                }
+                if checkCode.isEmpty {
+                    AlertService.alertNoToken(controller: controller)
+                    return
+                }
+                
+                if issuer != nil && !name.isEmpty && !checkCode.isEmpty {
                     let model = AccountModel(oneTimePassword: tranformedData, website: issuer!, login: name)
                     if !self.passwordsData.contains(model) {
                         AppSettings.saveToKeychain(id: tranformedData)
@@ -180,6 +202,8 @@ extension RootController {
                     } else {
                         AlertService.alertTheSameCode(controller: controller)
                     }
+                } else {
+                    AlertService.alertIncorrectURL(controller: controller)
                 }
             },
             on: self
