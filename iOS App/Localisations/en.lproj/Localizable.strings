@@ -1,0 +1,263 @@
+/* No comment provided by engineer. */
+"alert service code added" = "Account connected";
+
+/* No comment provided by engineer. */
+"alert service code deleted" = "Account deleted";
+
+/* No comment provided by engineer. */
+"alert service email error" = "Failed to open mail";
+
+/* No comment provided by engineer. */
+"alert service incorrect url" = "Incorrect URL";
+
+/* No comment provided by engineer. */
+"alert service no token" = "Incorrect token";
+
+/* No comment provided by engineer. */
+"alert service token exists" = "This account already exists";
+
+/* No comment provided by engineer. */
+"permissions camera denied alert action" = "Open Settings";
+
+/* No comment provided by engineer. */
+"permissions camera denied alert subtitle" = "In order to use the camera, you need to go to the settings and give access.";
+
+/* No comment provided by engineer. */
+"permissions camera denied alert title" = "Permission Denied";
+
+/* No comment provided by engineer. */
+"root controller account section footer" = "This section contains all your codes.";
+
+/* No comment provided by engineer. */
+"root controller empty cell subtitle" = "Add an account and it will be displayed here.";
+
+/* No comment provided by engineer. */
+"root controller empty cell title" = "Empty";
+
+/* No comment provided by engineer. */
+"root controller header view action" = "Add Account";
+
+/* No comment provided by engineer. */
+"root controller header view description" = "Once added, the code will appear on the home screen and you will be able to use it.";
+
+/* No comment provided by engineer. */
+"root controller section account header" = "Accounts";
+
+/* No comment provided by engineer. */
+"root controller settings button" = "Settings";
+
+/* No comment provided by engineer. */
+"root controller settings section footer" = "You can customize the app as you like or contact us.";
+
+/* No comment provided by engineer. */
+"root controller title" = "Authenticator";
+
+/* No comment provided by engineer. */
+"setings controller about section footer" = "Learn more about the app.";
+
+/* No comment provided by engineer. */
+"setings controller app section footer" = "Customize the appearance of the app to your liking.";
+
+/* No comment provided by engineer. */
+"setings controller app section header" = "APP";
+
+/* No comment provided by engineer. */
+"setings controller feedback section footer" = "Contact us if you want to report a problem or suggest an idea.";
+
+/* No comment provided by engineer. */
+"setings controller feedback section header" = "FEEDBACK";
+
+/* No comment provided by engineer. */
+"setings controller media section footer" = "Follow our activities on social networks or on the website.";
+
+/* No comment provided by engineer. */
+"setings controller media section header" = "MEDIA";
+
+/* No comment provided by engineer. */
+"setings password controller section footer" = "setings password controller section footer";
+
+/* No comment provided by engineer. */
+"setings password controller section header" = "setings password controller section header";
+
+/* No comment provided by engineer. */
+"settings about app controller package cell" = "settings about app controller package cell";
+
+/* No comment provided by engineer. */
+"settings about app controller package footer" = "settings about app controller package footer";
+
+/* No comment provided by engineer. */
+"settings about app controller package header" = "settings about app controller package header";
+
+/* No comment provided by engineer. */
+"settings about app controller title" = "About App";
+
+/* No comment provided by engineer. */
+"settings about app controller version cell title" = "Current";
+
+/* No comment provided by engineer. */
+"settings about app controller version footer" = "You have this version of the application installed. Check and install the new one if it is available.";
+
+/* No comment provided by engineer. */
+"settings about app controller version header" = "VERSION";
+
+/* No comment provided by engineer. */
+"settings appearance controller automatic cell" = "Automatic";
+
+/* No comment provided by engineer. */
+"settings appearance controller blue color cell" = "Blue";
+
+/* No comment provided by engineer. */
+"settings appearance controller colors table footer" = "Choose a background color that you like.";
+
+/* No comment provided by engineer. */
+"settings appearance controller colors table header" = "COLORS";
+
+/* No comment provided by engineer. */
+"settings appearance controller dark cell" = "Dark";
+
+/* No comment provided by engineer. */
+"settings appearance controller gray color cell" = "Gray";
+
+/* No comment provided by engineer. */
+"settings appearance controller green color cell" = "Green";
+
+/* No comment provided by engineer. */
+"settings appearance controller light cell" = "Light";
+
+/* No comment provided by engineer. */
+"settings appearance controller orange color cell" = "Orange";
+
+/* No comment provided by engineer. */
+"settings appearance controller pink color cell" = "Pink";
+
+/* No comment provided by engineer. */
+"settings appearance controller purple color cell" = "Purple";
+
+/* No comment provided by engineer. */
+"settings appearance controller red color cell" = "Red";
+
+/* No comment provided by engineer. */
+"settings appearance controller table automatic footer" = "The application theme will be synchronized with the system theme.";
+
+/* No comment provided by engineer. */
+"settings appearance controller table header" = "THEME";
+
+/* No comment provided by engineer. */
+"settings appearance controller table manually footer" = "The application theme will be forcibly set to your choice.";
+
+/* No comment provided by engineer.No comment provided by engineer. */
+"settings appearance controller title" = "Appearance";
+
+/* No comment provided by engineer. */
+"settings appearance controller yellow color cell" = "Yellow";
+
+/* No comment provided by engineer. */
+"settings controller about cell" = "About App";
+
+/* No comment provided by engineer. */
+"settings controller appereance cell" = "Appearance";
+
+/* No comment provided by engineer. */
+"settings controller contact cell" = "Contact Us";
+
+/* No comment provided by engineer. */
+"settings controller delete alert message" = "The account will be deleted. You will not be able to access without the code unless you have other authentication methods set up.";
+
+/* No comment provided by engineer. */
+"settings controller delete alert title" = "Confirm Action";
+
+/* No comment provided by engineer. */
+"settings controller feedback email body" = "Hello, I use OTP Authenticator with version";
+
+/* No comment provided by engineer. */
+"settings controller instagram cell" = "Instagram";
+
+/* No comment provided by engineer. */
+"settings controller language cell" = "Languages";
+
+/* No comment provided by engineer. */
+"settings controller notification cell" = "settings controller notification cell";
+
+/* No comment provided by engineer. */
+"settings controller password cell" = "Password";
+
+/* No comment provided by engineer. */
+"settings controller review cell" = "Write A Review";
+
+/* No comment provided by engineer. */
+"settings controller sounds cell" = "Sounds";
+
+/* No comment provided by engineer. */
+"settings controller telegram cell" = "Telegram";
+
+/* No comment provided by engineer. */
+"settings controller title" = "Settings";
+
+/* No comment provided by engineer. */
+"settings controller twitter cell" = "Twitter";
+
+/* No comment provided by engineer. */
+"settings controller website cell" = "Website";
+
+/* No comment provided by engineer. */
+"settings languages controller cell english" = "English";
+
+/* No comment provided by engineer. */
+"settings languages controller cell russian" = "Russian";
+
+/* No comment provided by engineer. */
+"settings languages controller footer" = "You can use another language instead of the system language.";
+
+/* No comment provided by engineer. */
+"settings languages controller header" = "AVAILABLE";
+
+/* No comment provided by engineer. */
+"settings languages controller title" = "Languages";
+
+/* No comment provided by engineer. */
+"settings password controller cell" = "settings password controller cell";
+
+/* No comment provided by engineer. */
+"settings password controller title" = "settings password controller title";
+
+/* No comment provided by engineer. */
+"settings sounds controller disabled cell" = "Disabled";
+
+/* No comment provided by engineer. */
+"settings sounds controller during day cell" = "During Day";
+
+/* No comment provided by engineer. */
+"settings sounds controller enabled cell" = "Enabled";
+
+/* No comment provided by engineer. */
+"settings sounds controller table footer" = "You can turn off sounds in the app or allow only daytime playback.";
+
+/* No comment provided by engineer. */
+"settings sounds controller table header" = "STATUS";
+
+/* No comment provided by engineer. */
+"settings sounds controller title" = "Sounds";
+
+/* No comment provided by engineer. */
+"shared added" = "Added";
+
+/* No comment provided by engineer. */
+"shared cancel" = "Cancel";
+
+/* No comment provided by engineer. */
+"shared copied" = "Copied";
+
+/* No comment provided by engineer. */
+"shared delete" = "Delete";
+
+/* No comment provided by engineer. */
+"shared deleted" = "Deleted";
+
+/* No comment provided by engineer. */
+"shared error" = "Error";
+
+/* No comment provided by engineer. */
+"shared ok" = "OK";
+
+/* No comment provided by engineer. */
+"shared unknown" = "Unknown";

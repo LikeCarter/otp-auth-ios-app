@@ -1,0 +1,8 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "OTP Auth";
+
+/* Bundle name */
+"CFBundleName" = "OTP Auth";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Этому приложению необходим доступ к вашей камере для сканирования QR-кода.";

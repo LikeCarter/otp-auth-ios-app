@@ -1,0 +1,263 @@
+/* No comment provided by engineer. */
+"alert service code added" = "Аккаунт добавлен";
+
+/* No comment provided by engineer. */
+"alert service code deleted" = "Аккаунт удален";
+
+/* No comment provided by engineer. */
+"alert service email error" = "Не удалось открыть почту";
+
+/* No comment provided by engineer. */
+"alert service incorrect url" = "Неправильный URL";
+
+/* No comment provided by engineer. */
+"alert service no token" = "Неправильный токен";
+
+/* No comment provided by engineer. */
+"alert service token exists" = "Этот аккаунт уже добавлен";
+
+/* No comment provided by engineer. */
+"permissions camera denied alert action" = "Открыть настройки";
+
+/* No comment provided by engineer. */
+"permissions camera denied alert subtitle" = "Чтобы воспользоваться камерой, необходимо зайти в настройки и разрешить доступ.";
+
+/* No comment provided by engineer. */
+"permissions camera denied alert title" = "Разрешение Отклонено";
+
+/* No comment provided by engineer. */
+"root controller account section footer" = "В этой секции находятся все ваши коды.";
+
+/* No comment provided by engineer. */
+"root controller empty cell subtitle" = "Добавьте аккаунт и он появится здесь.";
+
+/* No comment provided by engineer. */
+"root controller empty cell title" = "Пусто";
+
+/* No comment provided by engineer. */
+"root controller header view action" = "Добавить аккаунт";
+
+/* No comment provided by engineer. */
+"root controller header view description" = "После добавления код появится на главном экране, и вы сможете его использовать.";
+
+/* No comment provided by engineer. */
+"root controller section account header" = "Аккаунты";
+
+/* No comment provided by engineer. */
+"root controller settings button" = "Настройки";
+
+/* No comment provided by engineer. */
+"root controller settings section footer" = "Вы можете настроить приложение так, как вам удобно.";
+
+/* No comment provided by engineer. */
+"root controller title" = "Аутентификатор";
+
+/* No comment provided by engineer. */
+"setings controller about section footer" = "Узнайте больше о приложении.";
+
+/* No comment provided by engineer. */
+"setings controller app section footer" = "Настройте внешний вид приложения так, как вам нравится.";
+
+/* No comment provided by engineer. */
+"setings controller app section header" = "Приложение";
+
+/* No comment provided by engineer. */
+"setings controller feedback section footer" = "Свяжитесь с нами, если вы хотите сообщить о проблеме или предложить идею.";
+
+/* No comment provided by engineer. */
+"setings controller feedback section header" = "Обратная связь";
+
+/* No comment provided by engineer. */
+"setings controller media section footer" = "Следите за нашей деятельностью в социальных сетях или на сайте.";
+
+/* No comment provided by engineer. */
+"setings controller media section header" = "Медиа";
+
+/* No comment provided by engineer. */
+"setings password controller section footer" = "setings password controller section footer";
+
+/* No comment provided by engineer. */
+"setings password controller section header" = "setings password controller section header";
+
+/* No comment provided by engineer. */
+"settings about app controller package cell" = "settings about app controller package cell";
+
+/* No comment provided by engineer. */
+"settings about app controller package footer" = "settings about app controller package footer";
+
+/* No comment provided by engineer. */
+"settings about app controller package header" = "settings about app controller package header";
+
+/* No comment provided by engineer. */
+"settings about app controller title" = "О приложении";
+
+/* No comment provided by engineer. */
+"settings about app controller version cell title" = "Текущая";
+
+/* No comment provided by engineer. */
+"settings about app controller version footer" = "У вас установлена эта версия приложения. Проверьте и установите новую, если она доступна.";
+
+/* No comment provided by engineer. */
+"settings about app controller version header" = "ВЕРСИЯ";
+
+/* No comment provided by engineer. */
+"settings appearance controller automatic cell" = "Автоматически";
+
+/* No comment provided by engineer. */
+"settings appearance controller blue color cell" = "Синий";
+
+/* No comment provided by engineer. */
+"settings appearance controller colors table footer" = "Выберите цвет фона, который вам нравится.";
+
+/* No comment provided by engineer. */
+"settings appearance controller colors table header" = "ЦВЕТА";
+
+/* No comment provided by engineer. */
+"settings appearance controller dark cell" = "Темный";
+
+/* No comment provided by engineer. */
+"settings appearance controller gray color cell" = "Серый";
+
+/* No comment provided by engineer. */
+"settings appearance controller green color cell" = "Зеленый";
+
+/* No comment provided by engineer. */
+"settings appearance controller light cell" = "Светлый";
+
+/* No comment provided by engineer. */
+"settings appearance controller orange color cell" = "Оранжевый";
+
+/* No comment provided by engineer. */
+"settings appearance controller pink color cell" = "Розовый";
+
+/* No comment provided by engineer. */
+"settings appearance controller purple color cell" = "Пурпурный";
+
+/* No comment provided by engineer. */
+"settings appearance controller red color cell" = "Красный";
+
+/* No comment provided by engineer. */
+"settings appearance controller table automatic footer" = "Тема приложения будет синхронизирована с темой системы.";
+
+/* No comment provided by engineer. */
+"settings appearance controller table header" = "ТЕМА";
+
+/* No comment provided by engineer. */
+"settings appearance controller table manually footer" = "Тема приложения будет принудительно установлена на ваш выбор.";
+
+/* No comment provided by engineer.No comment provided by engineer. */
+"settings appearance controller title" = "Внешний вид";
+
+/* No comment provided by engineer. */
+"settings appearance controller yellow color cell" = "Желтый";
+
+/* No comment provided by engineer. */
+"settings controller about cell" = "О приложении";
+
+/* No comment provided by engineer. */
+"settings controller appereance cell" = "Внешний вид";
+
+/* No comment provided by engineer. */
+"settings controller contact cell" = "Свяжитесь с нами";
+
+/* No comment provided by engineer. */
+"settings controller delete alert message" = "Учетная запись будет удалена. Вы не сможете получить доступ без кода, если у вас не настроены другие методы аутентификации.";
+
+/* No comment provided by engineer. */
+"settings controller delete alert title" = "Подтвердите действие";
+
+/* No comment provided by engineer. */
+"settings controller feedback email body" = "Здравствуйте, я использую это версию аутентификатора";
+
+/* No comment provided by engineer. */
+"settings controller instagram cell" = "Instagram";
+
+/* No comment provided by engineer. */
+"settings controller language cell" = "Языки";
+
+/* No comment provided by engineer. */
+"settings controller notification cell" = "settings controller notification cell";
+
+/* No comment provided by engineer. */
+"settings controller password cell" = "Пароль";
+
+/* No comment provided by engineer. */
+"settings controller review cell" = "Оставить отзыв";
+
+/* No comment provided by engineer. */
+"settings controller sounds cell" = "Звуки";
+
+/* No comment provided by engineer. */
+"settings controller telegram cell" = "Telegram";
+
+/* No comment provided by engineer. */
+"settings controller title" = "Настройки";
+
+/* No comment provided by engineer. */
+"settings controller twitter cell" = "Twitter";
+
+/* No comment provided by engineer. */
+"settings controller website cell" = "Сайт";
+
+/* No comment provided by engineer. */
+"settings languages controller cell english" = "Английский";
+
+/* No comment provided by engineer. */
+"settings languages controller cell russian" = "Русский";
+
+/* No comment provided by engineer. */
+"settings languages controller footer" = "Вы можете использовать другой язык, вместо системного.";
+
+/* No comment provided by engineer. */
+"settings languages controller header" = "ДОСТУПНО";
+
+/* No comment provided by engineer. */
+"settings languages controller title" = "Языки";
+
+/* No comment provided by engineer. */
+"settings password controller cell" = "settings password controller cell";
+
+/* No comment provided by engineer. */
+"settings password controller title" = "settings password controller title";
+
+/* No comment provided by engineer. */
+"settings sounds controller disabled cell" = "Отключено";
+
+/* No comment provided by engineer. */
+"settings sounds controller during day cell" = "Днём";
+
+/* No comment provided by engineer. */
+"settings sounds controller enabled cell" = "Включено";
+
+/* No comment provided by engineer. */
+"settings sounds controller table footer" = "В приложении можно отключить звуки или разрешить воспроизведение только в дневное время.";
+
+/* No comment provided by engineer. */
+"settings sounds controller table header" = "СОCТОЯНИЕ";
+
+/* No comment provided by engineer. */
+"settings sounds controller title" = "Звуки";
+
+/* No comment provided by engineer. */
+"shared added" = "Добавлено";
+
+/* No comment provided by engineer. */
+"shared cancel" = "Отмена";
+
+/* No comment provided by engineer. */
+"shared copied" = "Скопировано";
+
+/* No comment provided by engineer. */
+"shared delete" = "Удалить";
+
+/* No comment provided by engineer. */
+"shared deleted" = "Удалено";
+
+/* No comment provided by engineer. */
+"shared error" = "Ошибка";
+
+/* No comment provided by engineer. */
+"shared ok" = "OK";
+
+/* No comment provided by engineer. */
+"shared unknown" = "Неизвестно";
