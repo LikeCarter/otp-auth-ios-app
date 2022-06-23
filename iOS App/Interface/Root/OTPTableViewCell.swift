@@ -1,6 +1,6 @@
 import UIKit
 import SparrowKit
-import OTPSwift
+import OTP
 
 class OTPTableViewCell: SPTableViewCell {
     
@@ -43,7 +43,7 @@ class OTPTableViewCell: SPTableViewCell {
         guard let url = URL(string: model.oneTimePassword) else { return }
         guard let token = url.valueOf("secret") else { return }
         guard let secret = base32DecodeToData(token) else { return }
-        password = OTPSwift.generateOTP(secret: secret)
+        password = OTP.generateOTP(secret: secret)
         codeView.setup(code: password ?? "XXXXXX")
     }
     

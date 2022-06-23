@@ -4,7 +4,7 @@ import NativeUIKit
 import PermissionsKit
 import SPDiffable
 import SPAlert
-import OTPSwift
+import OTP
 
 extension RootController {
     
@@ -182,7 +182,7 @@ extension RootController {
                     AlertService.alertNoToken(controller: controller)
                     return
                 }
-                guard let checkCode = OTPSwift.generateOTP(secret: secret) else {
+                guard let checkCode = OTP.generateOTP(secret: secret) else {
                     AlertService.alertNoToken(controller: controller)
                     return
                 }

@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "OTP",
+        "repositoryURL": "https://github.com/sparrowcode/OTP",
+        "state": {
+          "branch": null,
+          "revision": "bc0747bbe7bad7d194aa86f08fef561a70b7411d",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "PermissionsKit",
         "repositoryURL": "https://github.com/sparrowcode/PermissionsKit",
         "state": {
@@ -107,6 +116,15 @@
           "branch": null,
           "revision": "1a2bd5439aabba3474408fbca86eaad344c3fce9",
           "version": "1.0.1"
+        }
+      },
+      {
+        "package": "SwiftBoost",
+        "repositoryURL": "https://github.com/sparrowcode/SwiftBoost",
+        "state": {
+          "branch": null,
+          "revision": "f857c9e6ec6e20b06856f4519ad7b839e2946bc1",
+          "version": "4.0.0"
         }
       }
     ]
