@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/sparrowcode/PermissionsKit",
         "state": {
           "branch": null,
-          "revision": "d9c2dfb847cb5b3eb3e29d706a3eb994891de638",
-          "version": "9.0.0"
+          "revision": "01d64ef804ba3e537de17db5eb2c68e9121e1193",
+          "version": "9.0.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/sparrowcode/SafeSFSymbols",
         "state": {
           "branch": null,
-          "revision": "0155346e4e76a122399968d10111212eab51136a",
-          "version": "1.1.2"
+          "revision": "0909c9b1132fca42aa1609f0dc5399ddb39e3b7b",
+          "version": "1.1.4"
         }
       },
       {
