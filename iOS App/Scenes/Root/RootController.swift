@@ -5,6 +5,7 @@ import SPDiffable
 import SPSettingsIcons
 import CameraPermission
 import SPIndicator
+import ALPopup
 
 class RootController: SPDiffableTableController {
     
@@ -46,7 +47,6 @@ class RootController: SPDiffableTableController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppUtility.lockOrientation(.portrait)
         setupNavigationBar()
         setupTableView()
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
