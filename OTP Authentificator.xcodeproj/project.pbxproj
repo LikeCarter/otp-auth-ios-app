@@ -12,7 +12,6 @@
 		A329CA4C2843BC4400AFB45F /* SettingsLanguagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4B2843BC4400AFB45F /* SettingsLanguagesController.swift */; };
 		A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4D2843BD0200AFB45F /* AppLanguageModel.swift */; };
 		A329CA50284414DF00AFB45F /* SettingsAboutAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4F284414DF00AFB45F /* SettingsAboutAppController.swift */; };
-		A358DC492857C42C00BD6F4C /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC482857C42C00BD6F4C /* AppUtility.swift */; };
 		A358DC4E2857F02100BD6F4C /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
 		A35C8CE22858E47E00195CBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A35C8CE02858E47E00195CBC /* InfoPlist.strings */; };
 		A35E712E28270A160039A4C0 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E712D28270A160039A4C0 /* Texts.swift */; };
@@ -400,7 +399,6 @@
 			files = (
 				A3B2881E284141700072D89F /* AppColorModel.swift in Sources */,
 				A3B288292841435F0072D89F /* AppTintColorService.swift in Sources */,
-				A358DC492857C42C00BD6F4C /* AppUtility.swift in Sources */,
 				EB501A89282C3F8000BAED16 /* NumberOTPView.swift in Sources */,
 				A3B2882A2841435F0072D89F /* AppThemeServices.swift in Sources */,
 				A3B2883D284190650072D89F /* AlertService.swift in Sources */,
@@ -609,7 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -639,7 +637,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
