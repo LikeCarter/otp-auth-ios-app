@@ -63,6 +63,9 @@ class RootController: SPDiffableTableController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.navigationController?.navigationBar.layoutMargins.left = view.layoutMargins.left
+        self.navigationController?.navigationBar.layoutMargins.right = view.layoutMargins.left
+        
         headerContainerView.contentView.layoutMargins.left = tableView.layoutMargins.left
         headerContainerView.contentView.layoutMargins.right = tableView.layoutMargins.right
         headerContainerView.setWidthAndFit(width: view.frame.width)
@@ -73,6 +76,18 @@ class RootController: SPDiffableTableController {
                 self.diffableDataSource?.updateLayout(animated: false, completion: nil)
             }
         }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+
+        coordinator.animate(
+            alongsideTransition: { _ in
+            self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
+            self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
+            },
+            completion: nil
+        )
     }
     
     open func setSpaceBetweenHeaderAndCells(_ value: CGFloat) {

@@ -9,17 +9,42 @@ import SPAlert
 
 class SettingsController: SPDiffableTableController, MFMailComposeViewControllerDelegate, SFSafariViewControllerDelegate {
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupNavigationBar()
         configureDiffable(sections: content, cellProviders: SPDiffableTableDataSource.CellProvider.default)
         tableView.cellLayoutMarginsFollowReadableWidth = true
     }
     
     private func setupNavigationBar() {
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = Texts.SettingsController.title
         navigationItem.rightBarButtonItem = closeBarButtonItem
+    }
+    
+    // MARK: Layout
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.navigationController?.navigationBar.layoutMargins.left = view.layoutMargins.left
+        self.navigationController?.navigationBar.layoutMargins.right = view.layoutMargins.left
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+
+        coordinator.animate(
+            alongsideTransition: { _ in
+            self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
+            self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
+            },
+            completion: nil
+        )
     }
     
     // MARK: - Diffable
