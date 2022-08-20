@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A318C2E2282D31BA00D683AD /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318C2E1282D31BA00D683AD /* CodeView.swift */; };
+		A31BA23328A68AFD00EF82DF /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA23228A68AFD00EF82DF /* ScanController.swift */; };
 		A3208AB6283EA57D00B21D34 /* SettingsPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3208AB5283EA57D00B21D34 /* SettingsPasswordController.swift */; };
 		A329CA4C2843BC4400AFB45F /* SettingsLanguagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4B2843BC4400AFB45F /* SettingsLanguagesController.swift */; };
 		A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4D2843BD0200AFB45F /* AppLanguageModel.swift */; };
@@ -19,6 +20,10 @@
 		A35E713228270A6C0039A4C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E713128270A6C0039A4C0 /* Constants.swift */; };
 		A35E713428270BC80039A4C0 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E713328270BC80039A4C0 /* AppSettings.swift */; };
 		A3821EED283ED93400AF08ED /* SettingsSoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3821EEC283ED93400AF08ED /* SettingsSoundsController.swift */; };
+		A3A3798828B112E70031918B /* ScanControllerFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3798728B112E70031918B /* ScanControllerFeatureView.swift */; };
+		A3A3798A28B1130F0031918B /* ScanFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3798928B1130F0031918B /* ScanFeatureModel.swift */; };
+		A3A3798D28B115D80031918B /* ScanFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3798C28B115D80031918B /* ScanFeatureView.swift */; };
+		A3A3799028B13D780031918B /* ScanControllerScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3798F28B13D780031918B /* ScanControllerScanView.swift */; };
 		A3B2881E284141700072D89F /* AppColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2881C284141700072D89F /* AppColorModel.swift */; };
 		A3B2881F284141700072D89F /* AppThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2881D284141700072D89F /* AppThemeService.swift */; };
 		A3B28822284141E60072D89F /* SettingsAppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B28821284141E60072D89F /* SettingsAppearanceController.swift */; };
@@ -55,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		A318C2E1282D31BA00D683AD /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		A31BA23228A68AFD00EF82DF /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		A3208AB5283EA57D00B21D34 /* SettingsPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPasswordController.swift; sourceTree = "<group>"; };
 		A329CA4A2843BC0C00AFB45F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A329CA4B2843BC4400AFB45F /* SettingsLanguagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLanguagesController.swift; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 		A35E713128270A6C0039A4C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A35E713328270BC80039A4C0 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettings.swift; path = "iOS App/Data/AppSettings.swift"; sourceTree = SOURCE_ROOT; };
 		A3821EEC283ED93400AF08ED /* SettingsSoundsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSoundsController.swift; sourceTree = "<group>"; };
+		A3A3798728B112E70031918B /* ScanControllerFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanControllerFeatureView.swift; sourceTree = "<group>"; };
+		A3A3798928B1130F0031918B /* ScanFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFeatureModel.swift; sourceTree = "<group>"; };
+		A3A3798C28B115D80031918B /* ScanFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFeatureView.swift; sourceTree = "<group>"; };
+		A3A3798F28B13D780031918B /* ScanControllerScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanControllerScanView.swift; sourceTree = "<group>"; };
 		A3B2881C284141700072D89F /* AppColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorModel.swift; sourceTree = "<group>"; };
 		A3B2881D284141700072D89F /* AppThemeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppThemeService.swift; sourceTree = "<group>"; };
 		A3B28821284141E60072D89F /* SettingsAppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAppearanceController.swift; sourceTree = "<group>"; };
@@ -129,6 +139,32 @@
 				EB501A8A282D458F00BAED16 /* RootControllerHeaderView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		A3A3798628B112D40031918B /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A31BA23228A68AFD00EF82DF /* ScanController.swift */,
+				A3A3798F28B13D780031918B /* ScanControllerScanView.swift */,
+				A3A3798728B112E70031918B /* ScanControllerFeatureView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		A3A3798B28B115AA0031918B /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A3A3798C28B115D80031918B /* ScanFeatureView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		A3A3798E28B1197F0031918B /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A3A3798928B1130F0031918B /* ScanFeatureModel.swift */,
+			);
+			path = Scan;
 			sourceTree = "<group>";
 		};
 		A3B288202841417C0072D89F /* Checkmarks */ = {
@@ -246,6 +282,7 @@
 		EB4041692826FD0C00C0BBCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A3A3798E28B1197F0031918B /* Scan */,
 				A3B2882E284151600072D89F /* Diffable */,
 				A3B288202841417C0072D89F /* Checkmarks */,
 			);
@@ -280,6 +317,7 @@
 		EB40416C2826FD6600C0BBCF /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				A3A3798B28B115AA0031918B /* Scan */,
 				EB2977DB283D84AF00164B14 /* Root */,
 			);
 			path = Interface;
@@ -288,6 +326,7 @@
 		EB40416D2826FD7300C0BBCF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A3A3798628B112D40031918B /* Scan */,
 				A370536F282AF16C00A1A64D /* Root */,
 				EBE84F4128358F230079771F /* Settings */,
 			);
@@ -405,8 +444,10 @@
 				EB404185282B0ECE00C0BBCF /* RootController+Delegate.swift in Sources */,
 				A3821EED283ED93400AF08ED /* SettingsSoundsController.swift in Sources */,
 				A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */,
+				A3A3799028B13D780031918B /* ScanControllerScanView.swift in Sources */,
 				A3B28822284141E60072D89F /* SettingsAppearanceController.swift in Sources */,
 				A3B288242841424C0072D89F /* ColorTableViewCell.swift in Sources */,
+				A31BA23328A68AFD00EF82DF /* ScanController.swift in Sources */,
 				EB404181282AC53800C0BBCF /* AccountModel.swift in Sources */,
 				A3B2881F284141700072D89F /* AppThemeService.swift in Sources */,
 				EB501A8B282D458F00BAED16 /* RootControllerHeaderView.swift in Sources */,
@@ -429,9 +470,12 @@
 				F47CD2FD2865B064006367E9 /* Base32.swift in Sources */,
 				EB2F4025283A539E00E99291 /* RootController+UISearchResultsUpdating.swift in Sources */,
 				EB4041522826F6E700C0BBCF /* AppDelegate.swift in Sources */,
+				A3A3798828B112E70031918B /* ScanControllerFeatureView.swift in Sources */,
 				A329CA50284414DF00AFB45F /* SettingsAboutAppController.swift in Sources */,
+				A3A3798D28B115D80031918B /* ScanFeatureView.swift in Sources */,
 				EB501A87282C3C3700BAED16 /* OTPTableViewCell.swift in Sources */,
 				A318C2E2282D31BA00D683AD /* CodeView.swift in Sources */,
+				A3A3798A28B1130F0031918B /* ScanFeatureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
