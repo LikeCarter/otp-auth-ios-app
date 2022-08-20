@@ -5,7 +5,6 @@ import SPDiffable
 import SPSettingsIcons
 import CameraPermission
 import SPIndicator
-import ALPopup
 
 class RootController: SPDiffableTableController {
     
