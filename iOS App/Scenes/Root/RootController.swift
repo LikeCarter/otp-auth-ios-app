@@ -22,25 +22,22 @@ class RootController: SPDiffableTableController {
     }
     
     let headerView = RootControllerHeaderView()
-    
     open var headerContainerView: HeaderContainerView
-    
     private var cachedHeaderHeight: CGFloat? = nil
     
     var passwordsData: [AccountModel] = []
-    
     var filteredData: [AccountModel] = []
     
     // MARK: - Init
-        
+    
     public override init(style: UITableView.Style) {
-            self.headerContainerView = HeaderContainerView(contentView: self.headerView)
-            super.init(style: style)
-        }
-        
-        public required init?(coder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
+        self.headerContainerView = HeaderContainerView(contentView: self.headerView)
+        super.init(style: style)
+    }
+    
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - Lifecycle
     
@@ -52,16 +49,6 @@ class RootController: SPDiffableTableController {
         passwordsData = AppSettings.getAllFromKeychain()
         diffableDataSource?.set(content, animated: true)
         
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        #warning("Temporary solution: change to scan action before release. Remove previous scan system.")
-        let controller = ScanController()
-        controller.modalPresentationStyle = .overFullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,11 +77,11 @@ class RootController: SPDiffableTableController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-
+        
         coordinator.animate(
             alongsideTransition: { _ in
-            self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
-            self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
+                self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
+                self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
             },
             completion: nil
         )
