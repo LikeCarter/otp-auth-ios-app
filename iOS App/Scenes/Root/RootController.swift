@@ -51,17 +51,6 @@ class RootController: SPDiffableTableController {
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
         passwordsData = AppSettings.getAllFromKeychain()
         diffableDataSource?.set(content, animated: true)
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        /*
-        #warning("Temporary solution: change to scan action before release. Remove previous scan system.")
-        let controller = ScanController()
-        controller.modalPresentationStyle = .overFullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true)*/
     }
     
     override func viewWillAppear(_ animated: Bool) {
