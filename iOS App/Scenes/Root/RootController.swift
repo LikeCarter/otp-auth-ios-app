@@ -56,12 +56,12 @@ class RootController: SPDiffableTableController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        /*
         #warning("Temporary solution: change to scan action before release. Remove previous scan system.")
         let controller = ScanController()
         controller.modalPresentationStyle = .overFullScreen
         controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true)
+        present(controller, animated: true)*/
     }
     
     override func viewWillAppear(_ animated: Bool) {
