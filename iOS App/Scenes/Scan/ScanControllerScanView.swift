@@ -2,10 +2,11 @@ import UIKit
 import NativeUIKit
 import SparrowKit
 import SafeSFSymbols
+import AVFoundation
 
-class ScanView: SPView {
+class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
     #warning("Localise this all")
-    // MARK: - Views
+    // MARK: - View
     
     let closeButton = SPButton(type: .close, primaryAction: .none)
     
@@ -22,10 +23,10 @@ class ScanView: SPView {
         $0.numberOfLines = .zero
         $0.text = "Scan code of hold iPhone near the accessory. More options…"
     }
-    #warning("Make cameraView a true camera")
-    let cameraView = SPView().do {
+    
+    let cameraPreview = SPView().do {
         $0.backgroundColor = .secondarySystemBackground
-        $0.layer.cornerRadius = 11
+        $0.roundCorners(radius: 13)
     }
     
     let featureView = ScanControllerFeatureView(features: [
@@ -53,11 +54,12 @@ class ScanView: SPView {
     
     override func commonInit() {
         super.commonInit()
-        backgroundColor = .systemBackground
+        backgroundColor = .secondarySystemGroupedBackground
         roundCorners(radius: 43)
         layoutMargins = .init(horizontal: 32, vertical: 32)
         addSubview(scrollView)
-        scrollView.addSubviews([closeButton, titleLabel, subtitleLabel, cameraView, featureView])
+        scrollView.addSubviews([closeButton, titleLabel, subtitleLabel, cameraPreview, featureView])
+        
     }
     
     // MARK: - Layout
@@ -84,17 +86,17 @@ class ScanView: SPView {
         )
         subtitleLabel.center.x = self.frame.width / 2
         
-        cameraView.frame = .init(
+        cameraPreview.frame = .init(
             x: layoutMargins.left,
             y: subtitleLabel.frame.maxY + 22,
-            width: self.frame.width - (layoutMargins.left * 2),
+            width: self.bounds.width - (layoutMargins.left * 2),
             height: 180
         )
         
         featureView.frame = .init(
-            x: cameraView.frame.origin.x,
-            y: cameraView.frame.maxY + 20,
-            width: cameraView.frame.width,
+            x: cameraPreview.frame.origin.x,
+            y: cameraPreview.frame.maxY + 20,
+            width: cameraPreview.frame.width,
             height: featureView.frame.height
         )
         featureView.sizeToFit()
@@ -115,5 +117,10 @@ class ScanView: SPView {
         layoutSubviews()
         return .init(width: size.width, height: featureView.frame.maxY + 22)
     }
+    
+    internal static let supportedCodeTypes = [
+        AVMetadataObject.ObjectType.aztec,
+        AVMetadataObject.ObjectType.qr
+    ]
     
 }

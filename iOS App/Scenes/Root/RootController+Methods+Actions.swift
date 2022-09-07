@@ -1,5 +1,4 @@
 import UIKit
-import SPQRCode
 import NativeUIKit
 import PermissionsKit
 import SPDiffable
@@ -101,7 +100,7 @@ extension RootController {
         return image
     }
     
-    private func cutSymbols(model: SPQRCodeData) -> String {
+    private func cutSymbols(model: QRCodeData) -> String {
         var string = "\(model)"
         for _ in 0...3 {
             string.remove(at: string.startIndex)
@@ -120,94 +119,103 @@ extension RootController {
     }
     
     private func scaning() {
-        SPQRCode.scanning(
+        
+        QRCode.scanning(
             detect: { data, controller in
+                
+                // When founded
+                
                 return data
             },
             handled: { [weak self] data, controller in
-                guard let self = self else { return }
-                let tranformedData = self.cutSymbols(model: data)
-                guard let url = URL(string: tranformedData) else {
-                    AlertService.alertIncorrectURL(controller: controller)
-                    return
-                }
                 
-                let name = url.lastPathComponent
-                let issuer = url.valueOf("issuer")
-                let secret = url.valueOf("secret")
+                // When clicked
                 
-                guard let components = URLComponents(string: tranformedData) else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                guard components.scheme != nil else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                guard "\(components)".contains("secret") else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                guard "\(components)".contains("totp") else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                
-                if secret == nil {
-                    AlertService.alertIncorrectURL(controller: controller)
-                    return
-                }
-                if tranformedData == .empty {
-                    AlertService.alertIncorrectURL(controller: controller)
-                    return
-                }
-                if issuer == nil {
-                    AlertService.alertIncorrectURL(controller: controller)
-                    return
-                }
-                if name.isEmpty {
-                    AlertService.alertIncorrectURL(controller: controller)
-                    return
-                }
-                
-                guard let url = URL(string: tranformedData) else {
-                    AlertService.alertIncorrectURL(controller: controller)
-                    return
-                }
-                guard let token = url.valueOf("secret") else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                guard let secret = base32DecodeToData(token) else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                guard let checkCode = OTP.generateOTP(secret: secret) else {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                if checkCode.isEmpty {
-                    AlertService.alertNoToken(controller: controller)
-                    return
-                }
-                
-                if issuer != nil && !name.isEmpty && !checkCode.isEmpty {
-                    let model = AccountModel(oneTimePassword: tranformedData, website: issuer!, login: name)
-                    if !self.passwordsData.contains(model) {
-                        AppSettings.saveToKeychain(id: tranformedData)
-                        self.passwordsData = AppSettings.getAllFromKeychain()
-                        AlertService.code_added()
-                        self.diffableDataSource?.set(self.content, animated: true)
-                        controller.dismiss(animated: true)
-                    } else {
-                        AlertService.alertTheSameCode(controller: controller)
-                    }
-                } else {
-                    AlertService.alertIncorrectURL(controller: controller)
-                }
             },
             on: self
         )
+    }
+    
+    func handledQR(dataQR: QRCodeData) {
+        let tranformedData = self.cutSymbols(model: dataQR)
+        guard let url = URL(string: tranformedData) else {
+            AlertService.alertIncorrectURL(controller: self)
+            return
+        }
+        
+        let name = url.lastPathComponent
+        let issuer = url.valueOf("issuer")
+        let secret = url.valueOf("secret")
+        
+        guard let components = URLComponents(string: tranformedData) else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        guard components.scheme != nil else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        guard "\(components)".contains("secret") else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        guard "\(components)".contains("totp") else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        
+        if secret == nil {
+            AlertService.alertIncorrectURL(controller: self)
+            return
+        }
+        if tranformedData == .empty {
+            AlertService.alertIncorrectURL(controller: self)
+            return
+        }
+        if issuer == nil {
+            AlertService.alertIncorrectURL(controller: self)
+            return
+        }
+        if name.isEmpty {
+            AlertService.alertIncorrectURL(controller: self)
+            return
+        }
+        
+        guard let url = URL(string: tranformedData) else {
+            AlertService.alertIncorrectURL(controller: self)
+            return
+        }
+        guard let token = url.valueOf("secret") else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        guard let secret = base32DecodeToData(token) else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        guard let checkCode = OTP.generateOTP(secret: secret) else {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        if checkCode.isEmpty {
+            AlertService.alertNoToken(controller: self)
+            return
+        }
+        
+        if issuer != nil && !name.isEmpty && !checkCode.isEmpty {
+            let model = AccountModel(oneTimePassword: tranformedData, website: issuer!, login: name)
+            if !self.passwordsData.contains(model) {
+                AppSettings.saveToKeychain(id: tranformedData)
+                self.passwordsData = AppSettings.getAllFromKeychain()
+                AlertService.code_added()
+                self.diffableDataSource?.set(self.content, animated: true)
+                self.dismiss(animated: true)
+            } else {
+                AlertService.alertTheSameCode(controller: self)
+            }
+        } else {
+            AlertService.alertIncorrectURL(controller: self)
+        }
     }
     
 }
