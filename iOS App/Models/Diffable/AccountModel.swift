@@ -1,6 +1,7 @@
 import Foundation
 
 class AccountModel: Equatable, Codable {
+    
     static func == (lhs: AccountModel, rhs: AccountModel) -> Bool {
         return lhs.oneTimePassword == rhs.oneTimePassword
     }
