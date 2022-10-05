@@ -2,17 +2,18 @@ import Intents
 
 class IntentHandler: INExtension, SelectWebsiteIntentHandling {
     
-    func defaultWebsite(for intent: SelectWebsiteIntent) -> Website? {
-        guard let account = AppSettings.getAllFromKeychain().first else { return nil }
-        return convertAccountToWebsite(account)
-    }
-    
-    func provideWebsiteOptionsCollection(for intent: SelectWebsiteIntent, searchTerm: String?, with completion: @escaping (INObjectCollection<Website>?, Error?) -> Void) {
+    func provideWebsiteOptionsCollection(for intent: SelectWebsiteIntent, with completion: @escaping (INObjectCollection<Website>?, Error?) -> Void) {
         let websites: [Website] = AppSettings.getAllFromKeychain().map { account in
             return convertAccountToWebsite(account)
         }
         let collection = INObjectCollection(items: websites)
         completion(collection, nil)
+    }
+    
+    
+    func defaultWebsite(for intent: SelectWebsiteIntent) -> Website? {
+        guard let account = AppSettings.getAllFromKeychain().first else { return nil }
+        return convertAccountToWebsite(account)
     }
     
     override func handler(for intent: INIntent) -> Any {
