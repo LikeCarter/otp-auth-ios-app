@@ -993,7 +993,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget.intent";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1021,7 +1021,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget.intent";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

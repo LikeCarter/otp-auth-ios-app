@@ -12,7 +12,6 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
-				<string>SelectWebsite</string>
 				<string>SelectWebsiteIntent</string>
 			</array>
 		</dict>
