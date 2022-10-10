@@ -8,7 +8,7 @@ import OTP
 struct Entry: TimelineEntry {
     
     let otpCode: String
-    
+    let website: String?
     let date: Date
     let configuration: SelectWebsiteIntent
 }
@@ -16,12 +16,22 @@ struct Entry: TimelineEntry {
 struct Provider: IntentTimelineProvider {
     
     func placeholder(in context: Context) -> Entry {
-        Entry(otpCode: "111 111", date: Date(), configuration: SelectWebsiteIntent())
+        Entry(
+            otpCode: defaultCode,
+            website: "sparrowcode.io",
+            date: Date(),
+            configuration: SelectWebsiteIntent()
+        )
     }
     
     func getSnapshot(for configuration: SelectWebsiteIntent, in context: Context, completion: @escaping (Entry) -> ()) {
         let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: Date()) ?? defaultCode
-        let entry = Entry(otpCode: otpCode, date: Date(), configuration: configuration)
+        let entry = Entry(
+            otpCode: otpCode,
+            website: configuration.website?.website,
+            date: Date(),
+            configuration: configuration
+        )
         completion(entry)
     }
     
@@ -32,7 +42,12 @@ struct Provider: IntentTimelineProvider {
             let offset = TimeInterval(30 * codeIndex)
             let date = currentDate.addingTimeInterval(offset)
             let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: date) ?? defaultCode
-            let entry = Entry(otpCode: otpCode, date: date, configuration: configuration)
+            let entry = Entry(
+                otpCode: otpCode,
+                website: configuration.website?.website,
+                date: date,
+                configuration: configuration
+            )
             entries.append(entry)
         }
         let timeline = Timeline(entries: entries, policy: .atEnd)

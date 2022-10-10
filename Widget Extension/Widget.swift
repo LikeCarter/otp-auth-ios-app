@@ -17,7 +17,7 @@ struct OTPCodeWidget: Widget {
         }
         .configurationDisplayName(Texts.widget_title)
         .description(Texts.widget_description)
-        .supportedFamilies([.systemSmall, .accessoryRectangular])
+        .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular, .accessoryCircular, .accessoryInline])
     }
 }
 

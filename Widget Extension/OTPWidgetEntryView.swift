@@ -27,43 +27,67 @@ struct OTPWidgetEntryView : View {
                         .font(.caption)
                         Spacer()
                     }
-                    if let data = entry.configuration.website {
-                        VStack(alignment: .leading, spacing: 0) {
-                            Spacer()
-                            Text(data.website ?? "")
-                                .foregroundColor(.black)
-                                .opacity(0.8)
-                                .fontWeight(.medium)
-                                .font(.footnote)
-                                .lineLimit(1)
-                                .multilineTextAlignment(.leading)
-                                .opacity(0.7)
-                            Text(entry.otpCode)
-                                .foregroundColor(.white)
-                                .fontWeight(.semibold)
-                                .font(.title)
-                                .lineLimit(1)
-                                .multilineTextAlignment(.leading)
-                            ProgressView(
-                                timerInterval: entry.date...entry.date.addingTimeInterval(30),
-                                countsDown: true,
-                                label: {},
-                                currentValueLabel: {
-                                    Text(timerInterval: entry.date...entry.date.addingTimeInterval(30), countsDown: true)
-                                        .foregroundColor(.white)
+                    if let website = entry.website {
+                        VStack(spacing: 0) {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 0) {
+                                    Spacer()
+                                    Text(website)
+                                        .foregroundColor(.black)
+                                        .opacity(0.8)
                                         .fontWeight(.medium)
+                                        .font(.footnote)
+                                        .lineLimit(1)
+                                        .multilineTextAlignment(.leading)
+                                        .opacity(0.7)
+                                    Text(entry.otpCode)
+                                        .monospacedDigit()
+                                        .foregroundColor(.white)
+                                        .fontWeight(.semibold)
+                                        .font(.title)
+                                        .lineLimit(1)
+                                        .multilineTextAlignment(.leading)
                                 }
-                            )
-                            .tint(.white)
-                            .progressViewStyle(.linear)
+                                Spacer()
+                                if family == .systemMedium {
+                                    VStack(alignment: .trailing) {
+                                        Spacer()
+                                        Text(timerInterval: entry.date...entry.date.addingTimeInterval(30),
+                                             countsDown: true)
+                                        .monospacedDigit()
+                                        .foregroundColor(.white)
+                                        .fontWeight(.semibold)
+                                        .font(.title)
+                                        .lineLimit(1)
+                                        .multilineTextAlignment(.trailing)
+                                    }
+                                }
+                            }
+                            VStack {
+                                ProgressView(
+                                    timerInterval: entry.date...entry.date.addingTimeInterval(30),
+                                    countsDown: true,
+                                    label: {},
+                                    currentValueLabel: {
+                                        if family != .systemMedium {
+                                            Text(timerInterval: entry.date...entry.date.addingTimeInterval(30), countsDown: true)
+                                                .monospacedDigit()
+                                                .foregroundColor(.white.opacity(0.85))
+                                                .fontWeight(.medium)
+                                        }
+                                    }
+                                )
+                                .tint(.white)
+                                .progressViewStyle(.linear)
+                            }
                         }
                     } else {
                         Text(Texts.no_any_accounts)
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
-                            .font(.title)
+                            .font(.title2)
                             .multilineTextAlignment(.leading)
-                            .minimumScaleFactor(0.5)
+                            .minimumScaleFactor(0.3)
                     }
                 }
                 .padding()
@@ -81,6 +105,7 @@ struct OTPWidgetEntryView : View {
                             .opacity(0.7)
                             .minimumScaleFactor(0.5)
                         Text(entry.otpCode)
+                            .monospacedDigit()
                             .foregroundColor(.primary)
                             .fontWeight(.semibold)
                             .font(.title2)
@@ -103,8 +128,49 @@ struct OTPWidgetEntryView : View {
                     }
                 }
             }
+        case .accessoryCircular:
+            ZStack {
+                AccessoryWidgetBackground()
+                ProgressView(
+                    timerInterval: entry.date...entry.date.addingTimeInterval(30),
+                    countsDown: true,
+                    label: {},
+                    currentValueLabel: {
+                        VStack(spacing: 0) {
+                            Text(entry.otpCode.prefix(3))
+                            Text(entry.otpCode.suffix(3))
+                        }
+                        .multilineTextAlignment(.center)
+                        .lineLimit(2)
+                        .monospacedDigit()
+                    }
+                )
+                .progressViewStyle(.circular)
+            }
+        case .accessoryInline:
+            if let website = entry.website {
+                Text(website + .space + entry.otpCode)
+            } else {
+                Text(Texts.no_any_accounts)
+            }
+            
         default:
             Text(Texts.not_supported)
         }
+    }
+}
+
+struct OTPWidgetEntryView_Preview: PreviewProvider {
+    
+    static var previews: some View {
+        OTPWidgetEntryView(
+            entry: .init(
+                otpCode: "123 456",
+                website: "sparrowcode.io",
+                date: Date(),
+                configuration: SelectWebsiteIntent()
+            )
+        )
+        .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }
