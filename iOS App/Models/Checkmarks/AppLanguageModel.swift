@@ -4,6 +4,7 @@ import UIKit
 enum AppLanguage: String, CaseIterable {
     case russian
     case english
+    case german
     
     var id: String { rawValue }
     
@@ -13,6 +14,8 @@ enum AppLanguage: String, CaseIterable {
             return "Русский"
         case .english:
             return "English"
+        case .german:
+            return "Deutsch"
         }
         
     }
@@ -23,6 +26,8 @@ enum AppLanguage: String, CaseIterable {
             return Texts.SettingsController.Languages.russian
         case .english:
             return Texts.SettingsController.Languages.english
+        case .german:
+            return Texts.SettingsController.Languages.german
         }
     }
     
@@ -33,6 +38,8 @@ enum AppLanguage: String, CaseIterable {
             return .english
         case "ru":
             return .russian
+        case "de":
+            return .german
         case .none:
             return .english
         case .some(_):

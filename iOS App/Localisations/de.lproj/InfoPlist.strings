@@ -5,7 +5,7 @@
 "CFBundleName" = "OTP Auth";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "This app needs access to your camera to scan a QR code.";
+"NSCameraUsageDescription" = "Diese App benötigt Zugriff auf Ihre Kamera, um einen QR-Code zu scannen.";
 
 /* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "This app needs Face ID access to confirm your login.";
+"NSFaceIDUsageDescription" = "Diese App benötigt Face ID-Zugang, um Ihre Anmeldung zu bestätigen.";

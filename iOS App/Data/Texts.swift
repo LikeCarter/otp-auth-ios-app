@@ -147,6 +147,7 @@ enum Texts {
             
             static var russian: String { NSLocalizedString("settings languages controller cell russian", comment: "") }
             static var english: String { NSLocalizedString("settings languages controller cell english", comment: "") }
+            static var german: String { NSLocalizedString("settings languages controller cell german", comment: "") }
         }
         
         enum AboutApp {
