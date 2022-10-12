@@ -6,3 +6,6 @@
 
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Этому приложению необходим доступ к вашей камере для сканирования QR-кода.";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Этому приложению необходим доступ к Face ID для подтверждения входа.";

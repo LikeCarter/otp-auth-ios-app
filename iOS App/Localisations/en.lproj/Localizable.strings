@@ -17,6 +17,18 @@
 "alert service token exists" = "This account already exists";
 
 /* No comment provided by engineer. */
+"auth alert fail description" = "The identity is not verified. Try again.";
+
+/* No comment provided by engineer. */
+"auth alert fail title" = "Failed to verify";
+
+/* No comment provided by engineer. */
+"auth change description" = "Enable / disable protection.";
+
+/* No comment provided by engineer. */
+"auth login description" = "App Login Confirmation";
+
+/* No comment provided by engineer. */
 "permissions camera denied alert action" = "Open Settings";
 
 /* No comment provided by engineer. */
@@ -74,10 +86,10 @@
 "setings controller media section header" = "MEDIA";
 
 /* No comment provided by engineer. */
-"setings password controller section footer" = "setings password controller section footer";
+"setings password controller section footer" = "The application will request authorization before launch. For verification, use Face / Touch ID or passcode.";
 
 /* No comment provided by engineer. */
-"setings password controller section header" = "setings password controller section header";
+"setings password controller section header" = "ACCESSIBLE PROTECTION";
 
 /* No comment provided by engineer. */
 "settings about app controller package cell" = "settings about app controller package cell";
@@ -215,10 +227,10 @@
 "settings languages controller title" = "Languages";
 
 /* No comment provided by engineer. */
-"settings password controller cell" = "settings password controller cell";
+"settings password controller cell" = "Authorization";
 
 /* No comment provided by engineer. */
-"settings password controller title" = "settings password controller title";
+"settings password controller title" = "Password";
 
 /* No comment provided by engineer. */
 "settings sounds controller disabled cell" = "Disabled";
@@ -260,4 +272,8 @@
 "shared ok" = "OK";
 
 /* No comment provided by engineer. */
+"shared try again" = "Try Again";
+
+/* No comment provided by engineer. */
 "shared unknown" = "Unknown";
+

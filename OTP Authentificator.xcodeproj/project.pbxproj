@@ -33,21 +33,27 @@
 		A3B2883A2841870D0072D89F /* Success.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B288362841870D0072D89F /* Success.wav */; };
 		A3B2883B2841870D0072D89F /* Delete.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B288372841870D0072D89F /* Delete.wav */; };
 		A3B2883D284190650072D89F /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2883C284190650072D89F /* AlertService.swift */; };
+		A3DC862828F61C2C0030F276 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862728F61C2C0030F276 /* AuthController.swift */; };
+		A3DC862A28F61DEC0030F276 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862928F61DEC0030F276 /* RootController.swift */; };
+		A3DC862C28F61FB50030F276 /* AppLocalAuthentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */; };
+		A3DC862E28F621050030F276 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862D28F621050030F276 /* AppService.swift */; };
+		A3DC862F28F644930030F276 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41FE4B328ED8C6F00097440 /* Localizable.strings */; };
+		A3DC863028F644970030F276 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AC28ED8BDB00097440 /* Texts.swift */; };
 		A3FDB496284A7539006C79A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FDB494284A7539006C79A1 /* Localizable.strings */; };
-		EB2977DA283D394A00164B14 /* RootController+HeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2977D9283D394A00164B14 /* RootController+HeaderContainer.swift */; };
-		EB2F4025283A539E00E99291 /* RootController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F4024283A539E00E99291 /* RootController+UISearchResultsUpdating.swift */; };
-		EB2F4027283A71D500E99291 /* RootController+Methods+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F4026283A71D500E99291 /* RootController+Methods+Actions.swift */; };
+		EB2977DA283D394A00164B14 /* HomeController+HeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2977D9283D394A00164B14 /* HomeController+HeaderContainer.swift */; };
+		EB2F4025283A539E00E99291 /* HomeController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F4024283A539E00E99291 /* HomeController+UISearchResultsUpdating.swift */; };
+		EB2F4027283A71D500E99291 /* HomeController+Methods+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F4026283A71D500E99291 /* HomeController+Methods+Actions.swift */; };
 		EB4041522826F6E700C0BBCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4041512826F6E700C0BBCF /* AppDelegate.swift */; };
-		EB4041562826F6E700C0BBCF /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4041552826F6E700C0BBCF /* RootController.swift */; };
+		EB4041562826F6E700C0BBCF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4041552826F6E700C0BBCF /* HomeController.swift */; };
 		EB40415B2826F6F700C0BBCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB40415A2826F6F700C0BBCF /* Assets.xcassets */; };
 		EB40415E2826F6F700C0BBCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB40415C2826F6F700C0BBCF /* LaunchScreen.storyboard */; };
 		EB4041702827026C00C0BBCF /* AppImport in Frameworks */ = {isa = PBXBuildFile; productRef = EB40416F2827026C00C0BBCF /* AppImport */; };
 		EB404181282AC53800C0BBCF /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB404180282AC53800C0BBCF /* AccountModel.swift */; };
 		EB404183282AC58400C0BBCF /* CellProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB404182282AC58400C0BBCF /* CellProviders.swift */; };
-		EB404185282B0ECE00C0BBCF /* RootController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB404184282B0ECD00C0BBCF /* RootController+Delegate.swift */; };
+		EB404185282B0ECE00C0BBCF /* HomeController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB404184282B0ECD00C0BBCF /* HomeController+Delegate.swift */; };
 		EB501A87282C3C3700BAED16 /* OTPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB501A86282C3C3700BAED16 /* OTPTableViewCell.swift */; };
 		EB501A89282C3F8000BAED16 /* NumberOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB501A88282C3F7F00BAED16 /* NumberOTPView.swift */; };
-		EB501A8B282D458F00BAED16 /* RootControllerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB501A8A282D458F00BAED16 /* RootControllerHeaderView.swift */; };
+		EB501A8B282D458F00BAED16 /* HomeControllerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB501A8A282D458F00BAED16 /* HomeControllerHeaderView.swift */; };
 		EB501A8D282EC81100BAED16 /* ExtensionStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB501A8C282EC81100BAED16 /* ExtensionStringProtocol.swift */; };
 		EBE84F43283590850079771F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE84F42283590850079771F /* SettingsController.swift */; };
 		F41FE45B28ED677600097440 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE45A28ED677600097440 /* WidgetKit.framework */; };
@@ -69,8 +75,6 @@
 		F41FE4A828ED814B00097440 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 		F41FE4A928ED81AB00097440 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
 		F41FE4AB28ED871700097440 /* OTPWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AA28ED871700097440 /* OTPWidgetEntryView.swift */; };
-		F41FE4AD28ED8BDB00097440 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AC28ED8BDB00097440 /* Texts.swift */; };
-		F41FE4B128ED8C6F00097440 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41FE4B328ED8C6F00097440 /* Localizable.strings */; };
 		F41FE4B528ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
 		F41FE4B628ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
 		F41FE4B728ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
@@ -137,24 +141,28 @@
 		A3B288362841870D0072D89F /* Success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Success.wav; sourceTree = "<group>"; };
 		A3B288372841870D0072D89F /* Delete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Delete.wav; sourceTree = "<group>"; };
 		A3B2883C284190650072D89F /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		A3DC862728F61C2C0030F276 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		A3DC862928F61DEC0030F276 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalAuthentification.swift; sourceTree = "<group>"; };
+		A3DC862D28F621050030F276 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		A3FDB495284A7539006C79A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3FDB497284A7A2F006C79A1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EB2977D9283D394A00164B14 /* RootController+HeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootController+HeaderContainer.swift"; sourceTree = "<group>"; };
-		EB2F4024283A539E00E99291 /* RootController+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootController+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
-		EB2F4026283A71D500E99291 /* RootController+Methods+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootController+Methods+Actions.swift"; sourceTree = "<group>"; };
+		EB2977D9283D394A00164B14 /* HomeController+HeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+HeaderContainer.swift"; sourceTree = "<group>"; };
+		EB2F4024283A539E00E99291 /* HomeController+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
+		EB2F4026283A71D500E99291 /* HomeController+Methods+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+Methods+Actions.swift"; sourceTree = "<group>"; };
 		EB40414E2826F6E700C0BBCF /* OTP Authentificator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTP Authentificator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4041512826F6E700C0BBCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB4041552826F6E700C0BBCF /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		EB4041552826F6E700C0BBCF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		EB40415A2826F6F700C0BBCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB40415D2826F6F700C0BBCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB40415F2826F6F700C0BBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4041712827090100C0BBCF /* AppImport */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppImport; sourceTree = "<group>"; };
 		EB404180282AC53800C0BBCF /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		EB404182282AC58400C0BBCF /* CellProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProviders.swift; sourceTree = "<group>"; };
-		EB404184282B0ECD00C0BBCF /* RootController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootController+Delegate.swift"; sourceTree = "<group>"; };
+		EB404184282B0ECD00C0BBCF /* HomeController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+Delegate.swift"; sourceTree = "<group>"; };
 		EB501A86282C3C3700BAED16 /* OTPTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTableViewCell.swift; sourceTree = "<group>"; };
 		EB501A88282C3F7F00BAED16 /* NumberOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOTPView.swift; sourceTree = "<group>"; };
-		EB501A8A282D458F00BAED16 /* RootControllerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerHeaderView.swift; sourceTree = "<group>"; };
+		EB501A8A282D458F00BAED16 /* HomeControllerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerHeaderView.swift; sourceTree = "<group>"; };
 		EB501A8C282EC81100BAED16 /* ExtensionStringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStringProtocol.swift; sourceTree = "<group>"; };
 		EBE84F42283590850079771F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		F41FE45928ED677600097440 /* Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,17 +221,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A370536F282AF16C00A1A64D /* Root */ = {
+		A370536F282AF16C00A1A64D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EB4041552826F6E700C0BBCF /* RootController.swift */,
-				EB404184282B0ECD00C0BBCF /* RootController+Delegate.swift */,
-				EB2F4024283A539E00E99291 /* RootController+UISearchResultsUpdating.swift */,
-				EB2F4026283A71D500E99291 /* RootController+Methods+Actions.swift */,
-				EB2977D9283D394A00164B14 /* RootController+HeaderContainer.swift */,
-				EB501A8A282D458F00BAED16 /* RootControllerHeaderView.swift */,
+				EB4041552826F6E700C0BBCF /* HomeController.swift */,
+				EB404184282B0ECD00C0BBCF /* HomeController+Delegate.swift */,
+				EB2F4024283A539E00E99291 /* HomeController+UISearchResultsUpdating.swift */,
+				EB2F4026283A71D500E99291 /* HomeController+Methods+Actions.swift */,
+				EB2977D9283D394A00164B14 /* HomeController+HeaderContainer.swift */,
+				EB501A8A282D458F00BAED16 /* HomeControllerHeaderView.swift */,
 			);
-			path = Root;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A3B288202841417C0072D89F /* Checkmarks */ = {
@@ -367,6 +375,8 @@
 			children = (
 				A3B288252841435F0072D89F /* Appearance */,
 				A35E713328270BC80039A4C0 /* AppSettings.swift */,
+				A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */,
+				A3DC862D28F621050030F276 /* AppService.swift */,
 				F41FE4A228ED7C6800097440 /* AppSettingsExtension.swift */,
 				EB501A8C282EC81100BAED16 /* ExtensionStringProtocol.swift */,
 				A3B28831284182E90072D89F /* SoundsService.swift */,
@@ -388,7 +398,9 @@
 		EB40416D2826FD7300C0BBCF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A370536F282AF16C00A1A64D /* Root */,
+				A3DC862928F61DEC0030F276 /* RootController.swift */,
+				A3DC862728F61C2C0030F276 /* AuthController.swift */,
+				A370536F282AF16C00A1A64D /* Home */,
 				EBE84F4128358F230079771F /* Settings */,
 			);
 			path = Scenes;
@@ -583,7 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41FE46328ED677700097440 /* Assets.xcassets in Resources */,
-				F41FE4B128ED8C6F00097440 /* Localizable.strings in Resources */,
+				A3DC862F28F644930030F276 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,15 +618,16 @@
 				EB501A89282C3F8000BAED16 /* NumberOTPView.swift in Sources */,
 				A3B2882A2841435F0072D89F /* AppThemeServices.swift in Sources */,
 				A3B2883D284190650072D89F /* AlertService.swift in Sources */,
-				EB404185282B0ECE00C0BBCF /* RootController+Delegate.swift in Sources */,
+				EB404185282B0ECE00C0BBCF /* HomeController+Delegate.swift in Sources */,
+				A3DC862A28F61DEC0030F276 /* RootController.swift in Sources */,
 				A3821EED283ED93400AF08ED /* SettingsSoundsController.swift in Sources */,
 				A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */,
 				A3B28822284141E60072D89F /* SettingsAppearanceController.swift in Sources */,
 				A3B288242841424C0072D89F /* ColorTableViewCell.swift in Sources */,
 				EB404181282AC53800C0BBCF /* AccountModel.swift in Sources */,
 				A3B2881F284141700072D89F /* AppThemeService.swift in Sources */,
-				EB501A8B282D458F00BAED16 /* RootControllerHeaderView.swift in Sources */,
-				EB2977DA283D394A00164B14 /* RootController+HeaderContainer.swift in Sources */,
+				EB501A8B282D458F00BAED16 /* HomeControllerHeaderView.swift in Sources */,
+				EB2977DA283D394A00164B14 /* HomeController+HeaderContainer.swift in Sources */,
 				A358DC4E2857F02100BD6F4C /* URLExtension.swift in Sources */,
 				A329CA4C2843BC4400AFB45F /* SettingsLanguagesController.swift in Sources */,
 				A35E713228270A6C0039A4C0 /* Constants.swift in Sources */,
@@ -622,17 +635,20 @@
 				A3B2882D284143760072D89F /* DiffableTableColorRow.swift in Sources */,
 				A3B2882B2841435F0072D89F /* AppearanceControlService.swift in Sources */,
 				EBE84F43283590850079771F /* SettingsController.swift in Sources */,
-				EB2F4027283A71D500E99291 /* RootController+Methods+Actions.swift in Sources */,
+				EB2F4027283A71D500E99291 /* HomeController+Methods+Actions.swift in Sources */,
 				A35E713428270BC80039A4C0 /* AppSettings.swift in Sources */,
+				A3DC862828F61C2C0030F276 /* AuthController.swift in Sources */,
 				A35E713028270A580039A4C0 /* Images.swift in Sources */,
-				EB4041562826F6E700C0BBCF /* RootController.swift in Sources */,
+				EB4041562826F6E700C0BBCF /* HomeController.swift in Sources */,
 				A3208AB6283EA57D00B21D34 /* SettingsPasswordController.swift in Sources */,
+				A3DC862E28F621050030F276 /* AppService.swift in Sources */,
 				F41FE4B528ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */,
+				A3DC862C28F61FB50030F276 /* AppLocalAuthentification.swift in Sources */,
 				EB404183282AC58400C0BBCF /* CellProviders.swift in Sources */,
 				A3B28832284182E90072D89F /* SoundsService.swift in Sources */,
 				EB501A8D282EC81100BAED16 /* ExtensionStringProtocol.swift in Sources */,
 				F47CD2FD2865B064006367E9 /* Base32.swift in Sources */,
-				EB2F4025283A539E00E99291 /* RootController+UISearchResultsUpdating.swift in Sources */,
+				EB2F4025283A539E00E99291 /* HomeController+UISearchResultsUpdating.swift in Sources */,
 				F41FE4A428ED7C7300097440 /* AppSettingsExtension.swift in Sources */,
 				EB4041522826F6E700C0BBCF /* AppDelegate.swift in Sources */,
 				A329CA50284414DF00AFB45F /* SettingsAboutAppController.swift in Sources */,
@@ -646,7 +662,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41FE4A928ED81AB00097440 /* URLExtension.swift in Sources */,
-				F41FE4AD28ED8BDB00097440 /* Texts.swift in Sources */,
+				A3DC863028F644970030F276 /* Texts.swift in Sources */,
 				F41FE4B628ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */,
 				F41FE47028ED67AC00097440 /* Provider.swift in Sources */,
 				F41FE4AB28ED871700097440 /* OTPWidgetEntryView.swift in Sources */,

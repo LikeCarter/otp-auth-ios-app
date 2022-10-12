@@ -37,11 +37,11 @@ class SettingsController: SPDiffableTableController, MFMailComposeViewController
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-
+        
         coordinator.animate(
             alongsideTransition: { _ in
-            self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
-            self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
+                self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
+                self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
             },
             completion: nil
         )
@@ -77,18 +77,16 @@ class SettingsController: SPDiffableTableController, MFMailComposeViewController
                         self.navigationController?.pushViewController(SettingsSoundsController(style: .insetGrouped), animated: true)
                     }
                 ),
-                /*
-                 NativeDiffableLeftButton(
-                 id: Item.password.id,
-                 text: Texts.SettingsController.password_button,
-                 detail: nil,
-                 icon: Images.password,
-                 accessoryType: .disclosureIndicator,
-                 action: { item, indexPath in
-                 self.navigationController?.pushViewController(SettingsPasswordController(style: .insetGrouped), animated: true)
-                 }
-                 ),
-                 */
+                NativeDiffableLeftButton(
+                    id: Item.password.id,
+                    text: Texts.SettingsController.password_button,
+                    detail: nil,
+                    icon: Images.password,
+                    accessoryType: .disclosureIndicator,
+                    action: { item, indexPath in
+                        self.navigationController?.pushViewController(SettingsPasswordController(style: .insetGrouped), animated: true)
+                    }
+                ),
                 NativeDiffableLeftButton(
                     id: Item.languages.id,
                     text: Texts.SettingsController.language_button,

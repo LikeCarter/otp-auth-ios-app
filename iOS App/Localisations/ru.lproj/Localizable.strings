@@ -17,6 +17,18 @@
 "alert service token exists" = "Этот аккаунт уже добавлен";
 
 /* No comment provided by engineer. */
+"auth alert fail description" = "Личность не подтверждена. Попробуйте еще раз.";
+
+/* No comment provided by engineer. */
+"auth alert fail title" = "Не удалось подтвердить";
+
+/* No comment provided by engineer. */
+"auth change description" = "Включение / отключение защиты.";
+
+/* No comment provided by engineer. */
+"auth login description" = "Подтверждение входа в приложение";
+
+/* No comment provided by engineer. */
 "permissions camera denied alert action" = "Открыть настройки";
 
 /* No comment provided by engineer. */
@@ -74,10 +86,10 @@
 "setings controller media section header" = "Медиа";
 
 /* No comment provided by engineer. */
-"setings password controller section footer" = "setings password controller section footer";
+"setings password controller section footer" = "Приложение запросит авторизацию перед запуском. Для проверки используется Face / Touch ID или пароль.";
 
 /* No comment provided by engineer. */
-"setings password controller section header" = "setings password controller section header";
+"setings password controller section header" = "ДОСТУПНАЯ ЗАЩИТА";
 
 /* No comment provided by engineer. */
 "settings about app controller package cell" = "settings about app controller package cell";
@@ -215,10 +227,10 @@
 "settings languages controller title" = "Языки";
 
 /* No comment provided by engineer. */
-"settings password controller cell" = "settings password controller cell";
+"settings password controller cell" = "Авторизация";
 
 /* No comment provided by engineer. */
-"settings password controller title" = "settings password controller title";
+"settings password controller title" = "Пароль";
 
 /* No comment provided by engineer. */
 "settings sounds controller disabled cell" = "Отключено";
@@ -260,4 +272,8 @@
 "shared ok" = "OK";
 
 /* No comment provided by engineer. */
+"shared try again" = "Попробовать снова";
+
+/* No comment provided by engineer. */
 "shared unknown" = "Неизвестно";
+

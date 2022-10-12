@@ -2,7 +2,7 @@ import UIKit
 import SparrowKit
 import SPDiffable
 
-extension RootController {
+extension HomeController {
     
     open class HeaderContainerView: SPView {
         

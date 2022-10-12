@@ -6,7 +6,7 @@ import SPSettingsIcons
 import CameraPermission
 import SPIndicator
 
-class RootController: SPDiffableTableController {
+class HomeController: SPDiffableTableController {
     
     // MARK: - Views
     
@@ -55,6 +55,16 @@ class RootController: SPDiffableTableController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        #warning("Disquss about animation")
+        let gradeView = UIView()
+        gradeView.backgroundColor = .systemBackground
+        view.addSubview(gradeView)
+        gradeView.frame = view.bounds
+        UIView.animate(withDuration: 0.22, animations: {
+            gradeView.alpha = 0
+        }, completion: { finished in
+            gradeView.removeFromSuperview()
+        })
         diffableDataSource?.set(content, animated: false)
     }
     

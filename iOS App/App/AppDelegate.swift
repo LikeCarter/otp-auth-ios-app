@@ -6,10 +6,9 @@ import NativeUIKit
 class AppDelegate: SPAppWindowDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
+        
         makeKeyAndVisible(createViewControllerHandler: {
-            let navigationViewController = NativeNavigationController.init(rootViewController: RootController(style: .insetGrouped))
-            return navigationViewController
+            return AppSettings.isPasswordEnabled ? AuthController() : RootController()
         }, tint: .systemBlue)
         
         AppearanceControlService.check()

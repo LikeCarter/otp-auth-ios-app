@@ -1,6 +1,6 @@
 import UIKit
 
-extension RootController: UISearchResultsUpdating {
+extension HomeController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchText: searchController.searchBar.text!)

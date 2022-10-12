@@ -12,6 +12,20 @@ enum Texts {
         static var error: String { NSLocalizedString("shared error", comment: "") }
         static var OK: String { NSLocalizedString("shared ok", comment: "") }
         static var unknown: String { NSLocalizedString("shared unknown", comment: "") }
+        static var try_again: String { NSLocalizedString("shared try again", comment: "") }
+    }
+    
+    enum Auth {
+        
+        static var logic_description: String { NSLocalizedString("auth login description", comment: "") }
+        static var change_description: String { NSLocalizedString("auth change description", comment: "") }
+        
+        enum Alert {
+            
+            static var title: String { NSLocalizedString("auth alert fail title", comment: "") }
+            static var description: String { NSLocalizedString("auth alert fail description", comment: "") }
+        }
+        
     }
     
     enum Alerts {
@@ -22,7 +36,6 @@ enum Texts {
         static var token_exists: String { NSLocalizedString("alert service token exists", comment: "") }
         static var incorrect_url: String { NSLocalizedString("alert service incorrect url", comment: "") }
         static var email_error: String { NSLocalizedString("alert service email error", comment: "") }
-        
     }
     
     enum Permissions {
@@ -83,9 +96,9 @@ enum Texts {
             
             static var title: String { NSLocalizedString("settings password controller title", comment: "") }
             
-            static var header: String { NSLocalizedString("setings password controller section footer", comment: "") }
+            static var header: String { NSLocalizedString("setings password controller section header", comment: "") }
             static var cell: String { NSLocalizedString("settings password controller cell", comment: "") }
-            static var footer: String { NSLocalizedString("setings password controller section header", comment: "") }
+            static var footer: String { NSLocalizedString("setings password controller section footer", comment: "") }
         }
         
         enum Appearance {
@@ -111,7 +124,6 @@ enum Texts {
             static var blue_color: String { NSLocalizedString("settings appearance controller blue color cell", comment: "") }
             static var purple_color: String { NSLocalizedString("settings appearance controller purple color cell", comment: "") }
             static var gray_color: String { NSLocalizedString("settings appearance controller gray color cell", comment: "") }
-            
         }
         
         enum Sounds {
