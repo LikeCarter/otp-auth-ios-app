@@ -33,8 +33,9 @@ enum SoundsService {
         guard let url = Bundle.main.url(forResource: sound.name, withExtension: "wav") else { return }
 
             do {
-                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
+                
 
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
