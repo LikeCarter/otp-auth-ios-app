@@ -40,6 +40,23 @@ class SettingsPasswordController: SPDiffableTableController {
                             
                         }
                     }
+                ),
+                SPDiffableTableRowSwitch(
+                    id: "allow-widget",
+                    text: Texts.SettingsController.Password.cell,
+                    icon: nil,
+                    isOn: AppSettings.isPasswordEnabled,
+                    action: { currentState in
+                        AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
+                            if state {
+                                AppSettings.isPasswordEnabled = currentState
+                                self.diffableDataSource?.set(self.content, animated: true)
+                            } else {
+                                self.diffableDataSource?.set(self.content, animated: true)
+                            }
+                            
+                        }
+                    }
                 )
             ]
         )

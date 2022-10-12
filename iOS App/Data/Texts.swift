@@ -99,6 +99,9 @@ enum Texts {
             static var header: String { NSLocalizedString("setings password controller section header", comment: "") }
             static var cell: String { NSLocalizedString("settings password controller cell", comment: "") }
             static var footer: String { NSLocalizedString("setings password controller section footer", comment: "") }
+            
+            static var allow_widget: String { NSLocalizedString("settings password controller allow widget", comment: "") }
+            static var allow_widget_footer: String { NSLocalizedString("setings password controller section allow_widget footer", comment: "") }
         }
         
         enum Appearance {
