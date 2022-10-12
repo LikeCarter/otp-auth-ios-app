@@ -86,6 +86,9 @@
 "setings controller media section header" = "MEDIA";
 
 /* No comment provided by engineer. */
+"setings password controller section allow_widget footer" = "If this setting is enabled, it will be possible to access the codes through widgets without authorization.";
+
+/* No comment provided by engineer. */
 "setings password controller section footer" = "The application will request authorization before launch. For verification, use Face / Touch ID or passcode.";
 
 /* No comment provided by engineer. */
@@ -230,6 +233,9 @@
 "settings languages controller title" = "Languages";
 
 /* No comment provided by engineer. */
+"settings password controller allow widget" = "Allow Widgets";
+
+/* No comment provided by engineer. */
 "settings password controller cell" = "Authorization";
 
 /* No comment provided by engineer. */
@@ -279,3 +285,4 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Unknown";
+

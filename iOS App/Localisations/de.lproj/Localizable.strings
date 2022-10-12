@@ -86,6 +86,9 @@
 "setings controller media section header" = "MEDIEN";
 
 /* No comment provided by engineer. */
+"setings password controller section allow_widget footer" = "Wenn diese Einstellung aktiviert ist, können die Codes über Widgets ohne Autorisierung abgerufen werden.";
+
+/* No comment provided by engineer. */
 "setings password controller section footer" = "Die Anwendung wird vor dem Start eine Autorisierung anfordern. Verwenden Sie zur Verifizierung Face / Touch ID oder einen Passcode.";
 
 /* No comment provided by engineer. */
@@ -228,6 +231,9 @@
 
 /* No comment provided by engineer. */
 "settings languages controller title" = "Sprachen";
+
+/* No comment provided by engineer. */
+"settings password controller allow widget" = "Widgets zulassen";
 
 /* No comment provided by engineer. */
 "settings password controller cell" = "Autorisierung";

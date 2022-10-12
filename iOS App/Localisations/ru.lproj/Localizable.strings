@@ -86,6 +86,9 @@
 "setings controller media section header" = "Медиа";
 
 /* No comment provided by engineer. */
+"setings password controller section allow_widget footer" = "Если эта настройка включена, можно будет получить доступ к кодам через виджеты без авторизации.";
+
+/* No comment provided by engineer. */
 "setings password controller section footer" = "Приложение запросит авторизацию перед запуском. Для проверки используется Face / Touch ID или пароль.";
 
 /* No comment provided by engineer. */
@@ -230,6 +233,9 @@
 "settings languages controller title" = "Языки";
 
 /* No comment provided by engineer. */
+"settings password controller allow widget" = "Разрешить виджеты";
+
+/* No comment provided by engineer. */
 "settings password controller cell" = "Авторизация";
 
 /* No comment provided by engineer. */
@@ -279,3 +285,4 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Неизвестно";
+
