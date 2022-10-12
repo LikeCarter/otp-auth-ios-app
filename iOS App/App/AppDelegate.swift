@@ -1,4 +1,5 @@
 import UIKit
+import AVFAudio
 import SparrowKit
 import NativeUIKit
 
@@ -12,6 +13,11 @@ class AppDelegate: SPAppWindowDelegate {
         }, tint: .systemBlue)
         
         AppearanceControlService.check()
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.soloAmbient)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+        } catch {}
         
         return true
     }

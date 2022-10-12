@@ -1,7 +1,16 @@
 import UIKit
 import SparrowKit
+import SPDiffable
 
-class AuthController: UIViewController {
+class AuthController: SPDiffableTableController {
+    
+    public init() {
+        super.init(style: .insetGrouped)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

@@ -11,7 +11,6 @@ enum AppThemeService {
     static func check() {
         let id = AppSettings.appTheme
         let sharedApp = UIApplication.shared
-    
         switch id {
         case AppTheme.automatic:
             sharedApp.delegate?.window??.overrideUserInterfaceStyle = .unspecified

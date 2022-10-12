@@ -7,6 +7,5 @@ enum AppearanceControlService {
         AppTintColorService.check()
         AppThemeService.check()
     }
-    
 }
 

@@ -186,8 +186,14 @@
 		F41FE4B428ED8C7100097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F41FE4B828ED8F8F00097440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = en; path = en.lproj/WidgetIndents.intentdefinition; sourceTree = "<group>"; };
 		F41FE4BB28ED8F9300097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
+		F435FA8528F6D46800F664A0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F47CD2FC2865B064006367E9 /* Base32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
 		F47FDD082859000900499E8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4A09ED728F6CEEC009C31F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F4A09ED828F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F4A09ED928F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4A09EDA28F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4A09EDB28F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,6 +565,7 @@
 				en,
 				Base,
 				ru,
+				de,
 			);
 			mainGroup = EB4041452826F6E700C0BBCF;
 			packageReferences = (
@@ -705,6 +712,7 @@
 			children = (
 				A35C8CE12858E47E00195CBC /* ru */,
 				F47FDD082859000900499E8A /* en */,
+				F4A09ED928F6D3B9009C31F0 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -714,6 +722,7 @@
 			children = (
 				A3FDB495284A7539006C79A1 /* en */,
 				A3FDB497284A7A2F006C79A1 /* ru */,
+				F4A09EDA28F6D3B9009C31F0 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -723,6 +732,8 @@
 			children = (
 				EB40415D2826F6F700C0BBCF /* Base */,
 				A329CA4A2843BC0C00AFB45F /* ru */,
+				F4A09ED728F6CEEC009C31F0 /* en */,
+				F4A09ED828F6D3B9009C31F0 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -732,6 +743,7 @@
 			children = (
 				F41FE4B228ED8C6F00097440 /* en */,
 				F41FE4B428ED8C7100097440 /* ru */,
+				F4A09EDB28F6D3B9009C31F0 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -741,6 +753,7 @@
 			children = (
 				F41FE4B828ED8F8F00097440 /* en */,
 				F41FE4BB28ED8F9300097440 /* ru */,
+				F435FA8528F6D46800F664A0 /* de */,
 			);
 			name = WidgetIndents.intentdefinition;
 			sourceTree = "<group>";

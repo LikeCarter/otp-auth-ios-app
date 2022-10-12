@@ -3,8 +3,6 @@ import SparrowKit
 import NativeUIKit
 import SPDiffable
 import SPSettingsIcons
-import PermissionsKit
-import FaceIDPermission
 
 class SettingsPasswordController: SPDiffableTableController {
     
