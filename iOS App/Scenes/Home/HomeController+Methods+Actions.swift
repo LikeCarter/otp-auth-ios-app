@@ -6,7 +6,7 @@ import SPDiffable
 import SPAlert
 import OTP
 
-extension RootController {
+extension HomeController {
     
     // MARK: - Actions
     

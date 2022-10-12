@@ -2,7 +2,7 @@ import UIKit
 import SPDiffable
 import SPAlert
 
-extension RootController: SPDiffableTableDelegate, SPDiffableTableMediator {
+extension HomeController: SPDiffableTableDelegate, SPDiffableTableMediator {
     
     func diffableTableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         true
