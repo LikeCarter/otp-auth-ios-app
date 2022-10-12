@@ -1,10 +1,21 @@
 import UIKit
+import WidgetKit
 
 extension AppSettings {
     
     static var isPasswordEnabled: Bool {
         get { UserDefaults.standard.bool(forKey: "isPasswordEnabled") }
         set { UserDefaults.standard.setValue(newValue, forKey: "isPasswordEnabled") }
+    }
+    
+    static var hideWidgetData: Bool {
+        get {
+            UserDefaults(suiteName: "group.io.sparrowcode.apps.otp-auth")?.bool(forKey: "hideWidgetData") ?? false
+        }
+        set {
+            UserDefaults(suiteName: "group.io.sparrowcode.apps.otp-auth")?.setValue(newValue, forKey: "hideWidgetData")
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
     
     /**Return 1 for enabled, 2 for no sound, 3 for during day*/

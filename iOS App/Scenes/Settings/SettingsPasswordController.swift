@@ -40,33 +40,44 @@ class SettingsPasswordController: SPDiffableTableController {
                             
                         }
                     }
-                ),
-                SPDiffableTableRowSwitch(
-                    id: "allow-widget",
-                    text: Texts.SettingsController.Password.cell,
-                    icon: nil,
-                    isOn: AppSettings.isPasswordEnabled,
-                    action: { currentState in
-                        AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
-                            if state {
-                                AppSettings.isPasswordEnabled = currentState
-                                self.diffableDataSource?.set(self.content, animated: true)
-                            } else {
-                                self.diffableDataSource?.set(self.content, animated: true)
-                            }
-                            
-                        }
-                    }
                 )
             ]
         )
         sections.append(appSection)
         
+        if AppSettings.isPasswordEnabled {
+            let showWidgetSection = SPDiffableSection(
+                id: Section.show_widget.id,
+                header: nil,
+                footer: SPDiffableTextHeaderFooter(text: Texts.SettingsController.Password.allow_widget_footer),
+                items: [
+                    SPDiffableTableRowSwitch(
+                        id: "allow-widget",
+                        text: Texts.SettingsController.Password.allow_widget,
+                        icon: nil,
+                        isOn: !AppSettings.hideWidgetData,
+                        action: { currentState in
+                            AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
+                                if state {
+                                    AppSettings.hideWidgetData = !AppSettings.hideWidgetData
+                                    
+                                }
+                                self.diffableDataSource?.set(self.content, animated: true)
+                            }
+                        }
+                    )
+                ]
+            )
+            sections.append(showWidgetSection)
+        }
+        
         return sections
     }
     
     enum Section: String {
+        
         case password
+        case show_widget
         
         var id: String { rawValue }
     }

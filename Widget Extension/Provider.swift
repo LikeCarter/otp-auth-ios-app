@@ -15,6 +15,10 @@ struct Entry: TimelineEntry {
 
 struct Provider: IntentTimelineProvider {
     
+    var dataHidden: Bool {
+        return (UserDefaults(suiteName: "group.io.sparrowcode.apps.otp-auth")?.bool(forKey: "hideWidgetData") ?? false)
+    }
+    
     func placeholder(in context: Context) -> Entry {
         Entry(
             otpCode: defaultCode,
@@ -27,7 +31,7 @@ struct Provider: IntentTimelineProvider {
     func getSnapshot(for configuration: SelectWebsiteIntent, in context: Context, completion: @escaping (Entry) -> ()) {
         let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: Date()) ?? defaultCode
         let entry = Entry(
-            otpCode: otpCode,
+            otpCode: defaultCode,
             website: configuration.website?.website,
             date: Date(),
             configuration: configuration
@@ -43,7 +47,7 @@ struct Provider: IntentTimelineProvider {
             let date = currentDate.addingTimeInterval(offset)
             let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: date) ?? defaultCode
             let entry = Entry(
-                otpCode: otpCode,
+                otpCode: dataHidden ? hidenCode : defaultCode,
                 website: configuration.website?.website,
                 date: date,
                 configuration: configuration
@@ -63,6 +67,10 @@ struct Provider: IntentTimelineProvider {
     
     private var defaultCode: String {
         return "414 651"
+    }
+    
+    private var hidenCode: String {
+        return "••• •••"
     }
 }
 
