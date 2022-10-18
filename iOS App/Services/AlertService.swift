@@ -31,50 +31,30 @@ enum AlertService {
         SoundsService.play(sound: .delete)
     }
     
-    static func alertNoToken(controller: UIViewController) {
-        let alert = UIAlertController(
+    static func alertNoToken() {
+        SPAlert.present(
             title: Texts.Shared.error,
             message: Texts.Alerts.no_token,
-            preferredStyle: .alert
+            preset: .error
         )
-        let action = UIAlertAction(
-            title: Texts.Shared.OK,
-            style: .default,
-            handler: nil
-        )
-        alert.addAction(action)
-        controller.present(alert, animated: true, completion: nil)
         SoundsService.play(sound: .error)
     }
     
-    static func alertTheSameCode(controller: UIViewController) {
-        let alert = UIAlertController(
+    static func alertTheSameCode() {
+        SPAlert.present(
             title: Texts.Shared.error,
             message: Texts.Alerts.token_exists,
-            preferredStyle: .alert
+            preset: .error
         )
-        let action = UIAlertAction(
-            title: Texts.Shared.OK,
-            style: .default,
-            handler: nil
-        )
-        alert.addAction(action)
-        controller.present(alert, animated: true, completion: nil)
         SoundsService.play(sound: .error)
     }
     
-    static func alertIncorrectURL(controller: UIViewController) {
-        let alert = UIAlertController(
+    static func alertIncorrectURL() {
+        SPAlert.present(
             title: Texts.Shared.error,
             message: Texts.Alerts.incorrect_url,
-            preferredStyle: .alert)
-        let actionOK = UIAlertAction(
-            title: Texts.Shared.OK,
-            style: .default,
-            handler: nil
+            preset: .error
         )
-        alert.addAction(actionOK)
-        controller.present(alert, animated: true, completion: nil)
         SoundsService.play(sound: .error)
     }
     

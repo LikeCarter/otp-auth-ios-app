@@ -11,7 +11,20 @@
 		A3208AB6283EA57D00B21D34 /* SettingsPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3208AB5283EA57D00B21D34 /* SettingsPasswordController.swift */; };
 		A329CA4C2843BC4400AFB45F /* SettingsLanguagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4B2843BC4400AFB45F /* SettingsLanguagesController.swift */; };
 		A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4D2843BD0200AFB45F /* AppLanguageModel.swift */; };
-		A329CA50284414DF00AFB45F /* SettingsAboutAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329CA4F284414DF00AFB45F /* SettingsAboutAppController.swift */; };
+		A33ABD5A28FECBAC00702F9C /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD5528FECBAC00702F9C /* ScanController.swift */; };
+		A33ABD5B28FECBAC00702F9C /* ScanController+AVCaptureMetadataOutputObjectsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD5628FECBAC00702F9C /* ScanController+AVCaptureMetadataOutputObjectsDelegate.swift */; };
+		A33ABD5C28FECBAC00702F9C /* ScanControllerFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD5728FECBAC00702F9C /* ScanControllerFeatureView.swift */; };
+		A33ABD5D28FECBAC00702F9C /* ScanControllerScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD5828FECBAC00702F9C /* ScanControllerScanView.swift */; };
+		A33ABD5E28FECBAC00702F9C /* ScanControllerActions+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD5928FECBAC00702F9C /* ScanControllerActions+Methods.swift */; };
+		A33ABD6128FECBDD00702F9C /* ScanFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6028FECBDD00702F9C /* ScanFeatureView.swift */; };
+		A33ABD6428FECBEF00702F9C /* ScanFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6328FECBEF00702F9C /* ScanFeatureModel.swift */; };
+		A33ABD6C28FED66300702F9C /* QRDetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6728FED66300702F9C /* QRDetailButton.swift */; };
+		A33ABD6D28FED66300702F9C /* QRCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6828FED66300702F9C /* QRCorner.swift */; };
+		A33ABD6E28FED66300702F9C /* QRFrameLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6928FED66300702F9C /* QRFrameLayer.swift */; };
+		A33ABD6F28FED66300702F9C /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6A28FED66300702F9C /* QRCode.swift */; };
+		A33ABD7028FED66300702F9C /* QRCodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD6B28FED66300702F9C /* QRCodeData.swift */; };
+		A33ABD7228FEDA8300702F9C /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD7128FEDA8300702F9C /* AlertService.swift */; };
+		A33ABD7428FEE57300702F9C /* SettingsAboutAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ABD7328FEE57300702F9C /* SettingsAboutAppController.swift */; };
 		A358DC4E2857F02100BD6F4C /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
 		A35C8CE22858E47E00195CBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A35C8CE02858E47E00195CBC /* InfoPlist.strings */; };
 		A35E712E28270A160039A4C0 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E712D28270A160039A4C0 /* Texts.swift */; };
@@ -32,7 +45,6 @@
 		A3B288392841870D0072D89F /* Warning.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B288352841870D0072D89F /* Warning.wav */; };
 		A3B2883A2841870D0072D89F /* Success.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B288362841870D0072D89F /* Success.wav */; };
 		A3B2883B2841870D0072D89F /* Delete.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B288372841870D0072D89F /* Delete.wav */; };
-		A3B2883D284190650072D89F /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2883C284190650072D89F /* AlertService.swift */; };
 		A3DC862828F61C2C0030F276 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862728F61C2C0030F276 /* AuthController.swift */; };
 		A3DC862A28F61DEC0030F276 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862928F61DEC0030F276 /* RootController.swift */; };
 		A3DC862C28F61FB50030F276 /* AppLocalAuthentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */; };
@@ -79,7 +91,6 @@
 		F41FE4B628ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
 		F41FE4B728ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
 		F47CD2FD2865B064006367E9 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
-		F4E37B7528FE968F00C90A41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4E37B7428FE968F00C90A41 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +131,20 @@
 		A329CA4A2843BC0C00AFB45F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A329CA4B2843BC4400AFB45F /* SettingsLanguagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLanguagesController.swift; sourceTree = "<group>"; };
 		A329CA4D2843BD0200AFB45F /* AppLanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLanguageModel.swift; sourceTree = "<group>"; };
-		A329CA4F284414DF00AFB45F /* SettingsAboutAppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAboutAppController.swift; sourceTree = "<group>"; };
+		A33ABD5528FECBAC00702F9C /* ScanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
+		A33ABD5628FECBAC00702F9C /* ScanController+AVCaptureMetadataOutputObjectsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanController+AVCaptureMetadataOutputObjectsDelegate.swift"; sourceTree = "<group>"; };
+		A33ABD5728FECBAC00702F9C /* ScanControllerFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanControllerFeatureView.swift; sourceTree = "<group>"; };
+		A33ABD5828FECBAC00702F9C /* ScanControllerScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanControllerScanView.swift; sourceTree = "<group>"; };
+		A33ABD5928FECBAC00702F9C /* ScanControllerActions+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanControllerActions+Methods.swift"; sourceTree = "<group>"; };
+		A33ABD6028FECBDD00702F9C /* ScanFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanFeatureView.swift; sourceTree = "<group>"; };
+		A33ABD6328FECBEF00702F9C /* ScanFeatureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanFeatureModel.swift; sourceTree = "<group>"; };
+		A33ABD6728FED66300702F9C /* QRDetailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRDetailButton.swift; sourceTree = "<group>"; };
+		A33ABD6828FED66300702F9C /* QRCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCorner.swift; sourceTree = "<group>"; };
+		A33ABD6928FED66300702F9C /* QRFrameLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRFrameLayer.swift; sourceTree = "<group>"; };
+		A33ABD6A28FED66300702F9C /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		A33ABD6B28FED66300702F9C /* QRCodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeData.swift; sourceTree = "<group>"; };
+		A33ABD7128FEDA8300702F9C /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		A33ABD7328FEE57300702F9C /* SettingsAboutAppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAboutAppController.swift; sourceTree = "<group>"; };
 		A358DC4D2857F02100BD6F4C /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		A35C8CE12858E47E00195CBC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A35E712D28270A160039A4C0 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Texts.swift; path = "iOS App/Data/Texts.swift"; sourceTree = SOURCE_ROOT; };
@@ -141,7 +165,7 @@
 		A3B288352841870D0072D89F /* Warning.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Warning.wav; sourceTree = "<group>"; };
 		A3B288362841870D0072D89F /* Success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Success.wav; sourceTree = "<group>"; };
 		A3B288372841870D0072D89F /* Delete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Delete.wav; sourceTree = "<group>"; };
-		A3B2883C284190650072D89F /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		A3B6AF9428FEEB4500BA339C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3DC862728F61C2C0030F276 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		A3DC862928F61DEC0030F276 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalAuthentification.swift; sourceTree = "<group>"; };
@@ -195,7 +219,6 @@
 		F4A09ED928F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4A09EDA28F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4A09EDB28F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F4E37B7428FE968F00C90A41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +252,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A33ABD5428FECBAC00702F9C /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A33ABD5528FECBAC00702F9C /* ScanController.swift */,
+				A33ABD5628FECBAC00702F9C /* ScanController+AVCaptureMetadataOutputObjectsDelegate.swift */,
+				A33ABD5728FECBAC00702F9C /* ScanControllerFeatureView.swift */,
+				A33ABD5828FECBAC00702F9C /* ScanControllerScanView.swift */,
+				A33ABD5928FECBAC00702F9C /* ScanControllerActions+Methods.swift */,
+			);
+			name = Scan;
+			path = "../../../../../../Downloads/otp-auth-ios-app-dev/iOS App/Scenes/Scan";
+			sourceTree = "<group>";
+		};
+		A33ABD5F28FECBDD00702F9C /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A33ABD6028FECBDD00702F9C /* ScanFeatureView.swift */,
+			);
+			name = Scan;
+			path = "../../../../../../Downloads/otp-auth-ios-app-dev/iOS App/Interface/Scan";
+			sourceTree = "<group>";
+		};
+		A33ABD6228FECBEF00702F9C /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A33ABD6328FECBEF00702F9C /* ScanFeatureModel.swift */,
+			);
+			name = Scan;
+			path = Diffable/Scan;
+			sourceTree = "<group>";
+		};
+		A33ABD6528FED66300702F9C /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				A33ABD6628FED66300702F9C /* Interface */,
+				A33ABD6A28FED66300702F9C /* QRCode.swift */,
+				A33ABD6B28FED66300702F9C /* QRCodeData.swift */,
+			);
+			name = QRCode;
+			path = Appearance/QRCode;
+			sourceTree = "<group>";
+		};
+		A33ABD6628FED66300702F9C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A33ABD6728FED66300702F9C /* QRDetailButton.swift */,
+				A33ABD6828FED66300702F9C /* QRCorner.swift */,
+				A33ABD6928FED66300702F9C /* QRFrameLayer.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		A370536F282AF16C00A1A64D /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,10 +417,10 @@
 			isa = PBXGroup;
 			children = (
 				A3B28833284185EB0072D89F /* Sounds */,
-				F4E37B7428FE968F00C90A41 /* GoogleService-Info.plist */,
 				EB40415A2826F6F700C0BBCF /* Assets.xcassets */,
 				F41FE49D28ED7BC400097440 /* Entitlements.entitlements */,
 				EB40415F2826F6F700C0BBCF /* Info.plist */,
+				A3B6AF9428FEEB4500BA339C /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -363,6 +438,7 @@
 		EB4041692826FD0C00C0BBCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A33ABD6228FECBEF00702F9C /* Scan */,
 				A3B2882E284151600072D89F /* Diffable */,
 				A3B288202841417C0072D89F /* Checkmarks */,
 			);
@@ -382,6 +458,7 @@
 		EB40416B2826FD5500C0BBCF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A33ABD6528FED66300702F9C /* QRCode */,
 				A3B288252841435F0072D89F /* Appearance */,
 				A35E713328270BC80039A4C0 /* AppSettings.swift */,
 				A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */,
@@ -389,7 +466,7 @@
 				F41FE4A228ED7C6800097440 /* AppSettingsExtension.swift */,
 				EB501A8C282EC81100BAED16 /* ExtensionStringProtocol.swift */,
 				A3B28831284182E90072D89F /* SoundsService.swift */,
-				A3B2883C284190650072D89F /* AlertService.swift */,
+				A33ABD7128FEDA8300702F9C /* AlertService.swift */,
 				A358DC4D2857F02100BD6F4C /* URLExtension.swift */,
 				F47CD2FC2865B064006367E9 /* Base32.swift */,
 			);
@@ -399,6 +476,7 @@
 		EB40416C2826FD6600C0BBCF /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				A33ABD5F28FECBDD00702F9C /* Scan */,
 				EB2977DB283D84AF00164B14 /* Root */,
 			);
 			path = Interface;
@@ -410,6 +488,7 @@
 				A3DC862928F61DEC0030F276 /* RootController.swift */,
 				A3DC862728F61C2C0030F276 /* AuthController.swift */,
 				A370536F282AF16C00A1A64D /* Home */,
+				A33ABD5428FECBAC00702F9C /* Scan */,
 				EBE84F4128358F230079771F /* Settings */,
 			);
 			path = Scenes;
@@ -434,7 +513,7 @@
 				A3821EEC283ED93400AF08ED /* SettingsSoundsController.swift */,
 				A3208AB5283EA57D00B21D34 /* SettingsPasswordController.swift */,
 				A329CA4B2843BC4400AFB45F /* SettingsLanguagesController.swift */,
-				A329CA4F284414DF00AFB45F /* SettingsAboutAppController.swift */,
+				A33ABD7328FEE57300702F9C /* SettingsAboutAppController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -591,7 +670,6 @@
 			files = (
 				A3B288382841870D0072D89F /* Error.wav in Resources */,
 				A35C8CE22858E47E00195CBC /* InfoPlist.strings in Resources */,
-				F4E37B7528FE968F00C90A41 /* GoogleService-Info.plist in Resources */,
 				A3B2883B2841870D0072D89F /* Delete.wav in Resources */,
 				A3B2883A2841870D0072D89F /* Success.wav in Resources */,
 				A3FDB496284A7539006C79A1 /* Localizable.strings in Resources */,
@@ -627,13 +705,16 @@
 				A3B2881E284141700072D89F /* AppColorModel.swift in Sources */,
 				A3B288292841435F0072D89F /* AppTintColorService.swift in Sources */,
 				EB501A89282C3F8000BAED16 /* NumberOTPView.swift in Sources */,
+				A33ABD6128FECBDD00702F9C /* ScanFeatureView.swift in Sources */,
 				A3B2882A2841435F0072D89F /* AppThemeServices.swift in Sources */,
-				A3B2883D284190650072D89F /* AlertService.swift in Sources */,
 				EB404185282B0ECE00C0BBCF /* HomeController+Delegate.swift in Sources */,
 				A3DC862A28F61DEC0030F276 /* RootController.swift in Sources */,
 				A3821EED283ED93400AF08ED /* SettingsSoundsController.swift in Sources */,
+				A33ABD6F28FED66300702F9C /* QRCode.swift in Sources */,
+				A33ABD6D28FED66300702F9C /* QRCorner.swift in Sources */,
 				A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */,
 				A3B28822284141E60072D89F /* SettingsAppearanceController.swift in Sources */,
+				A33ABD5D28FECBAC00702F9C /* ScanControllerScanView.swift in Sources */,
 				A3B288242841424C0072D89F /* ColorTableViewCell.swift in Sources */,
 				EB404181282AC53800C0BBCF /* AccountModel.swift in Sources */,
 				A3B2881F284141700072D89F /* AppThemeService.swift in Sources */,
@@ -641,30 +722,39 @@
 				EB2977DA283D394A00164B14 /* HomeController+HeaderContainer.swift in Sources */,
 				A358DC4E2857F02100BD6F4C /* URLExtension.swift in Sources */,
 				A329CA4C2843BC4400AFB45F /* SettingsLanguagesController.swift in Sources */,
+				A33ABD7028FED66300702F9C /* QRCodeData.swift in Sources */,
 				A35E713228270A6C0039A4C0 /* Constants.swift in Sources */,
 				A35E712E28270A160039A4C0 /* Texts.swift in Sources */,
 				A3B2882D284143760072D89F /* DiffableTableColorRow.swift in Sources */,
 				A3B2882B2841435F0072D89F /* AppearanceControlService.swift in Sources */,
 				EBE84F43283590850079771F /* SettingsController.swift in Sources */,
+				A33ABD5A28FECBAC00702F9C /* ScanController.swift in Sources */,
 				EB2F4027283A71D500E99291 /* HomeController+Methods+Actions.swift in Sources */,
 				A35E713428270BC80039A4C0 /* AppSettings.swift in Sources */,
 				A3DC862828F61C2C0030F276 /* AuthController.swift in Sources */,
 				A35E713028270A580039A4C0 /* Images.swift in Sources */,
+				A33ABD6E28FED66300702F9C /* QRFrameLayer.swift in Sources */,
 				EB4041562826F6E700C0BBCF /* HomeController.swift in Sources */,
+				A33ABD6C28FED66300702F9C /* QRDetailButton.swift in Sources */,
 				A3208AB6283EA57D00B21D34 /* SettingsPasswordController.swift in Sources */,
 				A3DC862E28F621050030F276 /* AppService.swift in Sources */,
 				F41FE4B528ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */,
 				A3DC862C28F61FB50030F276 /* AppLocalAuthentification.swift in Sources */,
 				EB404183282AC58400C0BBCF /* CellProviders.swift in Sources */,
+				A33ABD6428FECBEF00702F9C /* ScanFeatureModel.swift in Sources */,
 				A3B28832284182E90072D89F /* SoundsService.swift in Sources */,
 				EB501A8D282EC81100BAED16 /* ExtensionStringProtocol.swift in Sources */,
+				A33ABD7428FEE57300702F9C /* SettingsAboutAppController.swift in Sources */,
 				F47CD2FD2865B064006367E9 /* Base32.swift in Sources */,
 				EB2F4025283A539E00E99291 /* HomeController+UISearchResultsUpdating.swift in Sources */,
 				F41FE4A428ED7C7300097440 /* AppSettingsExtension.swift in Sources */,
+				A33ABD5C28FECBAC00702F9C /* ScanControllerFeatureView.swift in Sources */,
+				A33ABD5B28FECBAC00702F9C /* ScanController+AVCaptureMetadataOutputObjectsDelegate.swift in Sources */,
 				EB4041522826F6E700C0BBCF /* AppDelegate.swift in Sources */,
-				A329CA50284414DF00AFB45F /* SettingsAboutAppController.swift in Sources */,
 				EB501A87282C3C3700BAED16 /* OTPTableViewCell.swift in Sources */,
 				A318C2E2282D31BA00D683AD /* CodeView.swift in Sources */,
+				A33ABD7228FEDA8300702F9C /* AlertService.swift in Sources */,
+				A33ABD5E28FECBAC00702F9C /* ScanControllerActions+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

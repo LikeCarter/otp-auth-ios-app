@@ -17,8 +17,8 @@ extension HomeController: SPDiffableTableDelegate, SPDiffableTableMediator {
                     guard let self = self else { return }
                     
                     let alert = UIAlertController(
-                        title: Texts.RootController.delete_alert_title,
-                        message: Texts.RootController.delete_alert_message,
+                        title: Texts.HomeController.delete_alert_title,
+                        message: Texts.HomeController.delete_alert_message,
                         preferredStyle: .actionSheet
                     )
                     let delete = UIAlertAction(

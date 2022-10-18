@@ -8,7 +8,7 @@ class RootControllerHeaderView: SPView {
     // MARK: - Views
 
     let scanButton = NativeLargeActionButton().do {
-        $0.set(title: Texts.RootController.header_view_action, icon: Images.scan, colorise: .init(content: .tint, background: .tint.alpha(0.1)))
+        $0.set(title: Texts.HomeController.header_view_action, icon: Images.scan, colorise: .init(content: .tint, background: .tint.alpha(0.1)))
     }
 
     let footerLabel = SPLabel().do {
@@ -17,7 +17,7 @@ class RootControllerHeaderView: SPView {
         $0.textAlignment = .left
         $0.adjustsFontSizeToFitWidth = true
         $0.textColor = .secondaryLabel
-        $0.text = Texts.RootController.header_view_description
+        $0.text = Texts.HomeController.header_view_description
     }
 
     // MARK: - Init
@@ -45,7 +45,7 @@ class RootControllerHeaderView: SPView {
     
     override func tintColorDidChange() {
         super.tintColorDidChange()
-        scanButton.set(title: Texts.RootController.header_view_action, icon: Images.scan, colorise: .init(content: .tint, background: .tint.alpha(0.1)))
+        scanButton.set(title: Texts.HomeController.header_view_action, icon: Images.scan, colorise: .init(content: .tint, background: .tint.alpha(0.1)))
     }
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {

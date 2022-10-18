@@ -65,6 +65,27 @@
 "root controller title" = "Authentifikator";
 
 /* No comment provided by engineer. */
+"scan controller description" = "Scannen Sie den QR-Code für die Zwei-Faktor-Authentifizierung.";
+
+/* No comment provided by engineer. */
+"scan controller google import feature description" = "Scannen Sie den QR-Exportcode von Google Authenticator. Alle Codes werden in diese Anwendung übertragen.";
+
+/* No comment provided by engineer. */
+"scan controller google import feature title" = "Aus Google Auth importieren";
+
+/* No comment provided by engineer. */
+"scan controller qr detail" = "Verknüpfung";
+
+/* No comment provided by engineer. */
+"scan controller scan feature description" = "Nach dem Scannen wird der Code auf dem Hauptbildschirm angezeigt. Mit ihm können Sie sich bei Ihrem Konto anmelden.";
+
+/* No comment provided by engineer. */
+"scan controller scan feature title" = "QR-Code scannen";
+
+/* No comment provided by engineer. */
+"scan controller title" = "Konto hinzufügen";
+
+/* No comment provided by engineer. */
 "setings controller about section footer" = "Erfahren Sie mehr über die App.";
 
 /* No comment provided by engineer. */
@@ -282,3 +303,4 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Unbekannt";
+

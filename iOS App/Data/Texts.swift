@@ -45,7 +45,7 @@ enum Texts {
         static var denied_action: String { NSLocalizedString("permissions camera denied alert action", comment: "") }
     }
     
-    enum RootController {
+    enum HomeController {
 
         static var title: String { NSLocalizedString("root controller title", comment: "") }
         
@@ -62,6 +62,21 @@ enum Texts {
         
         static var delete_alert_title: String { NSLocalizedString("settings controller delete alert title", comment: "") }
         static var delete_alert_message: String { NSLocalizedString("settings controller delete alert message", comment: "") }
+    }
+    
+    enum ScanController {
+        
+        static var title: String { NSLocalizedString("scan controller title", comment: "") }
+        static var description: String { NSLocalizedString("scan controller description", comment: "") }
+        
+        static var qr_detail: String { NSLocalizedString("scan controller qr detail", comment: "") }
+        
+        static var scan_feature_title: String { NSLocalizedString("scan controller scan feature title", comment: "") }
+        static var scan_feature_description: String { NSLocalizedString("scan controller scan feature description", comment: "") }
+        
+        static var google_import_feature_title: String { NSLocalizedString("scan controller google import feature title", comment: "") }
+        static var google_import_feature_description: String { NSLocalizedString("scan controller google import feature description", comment: "") }
+        
     }
     
     enum SettingsController {

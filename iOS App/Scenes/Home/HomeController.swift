@@ -31,6 +31,8 @@ class HomeController: SPDiffableTableController {
     
     var filteredData: [AccountModel] = []
     
+    var scannedData: [String] = []
+    
     // MARK: - Init
         
     public override init(style: UITableView.Style) {
@@ -55,7 +57,6 @@ class HomeController: SPDiffableTableController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        #warning("Disquss about animation")
         let gradeView = UIView()
         gradeView.backgroundColor = .systemBackground
         view.addSubview(gradeView)
@@ -110,8 +111,8 @@ class HomeController: SPDiffableTableController {
         
         let accountsSection = SPDiffableSection(
             id: Section.accounts.id,
-            header: SPDiffableTextHeaderFooter(text: Texts.RootController.account_section_header),
-            footer: SPDiffableTextHeaderFooter(text: Texts.RootController.account_section_footer),
+            header: SPDiffableTextHeaderFooter(text: Texts.HomeController.account_section_header),
+            footer: SPDiffableTextHeaderFooter(text: Texts.HomeController.account_section_footer),
             items: []
         )
         
@@ -153,8 +154,8 @@ class HomeController: SPDiffableTableController {
                 NativeEmptyRowItem.init(
                     id: "empty cell",
                     verticalMargins: .medium,
-                    text: Texts.RootController.empty_cell_title,
-                    detail: Texts.RootController.empty_cell_subitle)
+                    text: Texts.HomeController.empty_cell_title,
+                    detail: Texts.HomeController.empty_cell_subitle)
             )
         }
         
@@ -163,11 +164,11 @@ class HomeController: SPDiffableTableController {
         let settingsSection = SPDiffableSection(
             id: Section.settings.id,
             header: nil,
-            footer: SPDiffableTextHeaderFooter(text: Texts.RootController.settings_section_footer),
+            footer: SPDiffableTextHeaderFooter(text: Texts.HomeController.settings_section_footer),
             items: [
                 NativeDiffableLeftButton(
                     id: "settings button",
-                    text: Texts.RootController.settings_button,
+                    text: Texts.HomeController.settings_button,
                     detail: nil,
                     icon: Images.settings,
                     accessoryType: .disclosureIndicator,

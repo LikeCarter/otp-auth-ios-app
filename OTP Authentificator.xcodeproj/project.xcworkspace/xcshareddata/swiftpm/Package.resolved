@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "GAuthSwiftParser",
+        "repositoryURL": "https://github.com/svyatoynick/GAuthSwiftParser",
+        "state": {
+          "branch": null,
+          "revision": "c987174e2ddb0854e1ced2e6c8250fe3e7c7c51a",
+          "version": "1.0.3"
+        }
+      },
+      {
         "package": "GoogleAppMeasurement",
         "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
         "state": {
@@ -200,21 +209,21 @@
         }
       },
       {
-        "package": "SPQRCode",
-        "repositoryURL": "https://github.com/sparrowcode/SPQRCode",
-        "state": {
-          "branch": null,
-          "revision": "a0aecefc883453712a868ab6459210b5e5d10db9",
-          "version": "1.0.4"
-        }
-      },
-      {
         "package": "SPSettingsIcons",
         "repositoryURL": "https://github.com/sparrowcode/SPSettingsIcons",
         "state": {
           "branch": null,
           "revision": "1a2bd5439aabba3474408fbca86eaad344c3fce9",
           "version": "1.0.1"
+        }
+      },
+      {
+        "package": "swift-crypto",
+        "repositoryURL": "https://github.com/apple/swift-crypto.git",
+        "state": {
+          "branch": null,
+          "revision": "ddb07e896a2a8af79512543b1c7eb9797f8898a5",
+          "version": "1.1.7"
         }
       },
       {
@@ -233,6 +242,15 @@
           "branch": null,
           "revision": "f857c9e6ec6e20b06856f4519ad7b839e2946bc1",
           "version": "4.0.0"
+        }
+      },
+      {
+        "package": "SwiftOTP",
+        "repositoryURL": "https://github.com/lachlanbell/SwiftOTP.git",
+        "state": {
+          "branch": null,
+          "revision": "315acdb759083fd8f3c37b02fc021321c8934f9c",
+          "version": "3.0.0"
         }
       }
     ]

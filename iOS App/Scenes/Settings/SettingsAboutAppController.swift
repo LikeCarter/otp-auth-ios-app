@@ -3,8 +3,11 @@ import SparrowKit
 import NativeUIKit
 import SPDiffable
 import SPSettingsIcons
+import KeychainAccess
 
 class SettingsAboutAppController: SPDiffableTableController {
+    
+    var fakeDataClicks = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +21,7 @@ class SettingsAboutAppController: SPDiffableTableController {
     
     var content: [SPDiffableSection] {
         var sections: [SPDiffableSection] = []
- 
+        
         let versionSection = SPDiffableSection(
             id: Section.version.id,
             header: SPDiffableTextHeaderFooter(text: Texts.SettingsController.AboutApp.version_header),
@@ -31,30 +34,36 @@ class SettingsAboutAppController: SPDiffableTableController {
                     icon: nil,
                     accessoryType: .none,
                     selectionStyle: .none,
-                    action: nil
+                    action: { item, indexPath in
+                        self.fakeDataClicks += 1
+                        if self.fakeDataClicks == 5 {
+                            self.callMenu()
+                            self.fakeDataClicks = 0
+                        }
+                    }
                 )
             ]
         )
         sections.append(versionSection)
         
         /*
-        let packagesSection = SPDiffableSection(
-            id: Section.package.id,
-            header: SPDiffableTextHeaderFooter(text: Texts.SettingsController.app_section_header),
-            footer: SPDiffableTextHeaderFooter(text: Texts.SettingsController.app_section_footer),
-            items: [
-                SPDiffableTableRow(
-                    id: "Version",
-                    text: Texts.SettingsController.AboutApp.version_cell_title,
-                    detail: Texts.SettingsController.AboutApp.version_cell_detail,
-                    icon: nil,
-                    accessoryType: .none,
-                    selectionStyle: .none,
-                    action: nil
-                )
-            ]
-        )
-        */
+         let packagesSection = SPDiffableSection(
+         id: Section.package.id,
+         header: SPDiffableTextHeaderFooter(text: Texts.SettingsController.app_section_header),
+         footer: SPDiffableTextHeaderFooter(text: Texts.SettingsController.app_section_footer),
+         items: [
+         SPDiffableTableRow(
+         id: "Version",
+         text: Texts.SettingsController.AboutApp.version_cell_title,
+         detail: Texts.SettingsController.AboutApp.version_cell_detail,
+         icon: nil,
+         accessoryType: .none,
+         selectionStyle: .none,
+         action: nil
+         )
+         ]
+         )
+         */
         
         return sections
     }
@@ -64,6 +73,120 @@ class SettingsAboutAppController: SPDiffableTableController {
         case package
         
         var id: String { rawValue }
+    }
+    
+    private func callMenu() {
+        
+        let alert = UIAlertController(
+            title: "Developer Menu",
+            message: "Actions for developers. Don't use it if you don't know what it do.",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "Add Fake Data",
+                style: UIAlertAction.Style.destructive,
+                handler: { _ in
+                    let fakeData = [
+                        "otpauth://totp/ivan@sparrowcode.io?secret=JBSWY3DPEHPK3PXP&issuer=SparrowCode",
+                        "otpauth://totp/nikolay@sparrowcode.io?secret=JBSWY3DPEHPK3PFD&issuer=OTPAuth",
+                        "otpauth://totp/alexa@example.com?secret=JBSWY3DPEHPK3PKD&issuer=Amazon",
+                        "otpauth://totp/dmitry@example.com?secret=JBSWY3DPEHPK3XRD&issuer=Google"
+                    ]
+                    
+                    for fakeAccount in fakeData {
+                        AppSettings.removeFromKeychain(id: fakeAccount)
+                    }
+                    
+                    for fakeAccount in fakeData {
+                        AppSettings.saveToKeychain(id: fakeAccount)
+                    }
+                    
+                    let alert = UIAlertController(
+                        title: "Fake Data Added",
+                        message: "Now restart the application so that they appear on the main screen. You can delete them like any other account.",
+                        preferredStyle: UIAlertController.Style.alert
+                    )
+                    
+                    alert.addAction(
+                        UIAlertAction(
+                            title: Texts.Shared.OK,
+                            style: UIAlertAction.Style.cancel,
+                            handler: nil
+                        )
+                    )
+                    
+                    self.present(alert, animated: true, completion: nil)
+                    
+                }
+            )
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "Clear Keychain",
+                style: UIAlertAction.Style.destructive,
+                handler: { _ in
+                    
+                    let alert = UIAlertController(
+                        title: "Clear Keychain?",
+                        message: "All your accounts will be permamently deleted. They cannot be restored anymore.",
+                        preferredStyle: UIAlertController.Style.alert
+                    )
+                    
+                    alert.addAction(
+                        UIAlertAction(
+                            title: "Clear",
+                            style: UIAlertAction.Style.destructive,
+                            handler: { _ in
+                                
+                                let keychain = Keychain(service: Constants.Keychain.service)
+                                try! keychain.removeAll()
+                                
+                                let alert = UIAlertController(
+                                    title: "Keychain Cleaned",
+                                    message: "All your accounts were permamently deleted. They cannot be restored anymore.\n\nNow restart the application so that they disappear from the main screen",
+                                    preferredStyle: UIAlertController.Style.alert
+                                )
+                                
+                                alert.addAction(
+                                    UIAlertAction(
+                                        title: Texts.Shared.OK,
+                                        style: UIAlertAction.Style.cancel,
+                                        handler: nil
+                                    )
+                                )
+                                
+                                self.present(alert, animated: true, completion: nil)
+                            }
+                        )
+                    )
+                    
+                    alert.addAction(
+                        UIAlertAction(
+                            title: Texts.Shared.cancel,
+                            style: UIAlertAction.Style.cancel,
+                            handler: nil
+                        )
+                    )
+                    
+                    self.present(alert, animated: true, completion: nil)
+                    
+                }
+            )
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: Texts.Shared.cancel,
+                style: UIAlertAction.Style.cancel,
+                handler: nil
+            )
+        )
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
 }

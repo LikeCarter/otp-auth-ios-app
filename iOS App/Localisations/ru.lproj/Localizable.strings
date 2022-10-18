@@ -65,6 +65,27 @@
 "root controller title" = "Аутентификатор";
 
 /* No comment provided by engineer. */
+"scan controller description" = "Отсканируйте QR-код для двухфакторной аутентификации.";
+
+/* No comment provided by engineer. */
+"scan controller google import feature description" = "Отсканируйте QR-код экспорта из Google Authenticator. Все коды будут перенесены в это приложение.";
+
+/* No comment provided by engineer. */
+"scan controller google import feature title" = "Импорт из Google Auth";
+
+/* No comment provided by engineer. */
+"scan controller qr detail" = "Ссылка";
+
+/* No comment provided by engineer. */
+"scan controller scan feature description" = "После сканирования код появится на главном экране. Вы сможете использовать его для входа в аккаунт.";
+
+/* No comment provided by engineer. */
+"scan controller scan feature title" = "Отсканируйте QR-кода";
+
+/* No comment provided by engineer. */
+"scan controller title" = "Добавить аккаунт";
+
+/* No comment provided by engineer. */
 "setings controller about section footer" = "Узнайте больше о приложении.";
 
 /* No comment provided by engineer. */
@@ -282,3 +303,4 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Неизвестно";
+
