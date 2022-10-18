@@ -25,7 +25,7 @@ class ScanFeatureView: SPView {
         $0.textAlignment = .left
         $0.numberOfLines = .zero
         $0.text = "Empty"
-        $0.textColor = .label
+        $0.textColor = .secondaryLabel
     }
     
     init(model: ScanFeatureModel) {
