@@ -275,22 +275,20 @@
 		A33ABD6528FED66300702F9C /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				A33ABD6628FED66300702F9C /* Interface */,
 				A33ABD6A28FED66300702F9C /* QRCode.swift */,
 				A33ABD6B28FED66300702F9C /* QRCodeData.swift */,
 			);
-			name = QRCode;
-			path = Appearance/QRCode;
+			path = QRCode;
 			sourceTree = "<group>";
 		};
-		A33ABD6628FED66300702F9C /* Interface */ = {
+		A33ABD6628FED66300702F9C /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
 				A33ABD6728FED66300702F9C /* QRDetailButton.swift */,
 				A33ABD6828FED66300702F9C /* QRCorner.swift */,
 				A33ABD6928FED66300702F9C /* QRFrameLayer.swift */,
 			);
-			path = Interface;
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		A370536F282AF16C00A1A64D /* Home */ = {
@@ -369,6 +367,7 @@
 				A3B6AFA428FEEF4000BA339C /* ScanControllerFeatureView.swift */,
 				A3B6AFA528FEEF4000BA339C /* ScanControllerScanView.swift */,
 				A3B6AFA628FEEF4000BA339C /* ScanControllerActions+Methods.swift */,
+				A33ABD6528FED66300702F9C /* QRCode */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -481,7 +480,6 @@
 		EB40416B2826FD5500C0BBCF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A33ABD6528FED66300702F9C /* QRCode */,
 				A3B288252841435F0072D89F /* Appearance */,
 				A35E713328270BC80039A4C0 /* AppSettings.swift */,
 				A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */,
@@ -499,6 +497,7 @@
 		EB40416C2826FD6600C0BBCF /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				A33ABD6628FED66300702F9C /* QRCode */,
 				A3B6AFAC28FEEFDF00BA339C /* Scan */,
 				EB2977DB283D84AF00164B14 /* Root */,
 			);

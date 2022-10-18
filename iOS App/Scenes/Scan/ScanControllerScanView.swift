@@ -5,7 +5,7 @@ import SafeSFSymbols
 import AVFoundation
 
 class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
-    #warning("Localise this all")
+    
     // MARK: - View
     
     let closeButton = SPButton(type: .close, primaryAction: .none)
@@ -14,14 +14,14 @@ class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
         $0.font = UIFont.preferredFont(forTextStyle: .title1, weight: .bold)
         $0.textAlignment = .center
         $0.numberOfLines = .zero
-        $0.text = "Add Accessory"
+        $0.text = Texts.ScanController.title
     }
     
     let subtitleLabel = SPLabel().do {
         $0.font = UIFont.preferredFont(forTextStyle: .subheadline, weight: .regular)
         $0.textAlignment = .center
         $0.numberOfLines = .zero
-        $0.text = "Scan code of hold iPhone near the accessory. More options…"
+        $0.text = Texts.ScanController.description
     }
     
     let cameraPreview = SPView().do {
@@ -32,13 +32,13 @@ class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
     let featureView = ScanControllerFeatureView(features: [
             ScanFeatureModel(
                 icon: UIImage(.qrcode.viewfinder),
-                title: "Scan a Setup Code",
-                subtitle: "Look for a QR code on the accessory, packaging, or instructions and position it in the camera frame above."
+                title: Texts.ScanController.scan_feature_title,
+                subtitle: Texts.ScanController.scan_feature_description
             ),
             ScanFeatureModel(
-                icon: UIImage(.qrcode.viewfinder),
-                title: "Scan a Setup Code",
-                subtitle: "Look for a QR code on the accessory, packaging, or instructions and position it in the camera frame above."
+                icon: UIImage(.square.andArrowDown),
+                title: Texts.ScanController.google_import_feature_title,
+                subtitle: Texts.ScanController.google_import_feature_description
             )
         ]
     )
