@@ -15,6 +15,7 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk", .upToNextMajor(from: "10.0.0")),
         .package(url: "https://github.com/ivanvorobei/SPDiffable", .upToNextMajor(from: "4.2.0")),
         .package(url: "https://github.com/sparrowcode/SwiftBoost", .upToNextMajor(from: "4.0.0")),
         .package(url: "https://github.com/ivanvorobei/NativeUIKit", .upToNextMajor(from: "1.4.7")),
@@ -32,6 +33,10 @@ let package = Package(
         .target(
             name: "AppImport",
             dependencies: [
+                .product(name: "FirebaseMessaging", package: "Firebase"),
+                .product(name: "FirebaseCrashlytics", package: "Firebase"),
+                .product(name: "FirebasePerformance", package: "Firebase"),
+                .product(name: "FirebaseAppCheck", package: "Firebase"),
                 .product(name: "SPDiffable", package: "SPDiffable"),
                 .product(name: "SwiftBoost", package: "SwiftBoost"),
                 .product(name: "NativeUIKit", package: "NativeUIKit"),

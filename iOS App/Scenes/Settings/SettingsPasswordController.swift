@@ -45,31 +45,29 @@ class SettingsPasswordController: SPDiffableTableController {
         )
         sections.append(appSection)
         
-        if AppSettings.isPasswordEnabled {
-            let showWidgetSection = SPDiffableSection(
-                id: Section.show_widget.id,
-                header: nil,
-                footer: SPDiffableTextHeaderFooter(text: Texts.SettingsController.Password.allow_widget_footer),
-                items: [
-                    SPDiffableTableRowSwitch(
-                        id: "allow-widget",
-                        text: Texts.SettingsController.Password.allow_widget,
-                        icon: nil,
-                        isOn: !AppSettings.hideWidgetData,
-                        action: { currentState in
-                            AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
-                                if state {
-                                    AppSettings.hideWidgetData = !AppSettings.hideWidgetData
-                                    
-                                }
-                                self.diffableDataSource?.set(self.content, animated: true)
+        let showWidgetSection = SPDiffableSection(
+            id: Section.show_widget.id,
+            header: nil,
+            footer: SPDiffableTextHeaderFooter(text: Texts.SettingsController.Password.allow_widget_footer),
+            items: [
+                SPDiffableTableRowSwitch(
+                    id: "allow-widget",
+                    text: Texts.SettingsController.Password.allow_widget,
+                    icon: nil,
+                    isOn: !AppSettings.hideWidgetData,
+                    action: { currentState in
+                        AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
+                            if state {
+                                AppSettings.hideWidgetData = !AppSettings.hideWidgetData
+                                
                             }
+                            self.diffableDataSource?.set(self.content, animated: true)
                         }
-                    )
-                ]
-            )
-            sections.append(showWidgetSection)
-        }
+                    }
+                )
+            ]
+        )
+        sections.append(showWidgetSection)
         
         return sections
     }

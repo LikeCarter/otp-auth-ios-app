@@ -42,7 +42,11 @@ class CodeView: SPView {
         
         var xPosition: CGFloat = 0
         var biggestWidth: CGFloat = 0
-        numberOTPViews.forEach { biggestWidth = $0.numberLabel.frame.width > biggestWidth ? $0.numberLabel.frame.width : biggestWidth }
+        numberOTPViews.forEach {
+            $0.layoutSubviews()
+            $0.sizeToFit()
+            biggestWidth = $0.frame.width > biggestWidth ? $0.frame.width : biggestWidth
+        }
         for (_, view) in numberOTPViews.enumerated() {
             counter += 1
             view.frame = .init(

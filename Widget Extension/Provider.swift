@@ -47,7 +47,7 @@ struct Provider: IntentTimelineProvider {
             let date = currentDate.addingTimeInterval(offset)
             let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: date) ?? defaultCode
             let entry = Entry(
-                otpCode: dataHidden ? hidenCode : defaultCode,
+                otpCode: dataHidden ? hidenCode : otpCode,
                 website: configuration.website?.website,
                 date: date,
                 configuration: configuration

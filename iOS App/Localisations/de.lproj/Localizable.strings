@@ -194,9 +194,6 @@
 "settings controller notification cell" = "einstellungen Controller Benachrichtigungszelle";
 
 /* No comment provided by engineer. */
-"settings controller password cell" = "Passwort";
-
-/* No comment provided by engineer. */
 "settings controller review cell" = "Bewertung schreiben";
 
 /* No comment provided by engineer. */
@@ -285,4 +282,3 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Unbekannt";
-

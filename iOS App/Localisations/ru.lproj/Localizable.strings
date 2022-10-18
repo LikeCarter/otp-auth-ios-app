@@ -194,9 +194,6 @@
 "settings controller notification cell" = "settings controller notification cell";
 
 /* No comment provided by engineer. */
-"settings controller password cell" = "Пароль";
-
-/* No comment provided by engineer. */
 "settings controller review cell" = "Оставить отзыв";
 
 /* No comment provided by engineer. */
@@ -285,4 +282,3 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Неизвестно";
-

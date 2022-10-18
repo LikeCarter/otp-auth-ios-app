@@ -30,6 +30,7 @@ class SettingsLanguagesController: SPDiffableTableController {
             ),
             items: AppLanguage.allCases.map({ language in
                 return SPDiffableTableRowSubtitle.init(
+                    id: language.titleText,
                     text: language.titleText,
                     subtitle: language.detailText,
                     icon: nil,
@@ -53,12 +54,4 @@ class SettingsLanguagesController: SPDiffableTableController {
         var header: String { id + "_header" }
         var footer: String { id + "_footer" }
     }
-    
-    enum Item: String {
-        case russian
-        case english
-        
-        var id: String { rawValue }
-    }
-    
 }

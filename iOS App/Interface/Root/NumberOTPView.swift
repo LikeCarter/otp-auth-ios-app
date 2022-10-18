@@ -6,7 +6,7 @@ class NumberOTPView: SPView {
     // MARK: - Views
     
     var numberLabel = SPLabel().do {
-        $0.font = .preferredFont(forTextStyle: .title1, weight: .semibold)
+        $0.font = .preferredFont(forTextStyle: .title1, weight: .semibold).monospaced
         $0.adjustsFontSizeToFitWidth = true
         $0.textColor = .label
         $0.textAlignment = .center
@@ -25,10 +25,10 @@ class NumberOTPView: SPView {
     }
 
     private func setupUI() {
-        self.backgroundColor = .systemGroupedBackground
+        self.backgroundColor = .tertiarySystemGroupedBackground
         self.layer.masksToBounds = true
         self.addSubview(numberLabel)
-        self.layoutMargins = .init(horizontal: 10, vertical: 10)
+        self.layoutMargins = .init(horizontal: 2, vertical: 4)
         self.layer.cornerRadius = 10
     }
     
@@ -39,5 +39,10 @@ class NumberOTPView: SPView {
         numberLabel.sizeToFit()
         numberLabel.center.x = self.frame.width / 2
         numberLabel.center.y = self.frame.height / 2
+    }
+    
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        numberLabel.sizeToFit()
+        return .init(width: layoutMargins.left + layoutMargins.right + numberLabel.frame.width, height: layoutMargins.top + layoutMargins.bottom + numberLabel.frame.height)
     }
 }

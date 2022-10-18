@@ -2,19 +2,20 @@ import Foundation
 import UIKit
 
 enum AppLanguage: String, CaseIterable {
-    case russian
-    case english
-    case german
+    
+    case ru
+    case en
+    case de
     
     var id: String { rawValue }
     
     var titleText: String {
         switch self {
-        case .russian:
+        case .ru:
             return "Русский"
-        case .english:
+        case .en:
             return "English"
-        case .german:
+        case .de:
             return "Deutsch"
         }
         
@@ -22,11 +23,11 @@ enum AppLanguage: String, CaseIterable {
     
     var detailText: String {
         switch self {
-        case .russian:
+        case .ru:
             return Texts.SettingsController.Languages.russian
-        case .english:
+        case .en:
             return Texts.SettingsController.Languages.english
-        case .german:
+        case .de:
             return Texts.SettingsController.Languages.german
         }
     }
@@ -35,15 +36,15 @@ enum AppLanguage: String, CaseIterable {
         let languageCode = Locale.current.languageCode
         switch languageCode {
         case "en":
-            return .english
+            return .en
         case "ru":
-            return .russian
+            return .ru
         case "de":
-            return .german
+            return .de
         case .none:
-            return .english
+            return .en
         case .some(_):
-            return .english
+            return .en
         }
     }
     

@@ -79,7 +79,7 @@ class SettingsController: SPDiffableTableController, MFMailComposeViewController
                 ),
                 NativeDiffableLeftButton(
                     id: Item.password.id,
-                    text: Texts.SettingsController.password_button,
+                    text: Texts.SettingsController.Password.cell,
                     detail: nil,
                     icon: Images.password,
                     accessoryType: .disclosureIndicator,

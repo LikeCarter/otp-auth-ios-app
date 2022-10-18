@@ -72,7 +72,6 @@ enum Texts {
         static var appereance_button: String { NSLocalizedString("settings controller appereance cell", comment: "") }
         static var notification_button: String { NSLocalizedString("settings controller notification cell", comment: "") }
         static var sounds_button: String { NSLocalizedString("settings controller sounds cell", comment: "") }
-        static var password_button: String { NSLocalizedString("settings controller password cell", comment: "") }
         static var language_button: String { NSLocalizedString("settings controller language cell", comment: "") }
         static var app_section_footer: String { NSLocalizedString("setings controller app section footer", comment: "") }
         
