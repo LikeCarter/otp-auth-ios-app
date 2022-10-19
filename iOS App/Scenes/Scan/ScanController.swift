@@ -18,11 +18,13 @@ class ScanController: SPController {
     let scanView = ScanView()
     lazy var cameraView = makeVideoPreviewLayer()
     
+    private var presented: Bool = false
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black.alpha(0.6)
+        view.backgroundColor = .black.alpha(0)
         view.addSubview(scanView)
         
         let closeTap = UITapGestureRecognizer(target: self, action: #selector(close))
@@ -44,6 +46,22 @@ class ScanController: SPController {
         }
         
         updateInterface()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if presented {
+            
+        } else {
+            self.presented = true
+            UIView.animate(withDuration: 0.42, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0) {
+                self.viewDidLayoutSubviews()
+            }
+            UIView.animate(withDuration: 0.36, delay: 0, options: .curveEaseInOut) {
+                self.view.backgroundColor = .black.alpha(0.6)
+            }
+        }
         
     }
     
@@ -68,7 +86,7 @@ class ScanController: SPController {
             scanView.frame = .init(
                 x: 0,
                 y: 0,
-                width: view.readableWidth,
+                width: min(view.readableWidth, 420),
                 height: scanView.frame.height
             )
             scanView.sizeToFit()
@@ -77,6 +95,10 @@ class ScanController: SPController {
         }
         
         cameraView.frame.size = scanView.cameraPreview.frame.size
+        
+        if !presented {
+            scanView.frame.origin.y = self.view.frame.height + 40
+        }
         
     }
     

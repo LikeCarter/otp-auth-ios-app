@@ -1,0 +1,11 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "OTP Auth";
+
+/* Bundle name */
+"CFBundleName" = "OTP Auth";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "This app needs access to your camera to scan a QR code.";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "This app needs Face ID access to confirm your login.";

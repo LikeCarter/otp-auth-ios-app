@@ -230,6 +230,16 @@
 		F4A09ED928F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4A09EDA28F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4A09EDB28F6D3B9009C31F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D41E9D2900302600DA4979 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F4D41E9E2900302600DA4979 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4D41E9F2900302600DA4979 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D41EA02900302600DA4979 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D41EA22900302B00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F4D41EA32900302B00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4D41EA42900302B00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D41EA52900302B00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D41EA82900303A00DA4979 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
+		F4D41EAA2900303C00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +680,8 @@
 				Base,
 				ru,
 				de,
+				fr,
+				uk,
 			);
 			mainGroup = EB4041452826F6E700C0BBCF;
 			packageReferences = (
@@ -835,6 +847,8 @@
 				A35C8CE12858E47E00195CBC /* ru */,
 				F47FDD082859000900499E8A /* en */,
 				F4A09ED928F6D3B9009C31F0 /* de */,
+				F4D41E9E2900302600DA4979 /* fr */,
+				F4D41EA32900302B00DA4979 /* uk */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -845,6 +859,8 @@
 				A3FDB495284A7539006C79A1 /* en */,
 				A3FDB497284A7A2F006C79A1 /* ru */,
 				F4A09EDA28F6D3B9009C31F0 /* de */,
+				F4D41E9F2900302600DA4979 /* fr */,
+				F4D41EA42900302B00DA4979 /* uk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -856,6 +872,8 @@
 				A329CA4A2843BC0C00AFB45F /* ru */,
 				F4A09ED728F6CEEC009C31F0 /* en */,
 				F4A09ED828F6D3B9009C31F0 /* de */,
+				F4D41E9D2900302600DA4979 /* fr */,
+				F4D41EA22900302B00DA4979 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -866,6 +884,8 @@
 				F41FE4B228ED8C6F00097440 /* en */,
 				F41FE4B428ED8C7100097440 /* ru */,
 				F4A09EDB28F6D3B9009C31F0 /* de */,
+				F4D41EA02900302600DA4979 /* fr */,
+				F4D41EA52900302B00DA4979 /* uk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -876,6 +896,8 @@
 				F41FE4B828ED8F8F00097440 /* en */,
 				F41FE4BB28ED8F9300097440 /* ru */,
 				F435FA8528F6D46800F664A0 /* de */,
+				F4D41EA82900303A00DA4979 /* fr */,
+				F4D41EAA2900303C00DA4979 /* uk */,
 			);
 			name = WidgetIndents.intentdefinition;
 			sourceTree = "<group>";
@@ -1009,7 +1031,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1024,7 +1046,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1041,7 +1063,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1056,7 +1078,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1073,7 +1095,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Info.plist";
@@ -1085,7 +1107,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1103,7 +1125,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Info.plist";
@@ -1115,7 +1137,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1131,7 +1153,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Info.plist";
@@ -1143,7 +1165,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1159,7 +1181,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Info.plist";
@@ -1171,7 +1193,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

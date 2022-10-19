@@ -9,7 +9,12 @@ extension ScanController {
     // MARK: - Actions
     
     @objc func close() {
-        self.dismissAnimated()
+        UIView.animate(withDuration: 0.32, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0) {
+            self.scanView.frame.origin.y = self.view.frame.height + 40
+            self.view.backgroundColor = .black.alpha(0)
+        } completion: { finished in
+            self.dismiss(animated: false)
+        }
     }
     
     @objc func didTapHandledButton() {

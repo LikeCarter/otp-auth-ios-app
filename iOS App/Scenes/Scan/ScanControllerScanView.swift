@@ -55,11 +55,10 @@ class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
     override func commonInit() {
         super.commonInit()
         backgroundColor = .secondarySystemGroupedBackground
-        roundCorners(radius: 43)
+
         layoutMargins = .init(horizontal: 32, vertical: 32)
         addSubview(scrollView)
         scrollView.addSubviews([closeButton, titleLabel, subtitleLabel, cameraPreview, featureView])
-        
     }
     
     // MARK: - Layout
@@ -67,9 +66,9 @@ class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
     override func layoutSubviews() {
         
         closeButton.frame = .init(
-            x: self.frame.width - 44,
-            y: 20,
-            width: 24, height: 24
+            x: self.frame.width - 54,
+            y: 24,
+            width: 28, height: 28
         )
         
         titleLabel.layoutDynamicHeight(
@@ -81,7 +80,7 @@ class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
         
         subtitleLabel.layoutDynamicHeight(
             x: 0,
-            y: titleLabel.frame.maxY + 8,
+            y: titleLabel.frame.maxY + 6,
             width: self.frame.width / 1.5
         )
         subtitleLabel.center.x = self.frame.width / 2
@@ -109,6 +108,13 @@ class ScanView: SPView, AVCaptureMetadataOutputObjectsDelegate {
         )
         scrollView.contentSize = .init(width: frame.width, height: featureView.frame.maxY)
         
+        if let superview = self.superview {
+            if superview.frame.width <= 400 {
+                roundCorners(radius: 50)
+            } else {
+                roundCorners(radius: 43)
+            }
+        }
     }
     
     // MARK: - Methods

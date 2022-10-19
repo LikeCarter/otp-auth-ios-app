@@ -30,7 +30,8 @@ class ScanFeatureView: SPView {
     
     init(model: ScanFeatureModel) {
         super.init(frame: .zero)
-        self.iconView.image = model.icon
+        self.iconView.image = model.icon.alwaysTemplate
+        self.iconView.tintColor = .tint
         self.titleLabel.text = model.title
         self.subtitleLabel.text = model.subtitle
         addSubviews([iconView, titleLabel, subtitleLabel])
