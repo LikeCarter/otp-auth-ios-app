@@ -4,7 +4,7 @@ import SparrowKit
 import SafeSFSymbols
 import AVKit
 
-class ScanController: SPController {
+class ScanController: SPController, UIGestureRecognizerDelegate {
     
     // MARK: - Views
     
@@ -17,6 +17,15 @@ class ScanController: SPController {
     internal let detailView = QRDetailButton()
     let scanView = ScanView()
     lazy var cameraView = makeVideoPreviewLayer()
+    
+    lazy var panGesture: UIPanGestureRecognizer = {
+        let gesture = UIPanGestureRecognizer(target: self, action: #selector(swipeHandler(_:)))
+        gesture.delegate = self
+        gesture.cancelsTouchesInView = false
+        return gesture
+    }()
+    
+    private var initialCenter: CGPoint = .zero
     
     private var presented: Bool = false
     
@@ -32,6 +41,7 @@ class ScanController: SPController {
         view.addGestureRecognizer(closeTap)
         scanView.addGestureRecognizer(emptyTap) // Restrict closing by tap scanView
         scanView.closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        scanView.addGestureRecognizer(panGesture)
         
         scanView.layer.masksToBounds = true
         scanView.cameraPreview.masksToBounds = true
@@ -119,5 +129,41 @@ class ScanController: SPController {
         viewDidLayoutSubviews()
         
     }
+    #warning("Fix animations, refractor")
+    @objc func swipeHandler(_ gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .began:
+            initialCenter = scanView.center
+        case .changed:
+            let translation = gesture.translation(in: view)
+            scanView.center = CGPoint(x: initialCenter.x,
+                                      y: initialCenter.y + translation.y)
+            
+            if (translation.y / initialCenter.y) < 0.6 {
+                view.backgroundColor = UIColor.black.alpha(0.6 - (translation.y / initialCenter.y))
+                if view.backgroundColor!.alpha > 0.6 {
+                    view.backgroundColor = UIColor.black.alpha(0.6)
+                }
+            } else {
+                view.backgroundColor = UIColor.black.alpha(0.6)
+            }
+            
+        case .ended,
+                .cancelled:
+            
+            if scanView.center.y > (initialCenter.y + 50) {
+                close()
+            } else {
+                UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: [.curveEaseInOut]) {
+                    self.viewDidLayoutSubviews()
+                }
+            }
+            
+            
+        default:
+            break
+        }
+    }
+    
     
 }
