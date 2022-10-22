@@ -51,6 +51,7 @@
 		A3B6AFAA28FEEF4000BA339C /* ScanControllerScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B6AFA528FEEF4000BA339C /* ScanControllerScanView.swift */; };
 		A3B6AFAB28FEEF4000BA339C /* ScanControllerActions+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B6AFA628FEEF4000BA339C /* ScanControllerActions+Methods.swift */; };
 		A3B6AFAE28FEEFDF00BA339C /* ScanFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B6AFAD28FEEFDF00BA339C /* ScanFeatureView.swift */; };
+		A3B6AFB22903F98500BA339C /* ScanController+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B6AFB12903F98500BA339C /* ScanController+Gesture.swift */; };
 		A3DC862828F61C2C0030F276 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862728F61C2C0030F276 /* AuthController.swift */; };
 		A3DC862A28F61DEC0030F276 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862928F61DEC0030F276 /* RootController.swift */; };
 		A3DC862C28F61FB50030F276 /* AppLocalAuthentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */; };
@@ -177,6 +178,7 @@
 		A3B6AFA528FEEF4000BA339C /* ScanControllerScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanControllerScanView.swift; sourceTree = "<group>"; };
 		A3B6AFA628FEEF4000BA339C /* ScanControllerActions+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanControllerActions+Methods.swift"; sourceTree = "<group>"; };
 		A3B6AFAD28FEEFDF00BA339C /* ScanFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanFeatureView.swift; sourceTree = "<group>"; };
+		A3B6AFB12903F98500BA339C /* ScanController+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanController+Gesture.swift"; sourceTree = "<group>"; };
 		A3DC862728F61C2C0030F276 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		A3DC862928F61DEC0030F276 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		A3DC862B28F61FB50030F276 /* AppLocalAuthentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalAuthentification.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B6AFA228FEEF4000BA339C /* ScanController.swift */,
+				A3B6AFB12903F98500BA339C /* ScanController+Gesture.swift */,
 				A3B6AFA328FEEF4000BA339C /* ScanController+AVCaptureMetadataOutputObjectsDelegate.swift */,
 				A3B6AFA428FEEF4000BA339C /* ScanControllerFeatureView.swift */,
 				A3B6AFA528FEEF4000BA339C /* ScanControllerScanView.swift */,
@@ -751,6 +754,7 @@
 				A33ABD6D28FED66300702F9C /* QRCorner.swift in Sources */,
 				A3B6AF9C28FEEF2C00BA339C /* ScanController.swift in Sources */,
 				A329CA4E2843BD0200AFB45F /* AppLanguageModel.swift in Sources */,
+				A3B6AFB22903F98500BA339C /* ScanController+Gesture.swift in Sources */,
 				A3B28822284141E60072D89F /* SettingsAppearanceController.swift in Sources */,
 				A3B288242841424C0072D89F /* ColorTableViewCell.swift in Sources */,
 				EB404181282AC53800C0BBCF /* AccountModel.swift in Sources */,
