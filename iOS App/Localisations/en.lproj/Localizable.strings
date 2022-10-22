@@ -116,6 +116,15 @@
 "setings password controller section header" = "ACCESSIBLE PROTECTION";
 
 /* No comment provided by engineer. */
+"settings about app controller open source cell title" = "Open GitHub";
+
+/* No comment provided by engineer. */
+"settings about app controller open source footer" = "This project is open-source. It also uses our open-source libraries. Check out the source code of the application and our other solutions on GitHub.";
+
+/* No comment provided by engineer. */
+"settings about app controller open source header" = "OPEN SOURCE";
+
+/* No comment provided by engineer. */
 "settings about app controller package cell" = "settings about app controller package cell";
 
 /* No comment provided by engineer. */
@@ -236,10 +245,16 @@
 "settings languages controller cell english" = "English";
 
 /* No comment provided by engineer. */
+"settings languages controller cell french" = "French";
+
+/* No comment provided by engineer. */
 "settings languages controller cell german" = "German";
 
 /* No comment provided by engineer. */
 "settings languages controller cell russian" = "Russian";
+
+/* No comment provided by engineer. */
+"settings languages controller cell ukrainian" = "Ukrainian";
 
 /* No comment provided by engineer. */
 "settings languages controller footer" = "You can use another language instead of the system language.";
@@ -303,3 +318,4 @@
 
 /* No comment provided by engineer. */
 "shared unknown" = "Unknown";
+

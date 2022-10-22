@@ -1,7 +1,7 @@
-"no any accounts" = "No any Accounts";
+"no any accounts" = "Keine Konten";
 
-"not supported" = "Not Supported";
+"not supported" = "Nicht unterstützt";
 
 "configuration name" = "OTP Codes";
 
-"configuration description" = "You will see codes for logic without running app.";
+"configuration description" = "Sie werden Codes für die Logik sehen, ohne dass die Anwendung läuft.";
