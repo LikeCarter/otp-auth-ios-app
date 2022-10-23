@@ -8,6 +8,7 @@ enum Constants {
         static var telegram: String { "https://t.me/sparrowcode" }
         static var instagram: String { "https://www.instagram.com/sparrowcode/" }
         static var twitter: String { "https://twitter.com/sparrowcode_" }
+        static var github: String { "https://github.com/sparrowcode/otp-auth-ios-app" }
         
     }
     

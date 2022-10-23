@@ -18,6 +18,7 @@ enum Images {
     static var telegram: UIImage { .init(named: "Media Icon - Telegram") ?? UIImage() }
     static var twitter: UIImage { .init(named: "Media Icon - Twitter") ?? UIImage() }
     static var instagram: UIImage { .init(named: "Media Icon - Instagram") ?? UIImage() }
+    static var github: UIImage { .init(named: "Media Icon - GitHub") ?? UIImage() }
     
     static var about: UIImage { .generateSettingsIcon("house.fill", backgroundColor: .systemMint) ?? UIImage() }
 }

@@ -1,305 +1,321 @@
 /* No comment provided by engineer. */
-"alert service code added" = "Account connected";
+"alert service code added" = "Обліковий запис підключено";
 
 /* No comment provided by engineer. */
-"alert service code deleted" = "Account deleted";
+"alert service code deleted" = "Обліковий запис видалено";
 
 /* No comment provided by engineer. */
-"alert service email error" = "Failed to open mail";
+"alert service email error" = "Не вдалося відкрити пошту";
 
 /* No comment provided by engineer. */
-"alert service incorrect url" = "Incorrect URL";
+"alert service incorrect url" = "Неправильна URL-адреса";
 
 /* No comment provided by engineer. */
-"alert service no token" = "Incorrect token";
+"alert service no token" = "Неправильний токен";
 
 /* No comment provided by engineer. */
-"alert service token exists" = "This account already exists";
+"alert service token exists" = "Цей рахунок вже існує";
 
 /* No comment provided by engineer. */
-"auth alert fail description" = "The identity is not verified. Try again.";
+"auth alert fail description" = "Особа не підтверджена. Спробуйте ще раз.";
 
 /* No comment provided by engineer. */
-"auth alert fail title" = "Failed to verify";
+"auth alert fail title" = "Не вдалося перевірити";
 
 /* No comment provided by engineer. */
-"auth change description" = "Enable / disable protection.";
+"auth change description" = "Увімкнути / вимкнути захист.";
 
 /* No comment provided by engineer. */
-"auth login description" = "App Login Confirmation";
+"auth login description" = "Підтвердження входу в додаток";
 
 /* No comment provided by engineer. */
-"permissions camera denied alert action" = "Open Settings";
+"permissions camera denied alert action" = "Відкрити настройки";
 
 /* No comment provided by engineer. */
-"permissions camera denied alert subtitle" = "In order to use the camera, you need to go to the settings and give access.";
+"permissions camera denied alert subtitle" = "Для того, щоб скористатися камерою, потрібно зайти в налаштування та надати доступ.";
 
 /* No comment provided by engineer. */
-"permissions camera denied alert title" = "Permission Denied";
+"permissions camera denied alert title" = "У дозволі Відмовлено";
 
 /* No comment provided by engineer. */
-"root controller account section footer" = "This section contains all your codes.";
+"root controller account section footer" = "У цьому розділі зібрані всі ваші коди.";
 
 /* No comment provided by engineer. */
-"root controller empty cell subtitle" = "Add an account and it will be displayed here.";
+"root controller empty cell subtitle" = "Додайте обліковий запис і він відобразиться тут.";
 
 /* No comment provided by engineer. */
-"root controller empty cell title" = "Empty";
+"root controller empty cell title" = "Порожньо";
 
 /* No comment provided by engineer. */
-"root controller header view action" = "Add Account";
+"root controller header view action" = "Додати обліковий запис";
 
 /* No comment provided by engineer. */
-"root controller header view description" = "Once added, the code will appear on the home screen and you will be able to use it.";
+"root controller header view description" = "Після додавання код з'явиться на головному екрані і ви зможете ним скористатися.";
 
 /* No comment provided by engineer. */
-"root controller section account header" = "Accounts";
+"root controller section account header" = "Обліковий запис";
 
 /* No comment provided by engineer. */
-"root controller settings button" = "Settings";
+"root controller settings button" = "Налаштування";
 
 /* No comment provided by engineer. */
-"root controller settings section footer" = "You can customize the app as you like or contact us.";
+"root controller settings section footer" = "Ви можете налаштувати додаток на свій розсуд або зв'язатися з нами.";
 
 /* No comment provided by engineer. */
-"root controller title" = "Authenticator";
+"root controller title" = "Аутентифікатор";
 
 /* No comment provided by engineer. */
-"scan controller description" = "Scan the QR code for two-factor authentication.";
+"scan controller description" = "Відскануйте QR-код для двофакторної автентифікації.";
 
 /* No comment provided by engineer. */
-"scan controller google import feature description" = "Scan the QR export code from Google Authenticator. All codes will be transferred to this application.";
+"scan controller google import feature description" = "Відскануйте QR-код експорту з Google Authenticator. Всі коди будуть передані в цей додаток.";
 
 /* No comment provided by engineer. */
-"scan controller google import feature title" = "Import from Google Auth";
+"scan controller google import feature title" = "Імпорт з Google Auth";
 
 /* No comment provided by engineer. */
-"scan controller qr detail" = "Link";
+"scan controller qr detail" = "Посилання";
 
 /* No comment provided by engineer. */
-"scan controller scan feature description" = "After scanning, the code will appear on the main screen. You will be able to use it to log in to your account.";
+"scan controller scan feature description" = "Після сканування код з'явиться на головному екрані. З його допомогою ви зможете увійти до свого облікового запису.";
 
 /* No comment provided by engineer. */
-"scan controller scan feature title" = "Scan QR-Code";
+"scan controller scan feature title" = "Відскануйте QR-код";
 
 /* No comment provided by engineer. */
-"scan controller title" = "Add Account";
+"scan controller title" = "Додати обліковий запис";
 
 /* No comment provided by engineer. */
-"setings controller about section footer" = "Learn more about the app.";
+"setings controller about section footer" = "Дізнайтеся більше про додаток.";
 
 /* No comment provided by engineer. */
-"setings controller app section footer" = "Customize the appearance of the app to your liking.";
+"setings controller app section footer" = "Налаштуйте зовнішній вигляд програми на свій смак.";
 
 /* No comment provided by engineer. */
-"setings controller app section header" = "APP";
+"setings controller app section header" = "Додаток";
 
 /* No comment provided by engineer. */
-"setings controller feedback section footer" = "Contact us if you want to report a problem or suggest an idea.";
+"setings controller feedback section footer" = "Зв'яжіться з нами, якщо ви хочете повідомити про проблему або запропонувати ідею.";
 
 /* No comment provided by engineer. */
-"setings controller feedback section header" = "FEEDBACK";
+"setings controller feedback section header" = "ЗВОРОТНІЙ ЗВ'ЯЗОК";
 
 /* No comment provided by engineer. */
-"setings controller media section footer" = "Follow our activities on social networks or on the website.";
+"setings controller media section footer" = "Слідкуйте за нашою діяльністю у соціальних мережах або на сайті.";
 
 /* No comment provided by engineer. */
-"setings controller media section header" = "MEDIA";
+"setings controller media section header" = "МЕДІА";
 
 /* No comment provided by engineer. */
-"setings password controller section allow_widget footer" = "If this setting is enabled, it will be possible to access the codes through widgets without authorization.";
+"setings password controller section allow_widget footer" = "Якщо це налаштування увімкнено, то доступ до кодів через віджети буде можливий без авторизації.";
 
 /* No comment provided by engineer. */
-"setings password controller section footer" = "The application will request authorization before launch. For verification, use Face / Touch ID or passcode.";
+"setings password controller section footer" = "Перед запуском додаток запросить авторизацію. Для верифікації використовуйте Face/Touch ID або пароль.";
 
 /* No comment provided by engineer. */
-"setings password controller section header" = "ACCESSIBLE PROTECTION";
+"setings password controller section header" = "ДОСТУПНИЙ ЗАХИСТ";
 
 /* No comment provided by engineer. */
-"settings about app controller package cell" = "settings about app controller package cell";
+"settings about app controller open source cell title" = "Відкрити GitHub";
 
 /* No comment provided by engineer. */
-"settings about app controller package footer" = "settings about app controller package footer";
+"settings about app controller open source footer" = "Цей проект має відкритий вихідний код. Він також використовує наші бібліотеки з відкритим вихідним кодом. Ознайомтеся з вихідним кодом програми та інших наших рішень на GitHub.";
 
 /* No comment provided by engineer. */
-"settings about app controller package header" = "settings about app controller package header";
+"settings about app controller open source header" = "ВІДКРИТЕ ДЖЕРЕЛО";
 
 /* No comment provided by engineer. */
-"settings about app controller title" = "About App";
+"settings about app controller package cell" = "налаштування комірки пакету контролера додатків";
 
 /* No comment provided by engineer. */
-"settings about app controller version cell title" = "Current";
+"settings about app controller package footer" = "налаштування нижнього колонтитула пакета контролера додатків";
 
 /* No comment provided by engineer. */
-"settings about app controller version footer" = "You have this version of the application installed. Check and install the new one if it is available.";
+"settings about app controller package header" = "налаштування заголовку пакета контролера додатків";
 
 /* No comment provided by engineer. */
-"settings about app controller version header" = "VERSION";
+"settings about app controller title" = "Про програму";
 
 /* No comment provided by engineer. */
-"settings appearance controller automatic cell" = "Automatic";
+"settings about app controller version cell title" = "Поточний";
 
 /* No comment provided by engineer. */
-"settings appearance controller blue color cell" = "Blue";
+"settings about app controller version footer" = "У вас встановлена ця версія програми. Перевірте та встановіть нову, якщо вона доступна.";
 
 /* No comment provided by engineer. */
-"settings appearance controller colors table footer" = "Choose a background color that you like.";
+"settings about app controller version header" = "ВЕРСІЯ";
 
 /* No comment provided by engineer. */
-"settings appearance controller colors table header" = "COLORS";
+"settings appearance controller automatic cell" = "Автоматичне";
 
 /* No comment provided by engineer. */
-"settings appearance controller dark cell" = "Dark";
+"settings appearance controller blue color cell" = "Синій";
 
 /* No comment provided by engineer. */
-"settings appearance controller gray color cell" = "Gray";
+"settings appearance controller colors table footer" = "Виберіть колір фону, який вам подобається.";
 
 /* No comment provided by engineer. */
-"settings appearance controller green color cell" = "Green";
+"settings appearance controller colors table header" = "КОЛЬОРИ";
 
 /* No comment provided by engineer. */
-"settings appearance controller light cell" = "Light";
+"settings appearance controller dark cell" = "Темний";
 
 /* No comment provided by engineer. */
-"settings appearance controller orange color cell" = "Orange";
+"settings appearance controller gray color cell" = "Сірий";
 
 /* No comment provided by engineer. */
-"settings appearance controller pink color cell" = "Pink";
+"settings appearance controller green color cell" = "Зелений";
 
 /* No comment provided by engineer. */
-"settings appearance controller purple color cell" = "Purple";
+"settings appearance controller light cell" = "Світлий";
 
 /* No comment provided by engineer. */
-"settings appearance controller red color cell" = "Red";
+"settings appearance controller orange color cell" = "Помаранчевий";
 
 /* No comment provided by engineer. */
-"settings appearance controller table automatic footer" = "The application theme will be synchronized with the system theme.";
+"settings appearance controller pink color cell" = "Розовий";
 
 /* No comment provided by engineer. */
-"settings appearance controller table header" = "THEME";
+"settings appearance controller purple color cell" = "Пурпурний";
 
 /* No comment provided by engineer. */
-"settings appearance controller table manually footer" = "The application theme will be forcibly set to your choice.";
+"settings appearance controller red color cell" = "Червоний";
+
+/* No comment provided by engineer. */
+"settings appearance controller table automatic footer" = "Тема програми буде синхронізована з темою системи.";
+
+/* No comment provided by engineer. */
+"settings appearance controller table header" = "Тема";
+
+/* No comment provided by engineer. */
+"settings appearance controller table manually footer" = "Тема програми буде примусово встановлена на ваш вибір.";
 
 /* No comment provided by engineer.No comment provided by engineer. */
-"settings appearance controller title" = "Appearance";
+"settings appearance controller title" = "Зовнішній вигляд";
 
 /* No comment provided by engineer. */
-"settings appearance controller yellow color cell" = "Yellow";
+"settings appearance controller yellow color cell" = "Жовтий";
 
 /* No comment provided by engineer. */
-"settings controller about cell" = "About App";
+"settings controller about cell" = "Про програму";
 
 /* No comment provided by engineer. */
-"settings controller appereance cell" = "Appearance";
+"settings controller appereance cell" = "Зовнішній вигляд";
 
 /* No comment provided by engineer. */
-"settings controller contact cell" = "Contact Us";
+"settings controller contact cell" = "Зв'яжіться з нами";
 
 /* No comment provided by engineer. */
-"settings controller delete alert message" = "The account will be deleted. You will not be able to access without the code unless you have other authentication methods set up.";
+"settings controller delete alert message" = "Обліковий запис буде видалено. Ви не зможете отримати доступ без коду, якщо у вас не налаштовані інші методи автентифікації.";
 
 /* No comment provided by engineer. */
-"settings controller delete alert title" = "Confirm Action";
+"settings controller delete alert title" = "Підтвердити дію";
 
 /* No comment provided by engineer. */
-"settings controller feedback email body" = "Hello, I use OTP Authenticator with version";
+"settings controller feedback email body" = "Доброго дня, я використовую OTP Authenticator з версією";
 
 /* No comment provided by engineer. */
 "settings controller instagram cell" = "Instagram";
 
 /* No comment provided by engineer. */
-"settings controller language cell" = "Languages";
+"settings controller language cell" = "Мови";
 
 /* No comment provided by engineer. */
-"settings controller notification cell" = "settings controller notification cell";
+"settings controller notification cell" = "осередок сповіщення контролера налаштувань";
 
 /* No comment provided by engineer. */
-"settings controller review cell" = "Write A Review";
+"settings controller review cell" = "Написати відгук";
 
 /* No comment provided by engineer. */
-"settings controller sounds cell" = "Sounds";
+"settings controller sounds cell" = "Звуки";
 
 /* No comment provided by engineer. */
 "settings controller telegram cell" = "Telegram";
 
 /* No comment provided by engineer. */
-"settings controller title" = "Settings";
+"settings controller title" = "Налаштування";
 
 /* No comment provided by engineer. */
 "settings controller twitter cell" = "Twitter";
 
 /* No comment provided by engineer. */
-"settings controller website cell" = "Website";
+"settings controller website cell" = "Сайт";
 
 /* No comment provided by engineer. */
-"settings languages controller cell english" = "English";
+"settings languages controller cell english" = "Англійська";
 
 /* No comment provided by engineer. */
-"settings languages controller cell german" = "German";
+"settings languages controller cell french" = "Французька";
 
 /* No comment provided by engineer. */
-"settings languages controller cell russian" = "Russian";
+"settings languages controller cell german" = "Німецька";
 
 /* No comment provided by engineer. */
-"settings languages controller footer" = "You can use another language instead of the system language.";
+"settings languages controller cell russian" = "Російська";
 
 /* No comment provided by engineer. */
-"settings languages controller header" = "AVAILABLE";
+"settings languages controller cell ukrainian" = "Український";
 
 /* No comment provided by engineer. */
-"settings languages controller title" = "Languages";
+"settings languages controller footer" = "Ви можете використовувати іншу мову замість мови системи.";
 
 /* No comment provided by engineer. */
-"settings password controller allow widget" = "Allow Widgets";
+"settings languages controller header" = "ДОСТУПНІ";
 
 /* No comment provided by engineer. */
-"settings password controller cell" = "Authorization";
+"settings languages controller title" = "Мови";
 
 /* No comment provided by engineer. */
-"settings password controller title" = "Password";
+"settings password controller allow widget" = "Дозволити віджети";
 
 /* No comment provided by engineer. */
-"settings sounds controller disabled cell" = "Disabled";
+"settings password controller cell" = "Авторизація";
 
 /* No comment provided by engineer. */
-"settings sounds controller during day cell" = "During Day";
+"settings password controller title" = "Пароль";
 
 /* No comment provided by engineer. */
-"settings sounds controller enabled cell" = "Enabled";
+"settings sounds controller disabled cell" = "Вимкнено";
 
 /* No comment provided by engineer. */
-"settings sounds controller table footer" = "You can turn off sounds in the app or allow only daytime playback.";
+"settings sounds controller during day cell" = "Протягом дня";
 
 /* No comment provided by engineer. */
-"settings sounds controller table header" = "STATUS";
+"settings sounds controller enabled cell" = "Увімкнути";
 
 /* No comment provided by engineer. */
-"settings sounds controller title" = "Sounds";
+"settings sounds controller table footer" = "Ви можете вимкнути звуки в додатку або дозволити відтворення тільки в денний час.";
 
 /* No comment provided by engineer. */
-"shared added" = "Added";
+"settings sounds controller table header" = "СТАТУС";
 
 /* No comment provided by engineer. */
-"shared cancel" = "Cancel";
+"settings sounds controller title" = "Звуки";
 
 /* No comment provided by engineer. */
-"shared copied" = "Copied";
+"shared added" = "Додано";
 
 /* No comment provided by engineer. */
-"shared delete" = "Delete";
+"shared cancel" = "Скасувати";
 
 /* No comment provided by engineer. */
-"shared deleted" = "Deleted";
+"shared copied" = "Скопійовано";
 
 /* No comment provided by engineer. */
-"shared error" = "Error";
+"shared delete" = "Видалити";
 
 /* No comment provided by engineer. */
-"shared ok" = "OK";
+"shared deleted" = "Видалено";
 
 /* No comment provided by engineer. */
-"shared try again" = "Try Again";
+"shared error" = "Помилка";
 
 /* No comment provided by engineer. */
-"shared unknown" = "Unknown";
+"shared ok" = "ДОБРЕ";
+
+/* No comment provided by engineer. */
+"shared try again" = "Спробуйте ще раз";
+
+/* No comment provided by engineer. */
+"shared unknown" = "Невідомо";
+

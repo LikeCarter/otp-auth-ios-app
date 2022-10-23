@@ -4,8 +4,9 @@ import NativeUIKit
 import SPDiffable
 import SPSettingsIcons
 import KeychainAccess
+import SafariServices
 
-class SettingsAboutAppController: SPDiffableTableController {
+class SettingsAboutAppController: SPDiffableTableController, SFSafariViewControllerDelegate {
     
     var fakeDataClicks = 0
     
@@ -46,6 +47,26 @@ class SettingsAboutAppController: SPDiffableTableController {
         )
         sections.append(versionSection)
         
+        let openSourceSection = SPDiffableSection(
+            id: Section.openSource.id,
+            header: SPDiffableTextHeaderFooter(text: Texts.SettingsController.AboutApp.openSource_header),
+            footer: SPDiffableTextHeaderFooter(text: Texts.SettingsController.AboutApp.openSource_footer),
+            items: [
+                SPDiffableTableRow(
+                    id: "Open Source",
+                    text: Texts.SettingsController.AboutApp.openSource_cell_title,
+                    detail: nil,
+                    icon: Images.github,
+                    accessoryType: .disclosureIndicator,
+                    selectionStyle: .none,
+                    action: { item, indexPath in
+                        self.openUrl(urlStr: Constants.Media.github)
+                    }
+                )
+            ]
+        )
+        sections.append(openSourceSection)
+        
         /*
          let packagesSection = SPDiffableSection(
          id: Section.package.id,
@@ -70,6 +91,7 @@ class SettingsAboutAppController: SPDiffableTableController {
     
     enum Section: String {
         case version
+        case openSource
         case package
         
         var id: String { rawValue }
@@ -187,6 +209,15 @@ class SettingsAboutAppController: SPDiffableTableController {
         
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    private func openUrl(urlStr: String) {
+        if let url = URL(string: urlStr) {
+            let vc = SFSafariViewController(url: url)
+            vc.delegate = self
+            
+            present(vc, animated: true)
+        }
     }
     
 }

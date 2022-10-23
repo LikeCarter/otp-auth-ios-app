@@ -18,6 +18,14 @@ class ScanController: SPController {
     let scanView = ScanView()
     lazy var cameraView = makeVideoPreviewLayer()
     
+    lazy var panGesture: UIPanGestureRecognizer = {
+        let gesture = UIPanGestureRecognizer(target: self, action: #selector(swipeHandler(_:)))
+        gesture.cancelsTouchesInView = false
+        return gesture
+    }()
+    
+    internal var initialCenter: CGPoint = .zero
+    
     private var presented: Bool = false
     
     // MARK: - Lifecycle
@@ -32,6 +40,7 @@ class ScanController: SPController {
         view.addGestureRecognizer(closeTap)
         scanView.addGestureRecognizer(emptyTap) // Restrict closing by tap scanView
         scanView.closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        scanView.addGestureRecognizer(panGesture)
         
         scanView.layer.masksToBounds = true
         scanView.cameraPreview.masksToBounds = true
@@ -119,5 +128,4 @@ class ScanController: SPController {
         viewDidLayoutSubviews()
         
     }
-    
 }

@@ -1,7 +1,7 @@
-"no any accounts" = "No any Accounts";
+"no any accounts" = "Ні Аккаунтів";
 
-"not supported" = "Not Supported";
+"not supported" = "Не підтримується";
 
-"configuration name" = "OTP Codes";
+"configuration name" = "OTP Коди";
 
-"configuration description" = "You will see codes for logic without running app.";
+"configuration description" = "Коди видно без запуску програми.";

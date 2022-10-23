@@ -165,6 +165,8 @@ enum Texts {
             static var russian: String { NSLocalizedString("settings languages controller cell russian", comment: "") }
             static var english: String { NSLocalizedString("settings languages controller cell english", comment: "") }
             static var german: String { NSLocalizedString("settings languages controller cell german", comment: "") }
+            static var french: String { NSLocalizedString("settings languages controller cell french", comment: "") }
+            static var ukrainian: String { NSLocalizedString("settings languages controller cell ukrainian", comment: "") }
         }
         
         enum AboutApp {
@@ -175,6 +177,10 @@ enum Texts {
             static var version_cell_title: String { NSLocalizedString("settings about app controller version cell title", comment: "") }
             static var version_cell_detail: String { Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? Texts.Shared.unknown }
             static var version_footer: String { NSLocalizedString("settings about app controller version footer", comment: "") }
+            
+            static var openSource_header: String { NSLocalizedString("settings about app controller open source header", comment: "") }
+            static var openSource_cell_title: String { NSLocalizedString("settings about app controller open source cell title", comment: "") }
+            static var openSource_footer: String { NSLocalizedString("settings about app controller open source footer", comment: "") }
             
             static var package_header: String { NSLocalizedString("settings about app controller package header", comment: "") }
             static var package_cell: String { NSLocalizedString("settings about app controller package cell", comment: "") }

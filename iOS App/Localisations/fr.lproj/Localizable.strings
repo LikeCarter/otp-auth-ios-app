@@ -1,305 +1,321 @@
 /* No comment provided by engineer. */
-"alert service code added" = "Account connected";
+"alert service code added" = "Compte connecté";
 
 /* No comment provided by engineer. */
-"alert service code deleted" = "Account deleted";
+"alert service code deleted" = "Compte supprimé";
 
 /* No comment provided by engineer. */
-"alert service email error" = "Failed to open mail";
+"alert service email error" = "Impossible d'ouvrir le courrier";
 
 /* No comment provided by engineer. */
-"alert service incorrect url" = "Incorrect URL";
+"alert service incorrect url" = "URL incorrecte";
 
 /* No comment provided by engineer. */
-"alert service no token" = "Incorrect token";
+"alert service no token" = "Jeton incorrect";
 
 /* No comment provided by engineer. */
-"alert service token exists" = "This account already exists";
+"alert service token exists" = "Ce compte existe déjà";
 
 /* No comment provided by engineer. */
-"auth alert fail description" = "The identity is not verified. Try again.";
+"auth alert fail description" = "L'identité n'est pas vérifiée. Essayez à nouveau.";
 
 /* No comment provided by engineer. */
-"auth alert fail title" = "Failed to verify";
+"auth alert fail title" = "Échec de la vérification";
 
 /* No comment provided by engineer. */
-"auth change description" = "Enable / disable protection.";
+"auth change description" = "Activer / désactiver la protection.";
 
 /* No comment provided by engineer. */
-"auth login description" = "App Login Confirmation";
+"auth login description" = "Confirmation de la connexion à l'application";
 
 /* No comment provided by engineer. */
-"permissions camera denied alert action" = "Open Settings";
+"permissions camera denied alert action" = "Ouvrir les paramètres";
 
 /* No comment provided by engineer. */
-"permissions camera denied alert subtitle" = "In order to use the camera, you need to go to the settings and give access.";
+"permissions camera denied alert subtitle" = "Pour pouvoir utiliser la caméra, vous devez aller dans les paramètres et donner l'accès.";
 
 /* No comment provided by engineer. */
-"permissions camera denied alert title" = "Permission Denied";
+"permissions camera denied alert title" = "Permission refusée";
 
 /* No comment provided by engineer. */
-"root controller account section footer" = "This section contains all your codes.";
+"root controller account section footer" = "Cette section contient tous vos codes.";
 
 /* No comment provided by engineer. */
-"root controller empty cell subtitle" = "Add an account and it will be displayed here.";
+"root controller empty cell subtitle" = "Ajoutez un compte et il sera affiché ici.";
 
 /* No comment provided by engineer. */
-"root controller empty cell title" = "Empty";
+"root controller empty cell title" = "Vide";
 
 /* No comment provided by engineer. */
-"root controller header view action" = "Add Account";
+"root controller header view action" = "Ajouter un compte";
 
 /* No comment provided by engineer. */
-"root controller header view description" = "Once added, the code will appear on the home screen and you will be able to use it.";
+"root controller header view description" = "Une fois ajouté, le code apparaîtra sur l'écran d'accueil et vous pourrez l'utiliser.";
 
 /* No comment provided by engineer. */
-"root controller section account header" = "Accounts";
+"root controller section account header" = "Comptes";
 
 /* No comment provided by engineer. */
-"root controller settings button" = "Settings";
+"root controller settings button" = "Paramètres";
 
 /* No comment provided by engineer. */
-"root controller settings section footer" = "You can customize the app as you like or contact us.";
+"root controller settings section footer" = "Vous pouvez personnaliser l'application comme vous le souhaitez ou nous contacter.";
 
 /* No comment provided by engineer. */
-"root controller title" = "Authenticator";
+"root controller title" = "Authentificateur";
 
 /* No comment provided by engineer. */
-"scan controller description" = "Scan the QR code for two-factor authentication.";
+"scan controller description" = "Scannez le code QR pour une authentification à deux facteurs.";
 
 /* No comment provided by engineer. */
-"scan controller google import feature description" = "Scan the QR export code from Google Authenticator. All codes will be transferred to this application.";
+"scan controller google import feature description" = "Scannez le code d'exportation QR de Google Authenticator. Tous les codes seront transférés vers cette application.";
 
 /* No comment provided by engineer. */
-"scan controller google import feature title" = "Import from Google Auth";
+"scan controller google import feature title" = "Importation depuis Google Auth";
 
 /* No comment provided by engineer. */
-"scan controller qr detail" = "Link";
+"scan controller qr detail" = "Lien";
 
 /* No comment provided by engineer. */
-"scan controller scan feature description" = "After scanning, the code will appear on the main screen. You will be able to use it to log in to your account.";
+"scan controller scan feature description" = "Après avoir été scanné, le code apparaîtra sur l'écran principal. Vous pourrez l'utiliser pour vous connecter à votre compte.";
 
 /* No comment provided by engineer. */
-"scan controller scan feature title" = "Scan QR-Code";
+"scan controller scan feature title" = "Scanner le code QR";
 
 /* No comment provided by engineer. */
-"scan controller title" = "Add Account";
+"scan controller title" = "Ajouter un compte";
 
 /* No comment provided by engineer. */
-"setings controller about section footer" = "Learn more about the app.";
+"setings controller about section footer" = "En savoir plus sur l'application.";
 
 /* No comment provided by engineer. */
-"setings controller app section footer" = "Customize the appearance of the app to your liking.";
+"setings controller app section footer" = "Personnalisez l'apparence de l'application à votre guise.";
 
 /* No comment provided by engineer. */
 "setings controller app section header" = "APP";
 
 /* No comment provided by engineer. */
-"setings controller feedback section footer" = "Contact us if you want to report a problem or suggest an idea.";
+"setings controller feedback section footer" = "Contactez-nous si vous souhaitez signaler un problème ou suggérer une idée.";
 
 /* No comment provided by engineer. */
-"setings controller feedback section header" = "FEEDBACK";
+"setings controller feedback section header" = "COMMENTAIRES";
 
 /* No comment provided by engineer. */
-"setings controller media section footer" = "Follow our activities on social networks or on the website.";
+"setings controller media section footer" = "Suivez nos activités sur les réseaux sociaux ou sur le site web.";
 
 /* No comment provided by engineer. */
 "setings controller media section header" = "MEDIA";
 
 /* No comment provided by engineer. */
-"setings password controller section allow_widget footer" = "If this setting is enabled, it will be possible to access the codes through widgets without authorization.";
+"setings password controller section allow_widget footer" = "Si ce paramètre est activé, il sera possible d'accéder aux codes par le biais de widgets sans autorisation.";
 
 /* No comment provided by engineer. */
-"setings password controller section footer" = "The application will request authorization before launch. For verification, use Face / Touch ID or passcode.";
+"setings password controller section footer" = "L'application demandera une autorisation avant le lancement. Pour la vérification, utilisez Face / Touch ID ou un code d'accès.";
 
 /* No comment provided by engineer. */
-"setings password controller section header" = "ACCESSIBLE PROTECTION";
+"setings password controller section header" = "PROTECTION ACCESSIBLE";
 
 /* No comment provided by engineer. */
-"settings about app controller package cell" = "settings about app controller package cell";
+"settings about app controller open source cell title" = "Ouvrir GitHub";
 
 /* No comment provided by engineer. */
-"settings about app controller package footer" = "settings about app controller package footer";
+"settings about app controller open source footer" = "Ce projet est open-source. Il utilise également nos bibliothèques open-source. Consultez le code source de l'application et de nos autres solutions sur GitHub.";
 
 /* No comment provided by engineer. */
-"settings about app controller package header" = "settings about app controller package header";
+"settings about app controller open source header" = "SOURCE OUVERTE";
 
 /* No comment provided by engineer. */
-"settings about app controller title" = "About App";
+"settings about app controller package cell" = "paramètres de l'application contrôleur paquet cellule";
 
 /* No comment provided by engineer. */
-"settings about app controller version cell title" = "Current";
+"settings about app controller package footer" = "paramètres à propos de l'application contrôleur paquet pied de page";
 
 /* No comment provided by engineer. */
-"settings about app controller version footer" = "You have this version of the application installed. Check and install the new one if it is available.";
+"settings about app controller package header" = "paramètres de l'en-tête du paquet du contrôleur d'applications";
+
+/* No comment provided by engineer. */
+"settings about app controller title" = "À propos de l'application";
+
+/* No comment provided by engineer. */
+"settings about app controller version cell title" = "Actuel";
+
+/* No comment provided by engineer. */
+"settings about app controller version footer" = "Vous avez installé cette version de l'application. Vérifiez et installez la nouvelle version si elle est disponible.";
 
 /* No comment provided by engineer. */
 "settings about app controller version header" = "VERSION";
 
 /* No comment provided by engineer. */
-"settings appearance controller automatic cell" = "Automatic";
+"settings appearance controller automatic cell" = "Automatique";
 
 /* No comment provided by engineer. */
-"settings appearance controller blue color cell" = "Blue";
+"settings appearance controller blue color cell" = "Bleu";
 
 /* No comment provided by engineer. */
-"settings appearance controller colors table footer" = "Choose a background color that you like.";
+"settings appearance controller colors table footer" = "Choisissez une couleur de fond qui vous plaît.";
 
 /* No comment provided by engineer. */
-"settings appearance controller colors table header" = "COLORS";
+"settings appearance controller colors table header" = "COULEURS";
 
 /* No comment provided by engineer. */
-"settings appearance controller dark cell" = "Dark";
+"settings appearance controller dark cell" = "Sombre";
 
 /* No comment provided by engineer. */
-"settings appearance controller gray color cell" = "Gray";
+"settings appearance controller gray color cell" = "Gris";
 
 /* No comment provided by engineer. */
-"settings appearance controller green color cell" = "Green";
+"settings appearance controller green color cell" = "Vert";
 
 /* No comment provided by engineer. */
-"settings appearance controller light cell" = "Light";
+"settings appearance controller light cell" = "Clair";
 
 /* No comment provided by engineer. */
 "settings appearance controller orange color cell" = "Orange";
 
 /* No comment provided by engineer. */
-"settings appearance controller pink color cell" = "Pink";
+"settings appearance controller pink color cell" = "Rose";
 
 /* No comment provided by engineer. */
-"settings appearance controller purple color cell" = "Purple";
+"settings appearance controller purple color cell" = "Violet";
 
 /* No comment provided by engineer. */
-"settings appearance controller red color cell" = "Red";
+"settings appearance controller red color cell" = "Rouge";
 
 /* No comment provided by engineer. */
-"settings appearance controller table automatic footer" = "The application theme will be synchronized with the system theme.";
+"settings appearance controller table automatic footer" = "Le thème de l'application sera synchronisé avec le thème du système.";
 
 /* No comment provided by engineer. */
 "settings appearance controller table header" = "THEME";
 
 /* No comment provided by engineer. */
-"settings appearance controller table manually footer" = "The application theme will be forcibly set to your choice.";
+"settings appearance controller table manually footer" = "Le thème de l'application sera obligatoirement réglé sur votre choix.";
 
 /* No comment provided by engineer.No comment provided by engineer. */
-"settings appearance controller title" = "Appearance";
+"settings appearance controller title" = "Apparence";
 
 /* No comment provided by engineer. */
-"settings appearance controller yellow color cell" = "Yellow";
+"settings appearance controller yellow color cell" = "Jaune";
 
 /* No comment provided by engineer. */
-"settings controller about cell" = "About App";
+"settings controller about cell" = "À propos de l'application";
 
 /* No comment provided by engineer. */
-"settings controller appereance cell" = "Appearance";
+"settings controller appereance cell" = "Apparence";
 
 /* No comment provided by engineer. */
-"settings controller contact cell" = "Contact Us";
+"settings controller contact cell" = "Contactez-nous";
 
 /* No comment provided by engineer. */
-"settings controller delete alert message" = "The account will be deleted. You will not be able to access without the code unless you have other authentication methods set up.";
+"settings controller delete alert message" = "Le compte sera supprimé. Vous ne pourrez pas accéder au site sans le code, sauf si vous avez mis en place d'autres méthodes d'authentification.";
 
 /* No comment provided by engineer. */
-"settings controller delete alert title" = "Confirm Action";
+"settings controller delete alert title" = "Confirmer l'action";
 
 /* No comment provided by engineer. */
-"settings controller feedback email body" = "Hello, I use OTP Authenticator with version";
+"settings controller feedback email body" = "Bonjour, j'utilise OTP Authenticator avec la version";
 
 /* No comment provided by engineer. */
 "settings controller instagram cell" = "Instagram";
 
 /* No comment provided by engineer. */
-"settings controller language cell" = "Languages";
+"settings controller language cell" = "Langues";
 
 /* No comment provided by engineer. */
-"settings controller notification cell" = "settings controller notification cell";
+"settings controller notification cell" = "cellule de notification du contrôleur des paramètres";
 
 /* No comment provided by engineer. */
-"settings controller review cell" = "Write A Review";
+"settings controller review cell" = "Ecrire un avis";
 
 /* No comment provided by engineer. */
-"settings controller sounds cell" = "Sounds";
+"settings controller sounds cell" = "Sons";
 
 /* No comment provided by engineer. */
 "settings controller telegram cell" = "Telegram";
 
 /* No comment provided by engineer. */
-"settings controller title" = "Settings";
+"settings controller title" = "Paramètres";
 
 /* No comment provided by engineer. */
 "settings controller twitter cell" = "Twitter";
 
 /* No comment provided by engineer. */
-"settings controller website cell" = "Website";
+"settings controller website cell" = "Site web";
 
 /* No comment provided by engineer. */
-"settings languages controller cell english" = "English";
+"settings languages controller cell english" = "Anglais";
 
 /* No comment provided by engineer. */
-"settings languages controller cell german" = "German";
+"settings languages controller cell french" = "Français";
 
 /* No comment provided by engineer. */
-"settings languages controller cell russian" = "Russian";
+"settings languages controller cell german" = "Allemand";
 
 /* No comment provided by engineer. */
-"settings languages controller footer" = "You can use another language instead of the system language.";
+"settings languages controller cell russian" = "Russe";
 
 /* No comment provided by engineer. */
-"settings languages controller header" = "AVAILABLE";
+"settings languages controller cell ukrainian" = "Ukrainien";
 
 /* No comment provided by engineer. */
-"settings languages controller title" = "Languages";
+"settings languages controller footer" = "Vous pouvez utiliser une autre langue au lieu de la langue du système.";
 
 /* No comment provided by engineer. */
-"settings password controller allow widget" = "Allow Widgets";
+"settings languages controller header" = "DISPONIBLE";
 
 /* No comment provided by engineer. */
-"settings password controller cell" = "Authorization";
+"settings languages controller title" = "Langues";
 
 /* No comment provided by engineer. */
-"settings password controller title" = "Password";
+"settings password controller allow widget" = "Autoriser les widgets";
 
 /* No comment provided by engineer. */
-"settings sounds controller disabled cell" = "Disabled";
+"settings password controller cell" = "Autorisation";
 
 /* No comment provided by engineer. */
-"settings sounds controller during day cell" = "During Day";
+"settings password controller title" = "Mot de passe";
 
 /* No comment provided by engineer. */
-"settings sounds controller enabled cell" = "Enabled";
+"settings sounds controller disabled cell" = "Désactivé";
 
 /* No comment provided by engineer. */
-"settings sounds controller table footer" = "You can turn off sounds in the app or allow only daytime playback.";
+"settings sounds controller during day cell" = "Pendant la journée";
 
 /* No comment provided by engineer. */
-"settings sounds controller table header" = "STATUS";
+"settings sounds controller enabled cell" = "Activé";
 
 /* No comment provided by engineer. */
-"settings sounds controller title" = "Sounds";
+"settings sounds controller table footer" = "Vous pouvez désactiver les sons dans l'application ou n'autoriser que la lecture pendant la journée.";
 
 /* No comment provided by engineer. */
-"shared added" = "Added";
+"settings sounds controller table header" = "STATUT";
 
 /* No comment provided by engineer. */
-"shared cancel" = "Cancel";
+"settings sounds controller title" = "Sons";
 
 /* No comment provided by engineer. */
-"shared copied" = "Copied";
+"shared added" = "Ajouté";
 
 /* No comment provided by engineer. */
-"shared delete" = "Delete";
+"shared cancel" = "Annuler";
 
 /* No comment provided by engineer. */
-"shared deleted" = "Deleted";
+"shared copied" = "Copié";
 
 /* No comment provided by engineer. */
-"shared error" = "Error";
+"shared delete" = "Supprimer";
+
+/* No comment provided by engineer. */
+"shared deleted" = "Supprimé";
+
+/* No comment provided by engineer. */
+"shared error" = "Erreur";
 
 /* No comment provided by engineer. */
 "shared ok" = "OK";
 
 /* No comment provided by engineer. */
-"shared try again" = "Try Again";
+"shared try again" = "Essayer de nouveau";
 
 /* No comment provided by engineer. */
-"shared unknown" = "Unknown";
+"shared unknown" = "Inconnu";
+
