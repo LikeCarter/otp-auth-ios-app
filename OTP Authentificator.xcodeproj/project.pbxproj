@@ -100,7 +100,6 @@
 		F438F2BE29150B7200AD403E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2B429150B7200AD403E /* SettingsView.swift */; };
 		F438F2BF29150B7200AD403E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2B529150B7200AD403E /* ContentView.swift */; };
 		F438F2C029150B7200AD403E /* WatchSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2B629150B7200AD403E /* WatchSync.swift */; };
-		F438F2C129150B7200AD403E /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2B729150B7200AD403E /* Code.swift */; };
 		F438F2C229150B7200AD403E /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2B929150B7200AD403E /* SettingsRowView.swift */; };
 		F438F2C329150B7200AD403E /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2BA29150B7200AD403E /* NumberView.swift */; };
 		F438F2C429150B7200AD403E /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2BB29150B7200AD403E /* CodeView.swift */; };
@@ -110,6 +109,8 @@
 		F438F2CF2915109500AD403E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB404180282AC53800C0BBCF /* AccountModel.swift */; };
 		F438F2D02915142100AD403E /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 		F438F2D32915309A00AD403E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D22915309A00AD403E /* Constants.swift */; };
+		F438F2D529157CD300AD403E /* AuthSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D429157CD300AD403E /* AuthSettingsView.swift */; };
+		F438F2D82915871500AD403E /* OTPCodeVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D72915871500AD403E /* OTPCodeVisibility.swift */; };
 		F47CD2FD2865B064006367E9 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 /* End PBXBuildFile section */
 
@@ -265,12 +266,13 @@
 		F438F2B429150B7200AD403E /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F438F2B529150B7200AD403E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F438F2B629150B7200AD403E /* WatchSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSync.swift; sourceTree = "<group>"; };
-		F438F2B729150B7200AD403E /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		F438F2B929150B7200AD403E /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		F438F2BA29150B7200AD403E /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		F438F2BB29150B7200AD403E /* CodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		F438F2CD2915106700AD403E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		F438F2D22915309A00AD403E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F438F2D429157CD300AD403E /* AuthSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSettingsView.swift; sourceTree = "<group>"; };
+		F438F2D72915871500AD403E /* OTPCodeVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeVisibility.swift; sourceTree = "<group>"; };
 		F47CD2FC2865B064006367E9 /* Base32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
 		F47FDD082859000900499E8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4A09ED728F6CEEC009C31F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -671,8 +673,8 @@
 		F438F2B229150B7200AD403E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F438F2D629157CED00AD403E /* Settings */,
 				F438F2B329150B7200AD403E /* InsertSecretView.swift */,
-				F438F2B429150B7200AD403E /* SettingsView.swift */,
 				F438F2B529150B7200AD403E /* ContentView.swift */,
 			);
 			path = Scenes;
@@ -699,7 +701,7 @@
 		F438F2C929150B8E00AD403E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F438F2B729150B7200AD403E /* Code.swift */,
+				F438F2D72915871500AD403E /* OTPCodeVisibility.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -710,6 +712,15 @@
 				F438F2D22915309A00AD403E /* Constants.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F438F2D629157CED00AD403E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F438F2B429150B7200AD403E /* SettingsView.swift */,
+				F438F2D429157CD300AD403E /* AuthSettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -992,15 +1003,16 @@
 				F438F2BD29150B7200AD403E /* InsertSecretView.swift in Sources */,
 				F438F2BF29150B7200AD403E /* ContentView.swift in Sources */,
 				F438F2CE2915106700AD403E /* DataProvider.swift in Sources */,
+				F438F2D529157CD300AD403E /* AuthSettingsView.swift in Sources */,
 				F438F2C329150B7200AD403E /* NumberView.swift in Sources */,
 				F438F2C429150B7200AD403E /* CodeView.swift in Sources */,
 				F438F2BE29150B7200AD403E /* SettingsView.swift in Sources */,
 				F438F2C229150B7200AD403E /* SettingsRowView.swift in Sources */,
 				F438F2D32915309A00AD403E /* Constants.swift in Sources */,
+				F438F2D82915871500AD403E /* OTPCodeVisibility.swift in Sources */,
 				F438F2D02915142100AD403E /* Base32.swift in Sources */,
 				F438F2C029150B7200AD403E /* WatchSync.swift in Sources */,
 				F438F2CF2915109500AD403E /* AccountModel.swift in Sources */,
-				F438F2C129150B7200AD403E /* Code.swift in Sources */,
 				F438F2A729150B0B00AD403E /* WatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

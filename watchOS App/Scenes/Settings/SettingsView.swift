@@ -9,12 +9,7 @@ struct SettingsView: View {
         List {
             Section {
                 NavigationLink {
-                    VStack {
-                        Text("Show Synced")
-                        Text("Show Manually")
-                        Text("Show both")
-                        Text("Show complication")
-                    }
+                    AuthSettingsView()
                 } label: {
                     SettingsRowView(title: "Authorization", systemName: "lock.circle.fill", backgroundIconColor: .green)
                 }
