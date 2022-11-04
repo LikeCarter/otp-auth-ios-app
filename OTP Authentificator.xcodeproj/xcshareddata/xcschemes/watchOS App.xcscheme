@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F438F2A329150B0B00AD403E"
-               BuildableName = "watchOS App Watch App.app"
-               BlueprintName = "watchOS App Watch App"
+               BuildableName = "watchOS App.app"
+               BlueprintName = "watchOS App"
                ReferencedContainer = "container:OTP Authentificator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F438F2A329150B0B00AD403E"
-            BuildableName = "watchOS App Watch App.app"
-            BlueprintName = "watchOS App Watch App"
+            BuildableName = "watchOS App.app"
+            BlueprintName = "watchOS App"
             ReferencedContainer = "container:OTP Authentificator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F438F2A329150B0B00AD403E"
-            BuildableName = "watchOS App Watch App.app"
-            BlueprintName = "watchOS App Watch App"
+            BuildableName = "watchOS App.app"
+            BlueprintName = "watchOS App"
             ReferencedContainer = "container:OTP Authentificator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -255,7 +255,6 @@
 		F41FE4AC28ED8BDB00097440 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		F41FE4B228ED8C6F00097440 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F41FE4B428ED8C7100097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F41FE4B828ED8F8F00097440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = en; path = en.lproj/WidgetIndents.intentdefinition; sourceTree = "<group>"; };
 		F41FE4BB28ED8F9300097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F423616B2914F01D00313B1E /* WatchSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSync.swift; sourceTree = "<group>"; };
 		F42361702914F95500313B1E /* Imports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Imports; sourceTree = "<group>"; };
@@ -275,6 +274,8 @@
 		F438F2D22915309A00AD403E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F438F2D429157CD300AD403E /* AuthSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSettingsView.swift; sourceTree = "<group>"; };
 		F438F2D72915871500AD403E /* OTPCodeVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeVisibility.swift; sourceTree = "<group>"; };
+		F438F2DB2915B5FE00AD403E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/WidgetIndents.intentdefinition; sourceTree = "<group>"; };
+		F438F2DD2915B61200AD403E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F47CD2FC2865B064006367E9 /* Base32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
 		F47FDD082859000900499E8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4A09ED728F6CEEC009C31F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -617,15 +618,12 @@
 		F41FE45E28ED677600097440 /* Widget Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F438F2DE2915B62D00AD403E /* Resources */,
 				F41FE4AE28ED8C6300097440 /* Localisation */,
-				F41FE49B28ED7B8000097440 /* Entitlements.entitlements */,
 				F41FE45F28ED677600097440 /* Widget.swift */,
 				F41FE4AA28ED871700097440 /* EntryView.swift */,
 				F41FE46E28ED678600097440 /* Provider.swift */,
 				F41FE4AC28ED8BDB00097440 /* Texts.swift */,
-				F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */,
-				F41FE46228ED677700097440 /* Assets.xcassets */,
-				F41FE46428ED677700097440 /* Info.plist */,
 			);
 			path = "Widget Extension";
 			sourceTree = "<group>";
@@ -633,9 +631,8 @@
 		F41FE48A28ED758F00097440 /* Widget Extension Intent */ = {
 			isa = PBXGroup;
 			children = (
-				F41FE49C28ED7B8E00097440 /* Entitlements.entitlements */,
+				F438F2DF2915B65E00AD403E /* Resources */,
 				F41FE48B28ED758F00097440 /* IntentHandler.swift */,
-				F41FE48D28ED758F00097440 /* Info.plist */,
 			);
 			path = "Widget Extension Intent";
 			sourceTree = "<group>";
@@ -643,6 +640,7 @@
 		F41FE4AE28ED8C6300097440 /* Localisation */ = {
 			isa = PBXGroup;
 			children = (
+				F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */,
 				F41FE4B328ED8C6F00097440 /* Localizable.strings */,
 			);
 			path = Localisation;
@@ -723,6 +721,25 @@
 				F438F2D429157CD300AD403E /* AuthSettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		F438F2DE2915B62D00AD403E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F41FE49B28ED7B8000097440 /* Entitlements.entitlements */,
+				F41FE46228ED677700097440 /* Assets.xcassets */,
+				F41FE46428ED677700097440 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F438F2DF2915B65E00AD403E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F41FE49C28ED7B8E00097440 /* Entitlements.entitlements */,
+				F41FE48D28ED758F00097440 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1094,11 +1111,12 @@
 		F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F41FE4B828ED8F8F00097440 /* en */,
 				F41FE4BB28ED8F9300097440 /* ru */,
 				F435FA8528F6D46800F664A0 /* de */,
 				F4D41EA82900303A00DA4979 /* fr */,
 				F4D41EAA2900303C00DA4979 /* uk */,
+				F438F2DB2915B5FE00AD403E /* Base */,
+				F438F2DD2915B61200AD403E /* en */,
 			);
 			name = WidgetIndents.intentdefinition;
 			sourceTree = "<group>";
@@ -1294,12 +1312,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Entitlements.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Widget Extension/Info.plist";
+				INFOPLIST_FILE = "Widget Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1324,12 +1342,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Entitlements.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Widget Extension/Info.plist";
+				INFOPLIST_FILE = "Widget Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1352,12 +1370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Entitlements.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Widget Extension Intent/Info.plist";
+				INFOPLIST_FILE = "Widget Extension Intent/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Intent;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1380,12 +1398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Entitlements.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Widget Extension Intent/Info.plist";
+				INFOPLIST_FILE = "Widget Extension Intent/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Intent;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
