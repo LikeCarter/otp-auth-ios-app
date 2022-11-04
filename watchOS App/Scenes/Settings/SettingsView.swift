@@ -11,7 +11,7 @@ struct SettingsView: View {
                 NavigationLink {
                     AuthSettingsView()
                 } label: {
-                    SettingsRowView(title: "Authorization", systemName: "lock.circle.fill", backgroundIconColor: .green)
+                    SettingsRowView(title: Texts.SettingsController.Password.cell, systemName: "lock.circle.fill", backgroundIconColor: .green)
                 }
             } header: {
                 

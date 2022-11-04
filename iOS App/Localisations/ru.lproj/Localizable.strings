@@ -47,7 +47,7 @@
 "root controller empty cell title" = "Пусто";
 
 /* No comment provided by engineer. */
-"root controller header view action" = "Добавить аккаунт";
+"root controller header view action" = "Добавить Аккаунт";
 
 /* No comment provided by engineer. */
 "root controller header view description" = "После добавления код появится на главном экране, и вы сможете его использовать.";

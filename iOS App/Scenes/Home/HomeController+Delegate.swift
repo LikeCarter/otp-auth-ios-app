@@ -31,7 +31,7 @@ extension HomeController: SPDiffableTableDelegate, SPDiffableTableMediator {
                         }
                     let cancel = UIAlertAction(
                         title: Texts.Shared.cancel,
-                        style: .default,
+                        style: .cancel,
                         handler: nil
                     )
                     alert.addAction(delete)

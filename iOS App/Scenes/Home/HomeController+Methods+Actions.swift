@@ -57,40 +57,20 @@ extension HomeController {
     
     // MARK: UI
     
-    func setupNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = Texts.HomeController.title
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        navigationItem.searchController = searchController
-    }
-    
-    func setupTableView() {
-        passwordsData = AppSettings.getAllFromKeychain()
-        tableView.register(NativeEmptyTableViewCell.self)
-        tableView.register(OTPTableViewCell.self)
-        configureDiffable(sections: content, cellProviders: [.empty, .account] + SPDiffableTableDataSource.CellProvider.default)
-        headerContainerView.setWidthAndFit(width: view.frame.width)
-        tableView.tableHeaderView = headerContainerView
-        diffableDataSource?.mediator = self
-        diffableDataSource?.diffableDelegate = self
-        headerView.scanButton.addTarget(self, action: #selector(scanButtonTapped), for: .primaryActionTriggered)
-        tableView.cellLayoutMarginsFollowReadableWidth = true
-        
-    }
-    
     @objc func reload() {
         let time = Date().timeIntervalSince1970
         var partFrom30Seconds = Double(Int(time/30) + 1) - time/30
         partFrom30Seconds = Double(round(100 * partFrom30Seconds) / 100)
         let secondsBeforeUpdate = Int(partFrom30Seconds * 30)
-        let barButtonItem = UIBarButtonItem(image: imageForNumber(number: secondsBeforeUpdate))
+        
         if !passwordsData.isEmpty {
+            let barButtonItem = UIBarButtonItem(image: imageForNumber(number: secondsBeforeUpdate))
             self.navigationItem.rightBarButtonItem = barButtonItem
         } else {
             navigationItem.rightBarButtonItem = nil
         }
         if secondsBeforeUpdate == 0 || secondsBeforeUpdate == 30 {
+            print("call here 1 \(Int.random(in: 1...100))")
             self.diffableDataSource?.set(self.content, animated: false)
         }
         

@@ -10,7 +10,7 @@ struct NumberView: View {
             .overlay {
                 Rectangle()
                     .foregroundColor(.secondary)
-                    .opacity(0.16)
+                    .opacity(0.2)
                     .cornerRadius(3)
             }
     }

@@ -24,35 +24,48 @@ class HomeController: SPDiffableTableController {
     let headerView = RootControllerHeaderView()
     
     open var headerContainerView: HeaderContainerView
-    
     private var cachedHeaderHeight: CGFloat? = nil
-    
     var passwordsData: [AccountModel] = []
-    
     var filteredData: [AccountModel] = []
-    
     var scannedData: [String] = []
     
     // MARK: - Init
-        
+    
     public override init(style: UITableView.Style) {
-            self.headerContainerView = HeaderContainerView(contentView: self.headerView)
-            super.init(style: style)
-        }
-        
-        public required init?(coder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
+        self.headerContainerView = HeaderContainerView(contentView: self.headerView)
+        super.init(style: style)
+    }
+    
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
-        setupTableView()
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = Texts.HomeController.title
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        
         passwordsData = AppSettings.getAllFromKeychain()
-        diffableDataSource?.set(content, animated: true)
+        
+        tableView.cellLayoutMarginsFollowReadableWidth = true
+        tableView.register(NativeEmptyTableViewCell.self)
+        tableView.register(OTPTableViewCell.self)
+        configureDiffable(sections: content, cellProviders: [.empty, .account] + SPDiffableTableDataSource.CellProvider.default)
+        headerContainerView.setWidthAndFit(width: view.frame.width)
+        tableView.tableHeaderView = headerContainerView
+        diffableDataSource?.mediator = self
+        diffableDataSource?.diffableDelegate = self
+        
+        headerView.scanButton.addTarget(self, action: #selector(scanButtonTapped), for: .primaryActionTriggered)
+        
+        
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,6 +79,7 @@ class HomeController: SPDiffableTableController {
         }, completion: { finished in
             gradeView.removeFromSuperview()
         })
+        print("call here 2 \(Int.random(in: 1...100))")
         diffableDataSource?.set(content, animated: false)
     }
     
@@ -76,37 +90,33 @@ class HomeController: SPDiffableTableController {
         self.navigationController?.navigationBar.layoutMargins.left = view.layoutMargins.left
         self.navigationController?.navigationBar.layoutMargins.right = view.layoutMargins.left
         
-        headerContainerView.contentView.layoutMargins.left = tableView.layoutMargins.left
-        headerContainerView.contentView.layoutMargins.right = tableView.layoutMargins.right
-        headerContainerView.setWidthAndFit(width: view.frame.width)
+        var layoutContainer = false
+        if headerContainerView.contentView.layoutMargins.left != tableView.layoutMargins.left {
+            headerContainerView.contentView.layoutMargins.left = tableView.layoutMargins.left
+            layoutContainer = true
+        }
+        if headerContainerView.contentView.layoutMargins.right != tableView.layoutMargins.right {
+            headerContainerView.contentView.layoutMargins.right = tableView.layoutMargins.right
+            layoutContainer = true
+        }
+        if layoutContainer || headerContainerView.frame.width != view.frame.width {
+            headerContainerView.setWidthAndFit(width: view.frame.width)
+        }
+        
         if cachedHeaderHeight != headerContainerView.frame.height {
             cachedHeaderHeight = headerContainerView.frame.height
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
+                print("call here 3 \(Int.random(in: 1...100))")
                 self.diffableDataSource?.updateLayout(animated: false, completion: nil)
             }
         }
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-
-        coordinator.animate(
-            alongsideTransition: { _ in
-            self.navigationController?.navigationBar.layoutMargins.left = self.view.layoutMargins.left
-            self.navigationController?.navigationBar.layoutMargins.right = self.view.layoutMargins.left
-            },
-            completion: nil
-        )
-    }
-    
-    open func setSpaceBetweenHeaderAndCells(_ value: CGFloat) {
-        headerContainerView.layoutMargins.bottom = value
-    }
-    
     // MARK: - Diffable
     
     var content: [SPDiffableSection] {
+        print("call here 4 \(Int.random(in: 1...100))")
         var sections: [SPDiffableSection] = []
         
         let accountsSection = SPDiffableSection(

@@ -111,6 +111,8 @@
 		F438F2D32915309A00AD403E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D22915309A00AD403E /* Constants.swift */; };
 		F438F2D529157CD300AD403E /* AuthSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D429157CD300AD403E /* AuthSettingsView.swift */; };
 		F438F2D82915871500AD403E /* OTPCodeVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D72915871500AD403E /* OTPCodeVisibility.swift */; };
+		F438F2D92915892C00AD403E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FDB494284A7539006C79A1 /* Localizable.strings */; };
+		F438F2DA2915893900AD403E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E712D28270A160039A4C0 /* Texts.swift */; };
 		F47CD2FD2865B064006367E9 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 /* End PBXBuildFile section */
 
@@ -900,6 +902,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F438F2AE29150B0C00AD403E /* Preview Assets.xcassets in Resources */,
+				F438F2D92915892C00AD403E /* Localizable.strings in Resources */,
 				F438F2AB29150B0C00AD403E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1003,6 +1006,7 @@
 				F438F2BD29150B7200AD403E /* InsertSecretView.swift in Sources */,
 				F438F2BF29150B7200AD403E /* ContentView.swift in Sources */,
 				F438F2CE2915106700AD403E /* DataProvider.swift in Sources */,
+				F438F2DA2915893900AD403E /* Texts.swift in Sources */,
 				F438F2D529157CD300AD403E /* AuthSettingsView.swift in Sources */,
 				F438F2C329150B7200AD403E /* NumberView.swift in Sources */,
 				F438F2C429150B7200AD403E /* CodeView.swift in Sources */,
@@ -1228,7 +1232,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1243,7 +1247,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1260,7 +1264,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1275,7 +1279,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1292,7 +1296,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Info.plist";
@@ -1304,7 +1308,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1322,7 +1326,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Info.plist";
@@ -1334,7 +1338,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1350,7 +1354,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Info.plist";
@@ -1362,7 +1366,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1378,7 +1382,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Info.plist";
@@ -1390,7 +1394,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1407,7 +1411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOS App/Preview Content\"";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
@@ -1419,7 +1423,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1438,7 +1442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOS App/Preview Content\"";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
@@ -1450,7 +1454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;

@@ -21,7 +21,7 @@ struct ContentView: View {
                         } header: {
                             
                         } footer: {
-                            Text("Here small description about codes.")
+                            Text(Texts.HomeController.account_section_footer)
                         }
                     }
                     Section {
@@ -30,7 +30,7 @@ struct ContentView: View {
                         }, label: {
                             HStack {
                                 Image(systemName: "plus.circle.fill")
-                                Text("Add Code")
+                                Text(Texts.HomeController.header_view_action)
                             }
                             .fontWeight(.medium)
                         })
@@ -39,7 +39,7 @@ struct ContentView: View {
                     } header: {
                         
                     } footer: {
-                        Text("Here small description about codes.")
+                        Text(Texts.HomeController.header_view_description)
                     }
                     .listRowBackground(Color.clear)
                     .listRowInsets(.init())
@@ -47,12 +47,12 @@ struct ContentView: View {
                         NavigationLink(destination: {
                             SettingsView()
                         }, label: {
-                            SettingsRowView(title: "Settings", systemName: "gear.circle.fill", backgroundIconColor: .blue)
+                            SettingsRowView(title: Texts.HomeController.settings_button, systemName: "gear.circle.fill", backgroundIconColor: .blue)
                         })
                     }
                 }
             }
-            .navigationTitle("OTP Auth")
+            .navigationTitle(Texts.HomeController.title)
         }
         .sheet(isPresented: $showingAddCodeSheet) {
             InsertSecretView()
