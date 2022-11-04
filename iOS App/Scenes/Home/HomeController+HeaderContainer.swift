@@ -39,10 +39,8 @@ extension HomeController {
         }
         
         public override func sizeThatFits(_ size: CGSize) -> CGSize {
-            frame.setWidth(size.width)
             layoutSubviews()
-            print("call here 6 \(Int.random(in: 1...100))")
-            return .init(width: size.width, height: contentView.frame.maxY + layoutMargins.bottom)
+            return .init(width: size.width, height: (contentView.frame.maxY + layoutMargins.bottom).rounded(.up))
         }
     }
 }

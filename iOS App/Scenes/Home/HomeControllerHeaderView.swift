@@ -29,6 +29,11 @@ class RootControllerHeaderView: SPView {
     }
 
     // MARK: Layout
+    
+    override func tintColorDidChange() {
+        super.tintColorDidChange()
+        scanButton.set(title: Texts.HomeController.header_view_action, icon: Images.scan, colorise: .init(content: .tint, background: .tint.alpha(0.1)))
+    }
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -42,17 +47,13 @@ class RootControllerHeaderView: SPView {
             width: readableWidth - 8
         )
     }
-    
-    override func tintColorDidChange() {
-        super.tintColorDidChange()
-        scanButton.set(title: Texts.HomeController.header_view_action, icon: Images.scan, colorise: .init(content: .tint, background: .tint.alpha(0.1)))
-    }
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         layoutSubviews()
+        print("footer \(footerLabel.frame)")
         return CGSize.init(
             width: size.width,
-            height: footerLabel.frame.maxY + layoutMargins.bottom
+            height: (footerLabel.frame.maxY + layoutMargins.bottom).rounded(.up)
         )
     }
 }

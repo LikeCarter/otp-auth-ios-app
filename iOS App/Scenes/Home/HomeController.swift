@@ -85,10 +85,17 @@ class HomeController: SPDiffableTableController {
     
     // MARK: Layout
     
+    private var allowedLayoutInCycleForce = true
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.navigationController?.navigationBar.layoutMargins.left = view.layoutMargins.left
-        self.navigationController?.navigationBar.layoutMargins.right = view.layoutMargins.left
+        if self.navigationController?.navigationBar.layoutMargins.left != view.layoutMargins.left {
+            self.navigationController?.navigationBar.layoutMargins.left = view.layoutMargins.left
+        }
+        
+        if self.navigationController?.navigationBar.layoutMargins.right != view.layoutMargins.right {
+            self.navigationController?.navigationBar.layoutMargins.right = view.layoutMargins.right
+        }
         
         var layoutContainer = false
         if headerContainerView.contentView.layoutMargins.left != tableView.layoutMargins.left {
@@ -99,7 +106,13 @@ class HomeController: SPDiffableTableController {
             headerContainerView.contentView.layoutMargins.right = tableView.layoutMargins.right
             layoutContainer = true
         }
-        if layoutContainer || headerContainerView.frame.width != view.frame.width {
+        
+        if allowedLayoutInCycleForce {
+            layoutContainer = true
+            allowedLayoutInCycleForce = false
+        }
+        
+        if layoutContainer || (headerContainerView.frame.width != view.frame.width) {
             headerContainerView.setWidthAndFit(width: view.frame.width)
         }
         
