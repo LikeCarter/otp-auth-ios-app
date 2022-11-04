@@ -1,6 +1,6 @@
 import Foundation
 
-class AccountModel: Equatable, Codable {
+class AccountModel: NSObject, Codable {
     
     static func == (lhs: AccountModel, rhs: AccountModel) -> Bool {
         return lhs.oneTimePassword == rhs.oneTimePassword

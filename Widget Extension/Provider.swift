@@ -2,7 +2,7 @@ import WidgetKit
 import CryptoKit
 import SwiftUI
 import Intents
-import SparrowKit
+import SwiftBoost
 import OTP
 
 struct Entry: TimelineEntry {
@@ -29,7 +29,7 @@ struct Provider: IntentTimelineProvider {
     }
     
     func getSnapshot(for configuration: SelectWebsiteIntent, in context: Context, completion: @escaping (Entry) -> ()) {
-        let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: Date()) ?? defaultCode
+        //let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: Date()) ?? defaultCode
         let entry = Entry(
             otpCode: defaultCode,
             website: configuration.website?.website,

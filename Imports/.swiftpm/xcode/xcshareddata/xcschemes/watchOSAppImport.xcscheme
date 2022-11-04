@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-               BuildableName = "iOS App.app"
-               BlueprintName = "iOS App"
-               ReferencedContainer = "container:OTP Authentificator.xcodeproj">
+               BlueprintIdentifier = "watchOSAppImport"
+               BuildableName = "watchOSAppImport"
+               BlueprintName = "watchOSAppImport"
+               ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-            BuildableName = "iOS App.app"
-            BlueprintName = "iOS App"
-            ReferencedContainer = "container:OTP Authentificator.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-            BuildableName = "iOS App.app"
-            BlueprintName = "iOS App"
-            ReferencedContainer = "container:OTP Authentificator.xcodeproj">
+            BlueprintIdentifier = "watchOSAppImport"
+            BuildableName = "watchOSAppImport"
+            BlueprintName = "watchOSAppImport"
+            ReferencedContainer = "container:">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

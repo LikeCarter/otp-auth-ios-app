@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1400"
+   LastUpgradeVersion = "1410"
    wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-               BuildableName = "OTP Authentificator.app"
-               BlueprintName = "OTP Authentificator"
+               BuildableName = "iOS App.app"
+               BlueprintName = "iOS App"
                ReferencedContainer = "container:OTP Authentificator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-            BuildableName = "OTP Authentificator.app"
-            BlueprintName = "OTP Authentificator"
+            BuildableName = "iOS App.app"
+            BlueprintName = "iOS App"
             ReferencedContainer = "container:OTP Authentificator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,8 +81,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-            BuildableName = "OTP Authentificator.app"
-            BlueprintName = "OTP Authentificator"
+            BuildableName = "iOS App.app"
+            BlueprintName = "iOS App"
             ReferencedContainer = "container:OTP Authentificator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

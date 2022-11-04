@@ -13,7 +13,7 @@ struct OTPCodeWidget: Widget {
             intent: SelectWebsiteIntent.self,
             provider: Provider()
         ) { entry in
-            OTPWidgetEntryView(entry: entry)
+            EntryView(entry: entry)
         }
         .configurationDisplayName(Texts.widget_title)
         .description(Texts.widget_description)

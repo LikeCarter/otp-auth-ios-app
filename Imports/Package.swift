@@ -3,16 +3,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppImport",
+    name: "Imports",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v13), .watchOS(.v6)
     ],
     products: [
         .library(
-            name: "AppImport",
-            targets: ["AppImport"]
+            name: "iOSAppImport",
+            targets: ["iOSAppImport"]
         ),
+        .library(
+            name: "widgetExtensionImport",
+            targets: ["widgetExtensionImport"]
+        ),
+        .library(
+            name: "watchOSAppImport",
+            targets: ["watchOSAppImport"]
+        )
     ],
     dependencies: [
         .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk", .upToNextMajor(from: "10.0.0")),
@@ -26,12 +34,13 @@ let package = Package(
         .package(url: "https://github.com/ivanvorobei/SPIndicator", .upToNextMajor(from: "1.6.4")),
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", .upToNextMajor(from: "4.2.2")),
         .package(url: "https://github.com/sparrowcode/OTP", .upToNextMajor(from: "1.0.0")),
-        .package(url: "https://github.com/svyatoynick/GAuthSwiftParser", .upToNextMajor(from: "1.0.3"))
+        .package(url: "https://github.com/svyatoynick/GAuthSwiftParser", .upToNextMajor(from: "1.0.3")),
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON", .upToNextMajor(from: "5.0.1"))
         
     ],
     targets: [
         .target(
-            name: "AppImport",
+            name: "iOSAppImport",
             dependencies: [
                 .product(name: "FirebaseMessaging", package: "Firebase"),
                 .product(name: "FirebaseCrashlytics", package: "Firebase"),
@@ -48,6 +57,22 @@ let package = Package(
                 .product(name: "KeychainAccess", package: "KeychainAccess"),
                 .product(name: "OTP", package: "OTP"),
                 .product(name: "GAuthSwiftParser", package: "GAuthSwiftParser")
+            ]
+        ),
+        .target(
+            name: "widgetExtensionImport",
+            dependencies: [
+                .product(name: "SwiftBoost", package: "SwiftBoost"),
+                .product(name: "KeychainAccess", package: "KeychainAccess"),
+                .product(name: "OTP", package: "OTP")
+            ]
+        ),
+        .target(
+            name: "watchOSAppImport",
+            dependencies: [
+                .product(name: "SwiftBoost", package: "SwiftBoost"),
+                .product(name: "SwiftyJSON", package: "SwiftyJSON"),
+                .product(name: "OTP", package: "OTP")
             ]
         )
     ]

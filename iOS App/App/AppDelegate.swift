@@ -16,6 +16,7 @@ class AppDelegate: SPAppWindowDelegate {
         }, tint: .systemBlue)
         
         AppearanceControlService.check()
+        WatchSync.configure()
         
         return true
     }

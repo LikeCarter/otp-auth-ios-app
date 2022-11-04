@@ -1,9 +1,10 @@
 import WidgetKit
+import SwiftBoost
 import SwiftUI
 import Intents
 import OTP
 
-struct OTPWidgetEntryView : View {
+struct EntryView : View {
     
     @Environment(\.widgetFamily) var family: WidgetFamily
     
@@ -163,7 +164,7 @@ struct OTPWidgetEntryView : View {
 struct OTPWidgetEntryView_Preview: PreviewProvider {
     
     static var previews: some View {
-        OTPWidgetEntryView(
+        EntryView(
             entry: .init(
                 otpCode: "123 456",
                 website: "sparrowcode.io",
