@@ -1,7 +1,7 @@
 import UIKit
 import WidgetKit
 
-extension AppSettings {
+enum Settings {
     
     static var isPasswordEnabled: Bool {
         get { UserDefaults.standard.bool(forKey: "isPasswordEnabled") }

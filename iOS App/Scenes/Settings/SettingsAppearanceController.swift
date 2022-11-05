@@ -54,7 +54,7 @@ class SettingsAppearanceController: SPDiffableTableController {
                     text: color.title,
                     detail: nil,
                     icon: color.image,
-                    accessoryType: AppSettings.appColor == color ? .checkmark : .none,
+                    accessoryType: Settings.appColor == color ? .checkmark : .none,
                     selectionStyle: .none,
                     action: { item, indexPath in
                         self.setColor(color: color)
@@ -76,10 +76,10 @@ class SettingsAppearanceController: SPDiffableTableController {
                     id: Item.automatic.id,
                     text: Texts.SettingsController.Appearance.automatic_cell,
                     icon: nil,
-                    isOn: AppSettings.isAppearanceAutomatic,
+                    isOn: Settings.isAppearanceAutomatic,
                     action: { state in
-                        AppSettings.isAppearanceAutomatic = state
-                        if AppSettings.isAppearanceAutomatic {
+                        Settings.isAppearanceAutomatic = state
+                        if Settings.isAppearanceAutomatic {
                             self.setStyle(style: .automatic)
                         } else {
                             self.setStyle(style: .light)
@@ -100,7 +100,7 @@ class SettingsAppearanceController: SPDiffableTableController {
                     text: Texts.SettingsController.Appearance.light_cell,
                     detail: nil,
                     icon: nil,
-                    accessoryType: AppSettings.appTheme == .light ? .checkmark : .none,
+                    accessoryType: Settings.appTheme == .light ? .checkmark : .none,
                     selectionStyle: .none,
                     action: { item, indexPath in
                         self.setStyle(style: .light)
@@ -111,7 +111,7 @@ class SettingsAppearanceController: SPDiffableTableController {
                     text: Texts.SettingsController.Appearance.dark_cell,
                     detail: nil,
                     icon: nil,
-                    accessoryType: AppSettings.appTheme == .dark ? .checkmark : .none,
+                    accessoryType: Settings.appTheme == .dark ? .checkmark : .none,
                     selectionStyle: .none,
                     action: { item, indexPath in
                         self.setStyle(style: .dark)
@@ -120,7 +120,7 @@ class SettingsAppearanceController: SPDiffableTableController {
             ]
         )
         
-        if AppSettings.isAppearanceAutomatic {
+        if Settings.isAppearanceAutomatic {
             return [automaticSection, colorsSection]
         } else {
             return [automaticSection, manuallySection, colorsSection]

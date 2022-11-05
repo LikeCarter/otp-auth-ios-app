@@ -7,9 +7,8 @@ extension HomeController: UISearchResultsUpdating {
     }
     
     private func filterContentForSearchText(searchText: String) {
-        
         let filteredDataFromWebsite = passwordsData.filter { model in
-            return model.website.lowercased().contains(searchText.lowercased())
+            return model.issuer.lowercased().contains(searchText.lowercased())
         }
         
         let filteredDataFromLogin: [AccountModel] = passwordsData.filter { model in

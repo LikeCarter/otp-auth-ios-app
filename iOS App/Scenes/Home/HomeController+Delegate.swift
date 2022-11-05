@@ -25,8 +25,7 @@ extension HomeController: SPDiffableTableDelegate, SPDiffableTableMediator {
                         title: Texts.Shared.delete,
                         style: .destructive) { alert in
                             self.passwordsData.remove(at: indexPath.row)
-                            AppSettings.removeFromKeychain(id: modelID)
-                            self.diffableDataSource?.set(self.content, animated: true)
+                            KeychainStorage.remove(rawURLs: [modelID])
                             AlertService.code_deleted()
                         }
                     let cancel = UIAlertAction(

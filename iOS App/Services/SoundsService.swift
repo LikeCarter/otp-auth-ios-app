@@ -50,8 +50,8 @@ enum SoundsService {
                     isDay = (now > fromDate) && (now < toDate)
                 }
                 
-                if AppSettings.isSoundsEnabled != "3" {
-                    if AppSettings.isSoundsEnabled == "1" {
+                if Settings.isSoundsEnabled != "3" {
+                    if Settings.isSoundsEnabled == "1" {
                         player.play()
                     }
                 } else {

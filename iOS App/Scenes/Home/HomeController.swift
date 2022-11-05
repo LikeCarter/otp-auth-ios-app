@@ -5,6 +5,7 @@ import SPDiffable
 import SPSettingsIcons
 import CameraPermission
 import SPIndicator
+import WidgetKit
 
 class HomeController: SPDiffableTableController {
     
@@ -51,7 +52,7 @@ class HomeController: SPDiffableTableController {
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         
-        passwordsData = AppSettings.getAllFromKeychain()
+        passwordsData = KeychainStorage.getAccounts()
         
         tableView.cellLayoutMarginsFollowReadableWidth = true
         tableView.register(NativeEmptyTableViewCell.self)
@@ -66,6 +67,12 @@ class HomeController: SPDiffableTableController {
         
         
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
+        
+        NotificationCenter.default.addObserver(forName: .changedAccounts, object: nil, queue: nil) { notification in
+            self.passwordsData = KeychainStorage.getAccounts()
+            self.diffableDataSource?.set(self.content, animated: true)
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,7 +86,6 @@ class HomeController: SPDiffableTableController {
         }, completion: { finished in
             gradeView.removeFromSuperview()
         })
-        print("call here 2 \(Int.random(in: 1...100))")
         diffableDataSource?.set(content, animated: false)
     }
     
@@ -120,7 +126,6 @@ class HomeController: SPDiffableTableController {
             cachedHeaderHeight = headerContainerView.frame.height
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
-                print("call here 3 \(Int.random(in: 1...100))")
                 self.diffableDataSource?.updateLayout(animated: false, completion: nil)
             }
         }
@@ -129,7 +134,6 @@ class HomeController: SPDiffableTableController {
     // MARK: - Diffable
     
     var content: [SPDiffableSection] {
-        print("call here 4 \(Int.random(in: 1...100))")
         var sections: [SPDiffableSection] = []
         
         let accountsSection = SPDiffableSection(
@@ -142,7 +146,7 @@ class HomeController: SPDiffableTableController {
         if isFiltering {
             for model in filteredData {
                 let item = SPDiffableWrapperItem(
-                    id: "\(model.oneTimePassword)",
+                    id: "\(model.url)",
                     model: model) { item, indexPath in
                         let indicatorView = SPIndicatorView(title: Texts.Shared.copied, preset: .done)
                         indicatorView.present(duration: 3)
@@ -158,7 +162,7 @@ class HomeController: SPDiffableTableController {
         } else {
             for model in passwordsData {
                 let item = SPDiffableWrapperItem(
-                    id: "\(model.oneTimePassword)",
+                    id: "\(model.url)",
                     model: model) { item, indexPath in
                         AlertService.copied()
                         guard let cell = self.tableView.cellForRow(at: indexPath) as? OTPTableViewCell else { return }
@@ -209,6 +213,7 @@ class HomeController: SPDiffableTableController {
     }
     
     enum Section: String {
+        
         case accounts
         case settings
         

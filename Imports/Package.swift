@@ -2,6 +2,10 @@
 
 import PackageDescription
 
+let otpProduct: Target.Dependency = .product(name: "OTP", package: "OTP")
+let swiftBoostProduct: Target.Dependency = .product(name: "SwiftBoost", package: "SwiftBoost")
+let keychainAccessProduct: Target.Dependency = .product(name: "KeychainAccess", package: "KeychainAccess")
+
 let package = Package(
     name: "Imports",
     defaultLocalization: "en",
@@ -47,32 +51,33 @@ let package = Package(
                 .product(name: "FirebasePerformance", package: "Firebase"),
                 .product(name: "FirebaseAppCheck", package: "Firebase"),
                 .product(name: "SPDiffable", package: "SPDiffable"),
-                .product(name: "SwiftBoost", package: "SwiftBoost"),
+                swiftBoostProduct,
                 .product(name: "NativeUIKit", package: "NativeUIKit"),
                 .product(name: "SPSettingsIcons", package: "SPSettingsIcons"),
                 .product(name: "SafeSFSymbols", package: "SafeSFSymbols"),
                 .product(name: "CameraPermission", package: "PermissionsKit"),
                 .product(name: "SPAlert", package: "SPAlert"),
                 .product(name: "SPIndicator", package: "SPIndicator"),
-                .product(name: "KeychainAccess", package: "KeychainAccess"),
-                .product(name: "OTP", package: "OTP"),
+                keychainAccessProduct,
+                otpProduct,
                 .product(name: "GAuthSwiftParser", package: "GAuthSwiftParser")
             ]
         ),
         .target(
             name: "widgetExtensionImport",
             dependencies: [
-                .product(name: "SwiftBoost", package: "SwiftBoost"),
-                .product(name: "KeychainAccess", package: "KeychainAccess"),
-                .product(name: "OTP", package: "OTP")
+                swiftBoostProduct,
+                keychainAccessProduct,
+                otpProduct
             ]
         ),
         .target(
             name: "watchOSAppImport",
             dependencies: [
-                .product(name: "SwiftBoost", package: "SwiftBoost"),
                 .product(name: "SwiftyJSON", package: "SwiftyJSON"),
-                .product(name: "OTP", package: "OTP")
+                swiftBoostProduct,
+                keychainAccessProduct,
+                otpProduct
             ]
         )
     ]

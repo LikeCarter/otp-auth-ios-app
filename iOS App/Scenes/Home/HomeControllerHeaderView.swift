@@ -50,7 +50,6 @@ class RootControllerHeaderView: SPView {
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         layoutSubviews()
-        print("footer \(footerLabel.frame)")
         return CGSize.init(
             width: size.width,
             height: (footerLabel.frame.maxY + layoutMargins.bottom).rounded(.up)

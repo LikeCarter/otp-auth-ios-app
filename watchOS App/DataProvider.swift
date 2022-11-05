@@ -8,8 +8,9 @@ class DataProvider: ObservableObject {
     @Published var fromDate = Date()
     
     init() {
-        NotificationCenter.default.addObserver(self, selector: #selector(updateData), name: .applicationContextDidReload, object: nil)
-        updateData()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(syncData), name: .applicationContextDidReload, object: nil)
+        syncData()
         
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             let startMinuteDate = Date().start(of: .minute)
@@ -19,13 +20,11 @@ class DataProvider: ObservableObject {
                 let newFromDate = startMinuteDate.addingTimeInterval(30)
                 if self.fromDate != newFromDate {
                     self.fromDate = newFromDate
-                    self.updateData()
                 }
             } else {
                 let newFromDate = startMinuteDate
                 if self.fromDate != newFromDate {
                     self.fromDate = newFromDate
-                    self.updateData()
                 }
             }
         }
@@ -35,29 +34,31 @@ class DataProvider: ObservableObject {
         NotificationCenter.default.removeObserver(self)
     }
     
-    @objc func updateData() {
-        self.accounts = parseApplicationContext()
-    }
-    
-    private func parseApplicationContext() -> [AccountModel] {
+    @objc func syncData() {
         let context = WatchSync.getApplicationContext()
         let json = JSON(context)
         print("current is \(json)")
-        var accounts: [AccountModel] = []
+        var newURLs: [URL] = []
         for value in json["accounts"].arrayValue {
-            guard let secret = value["secret"].string else { continue }
-            guard let login = value["login"].string else { continue }
-            guard let website = value["website"].string else { continue }
-            guard let secretData = base32DecodeToData(secret) else { continue }
-            guard let otp = OTP.generateOTP(secret: secretData) else { continue }
-            accounts.append(
-                AccountModel(
-                    oneTimePassword: otp,
-                    website: website,
-                    login: login
-                )
-            )
+            if let string = value.string, let url = URL(string: string) {
+                newURLs.append(url)
+            }
         }
-        return accounts
+        
+        // 1. Clean old values if it now present already
+        let storageURLs = KeychainStorage.getRawURLs()
+        var urlsToDelete: [URL] = []
+        for url in storageURLs {
+            if !newURLs.contains(url) {
+                urlsToDelete.append(url)
+            }
+        }
+        KeychainStorage.remove(rawURLs: urlsToDelete.map({ $0.absoluteString }))
+        
+        // 2. Adding new data
+        KeychainStorage.save(rawURLs: newURLs.map({ $0.absoluteString }))
+        
+        // 3. Update data in app
+        self.accounts = KeychainStorage.getAccounts()
     }
 }

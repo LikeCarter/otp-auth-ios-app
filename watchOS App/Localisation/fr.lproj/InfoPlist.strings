@@ -1,0 +1,5 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "OTP Auth";
+
+/* Bundle name */
+"CFBundleName" = "OTP Auth";

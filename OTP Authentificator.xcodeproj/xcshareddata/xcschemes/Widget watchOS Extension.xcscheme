@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1410"
-   wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F41FE45828ED677600097440"
-               BuildableName = "Widget Extension.appex"
-               BlueprintName = "Widget Extension"
-               ReferencedContainer = "container:OTP Authentificator.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-               BuildableName = "iOS App.app"
-               BlueprintName = "iOS App"
+               BlueprintIdentifier = "F4CBBECA291662D100FF955E"
+               BuildableName = "Widget watchOS Extension.appex"
+               BlueprintName = "Widget watchOS Extension"
                ReferencedContainer = "container:OTP Authentificator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,26 +42,6 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.springboard">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F41FE45828ED677600097440"
-            BuildableName = "Widget Extension.appex"
-            BlueprintName = "Widget Extension"
-            ReferencedContainer = "container:OTP Authentificator.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-            BuildableName = "iOS App.app"
-            BlueprintName = "iOS App"
-            ReferencedContainer = "container:OTP Authentificator.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCWidgetKind"
@@ -103,16 +68,15 @@
       debugDocumentVersioning = "YES"
       askForAppToLaunch = "Yes"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB40414D2826F6E700C0BBCF"
-            BuildableName = "iOS App.app"
-            BlueprintName = "iOS App"
+            BlueprintIdentifier = "F4CBBECA291662D100FF955E"
+            BuildableName = "Widget watchOS Extension.appex"
+            BlueprintName = "Widget watchOS Extension"
             ReferencedContainer = "container:OTP Authentificator.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

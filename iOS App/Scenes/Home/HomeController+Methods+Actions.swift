@@ -70,7 +70,6 @@ extension HomeController {
             navigationItem.rightBarButtonItem = nil
         }
         if secondsBeforeUpdate == 0 || secondsBeforeUpdate == 30 {
-            print("call here 1 \(Int.random(in: 1...100))")
             self.diffableDataSource?.set(self.content, animated: false)
         }
         
@@ -133,33 +132,17 @@ extension HomeController {
     }
     
     func handledGoogleParser(tranformedData: String, url: URL, dataQR: QRCodeData) {
-        
         let accounts = GAuthSwiftParser.getAccounts(code: tranformedData)
-        
         for account in accounts {
-            
             if account.name == "" && account.issuer == "" && account.secret == "" {
                 AlertService.alertIncorrectURL()
                 self.dismiss(animated: true)
                 return
             }
-            
-            let model = AccountModel(oneTimePassword: account.getLink(), website: account.issuer, login: account.name)
-            
-            if !self.passwordsData.contains(model) {
-                AppSettings.saveToKeychain(id: account.getLink())
-            } else {
-                AlertService.alertTheSameCode()
-                return
-            }
-            
+            KeychainStorage.save(rawURLs: [account.getLink()])
         }
-        
-        self.passwordsData = AppSettings.getAllFromKeychain()
         AlertService.code_added()
-        self.diffableDataSource?.set(self.content, animated: true)
         self.dismiss(animated: true)
-        
     }
     
     func handledQR(tranformedData: String, url: URL, dataQR: QRCodeData) {
@@ -224,16 +207,11 @@ extension HomeController {
         }
         
         if issuer != nil && !name.isEmpty && !checkCode.isEmpty {
-            let model = AccountModel(oneTimePassword: tranformedData, website: issuer!, login: name)
-            if !self.passwordsData.contains(model) {
-                AppSettings.saveToKeychain(id: tranformedData)
-                self.passwordsData = AppSettings.getAllFromKeychain()
-                AlertService.code_added()
-                self.diffableDataSource?.set(self.content, animated: true)
-                self.dismiss(animated: true)
-            } else {
-                AlertService.alertTheSameCode()
-            }
+            KeychainStorage.save(rawURLs: [tranformedData])
+            passwordsData = KeychainStorage.getAccounts()
+            AlertService.code_added()
+            diffableDataSource?.set(content, animated: true)
+            dismiss(animated: true)
         } else {
             AlertService.alertIncorrectURL()
         }

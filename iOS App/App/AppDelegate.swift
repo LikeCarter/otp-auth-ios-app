@@ -12,7 +12,7 @@ class AppDelegate: SPAppWindowDelegate {
         FirebaseApp.configure()
         
         makeKeyAndVisible(createViewControllerHandler: {
-            return AppSettings.isPasswordEnabled ? AuthController() : RootController()
+            return Settings.isPasswordEnabled ? AuthController() : RootController()
         }, tint: .systemBlue)
         
         AppearanceControlService.check()

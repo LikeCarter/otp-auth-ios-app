@@ -9,11 +9,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>88xZPY</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>21G115</string>
+	<string>22A380</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>14A400</string>
+	<string>14B47b</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>14.0.1</string>
+	<string>14.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -30,22 +30,22 @@
 			<key>INIntentLastParameterTag</key>
 			<integer>11</integer>
 			<key>INIntentName</key>
-			<string>SelectWebsite</string>
+			<string>SelectAccount</string>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Website</string>
+					<string>Account</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>jo9O5Q</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
 					<key>INIntentParameterName</key>
-					<string>website</string>
+					<string>account</string>
 					<key>INIntentParameterObjectType</key>
-					<string>Website</string>
+					<string>IntentAccount</string>
 					<key>INIntentParameterObjectTypeNamespace</key>
 					<string>88xZPY</string>
 					<key>INIntentParameterPromptDialogs</key>
@@ -92,7 +92,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Select Website</string>
+			<string>Select Account</string>
 			<key>INIntentTitleID</key>
 			<string>gpCwrM</string>
 			<key>INIntentType</key>
@@ -105,13 +105,13 @@
 	<array>
 		<dict>
 			<key>INTypeDisplayName</key>
-			<string>Website</string>
+			<string>Intent Account</string>
 			<key>INTypeDisplayNameID</key>
 			<string>YkLdAN</string>
 			<key>INTypeLastPropertyTag</key>
 			<integer>107</integer>
 			<key>INTypeName</key>
-			<string>Website</string>
+			<string>IntentAccount</string>
 			<key>INTypeProperties</key>
 			<array>
 				<dict>
@@ -180,13 +180,13 @@
 				</dict>
 				<dict>
 					<key>INTypePropertyDisplayName</key>
-					<string>Website</string>
+					<string>Issuer</string>
 					<key>INTypePropertyDisplayNameID</key>
 					<string>KTShvW</string>
 					<key>INTypePropertyDisplayPriority</key>
 					<integer>6</integer>
 					<key>INTypePropertyName</key>
-					<string>website</string>
+					<string>issuer</string>
 					<key>INTypePropertyTag</key>
 					<integer>101</integer>
 					<key>INTypePropertyType</key>

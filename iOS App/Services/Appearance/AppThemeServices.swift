@@ -4,12 +4,12 @@ import SparrowKit
 enum AppThemeService {
     
     static func set(style: AppTheme) {
-        AppSettings.appTheme = style
+        Settings.appTheme = style
         AppThemeService.check()
     }
     
     static func check() {
-        let id = AppSettings.appTheme
+        let id = Settings.appTheme
         let sharedApp = UIApplication.shared
         switch id {
         case AppTheme.automatic:

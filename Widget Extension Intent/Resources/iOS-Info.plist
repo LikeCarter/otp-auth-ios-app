@@ -12,7 +12,7 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
-				<string>SelectWebsiteIntent</string>
+				<string>SelectAccountIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

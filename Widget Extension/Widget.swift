@@ -10,14 +10,23 @@ struct OTPCodeWidget: Widget {
     var body: some WidgetConfiguration {
         IntentConfiguration(
             kind: kind,
-            intent: SelectWebsiteIntent.self,
+            intent: SelectAccountIntent.self,
             provider: Provider()
         ) { entry in
             EntryView(entry: entry)
         }
         .configurationDisplayName(Texts.widget_title)
         .description(Texts.widget_description)
-        .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular, .accessoryCircular, .accessoryInline])
+        .supportedFamilies(supportedFamilies)
+    }
+    
+    private var supportedFamilies: [WidgetFamily] {
+        #if os(iOS)
+        return [.systemSmall, .systemMedium, .accessoryRectangular, .accessoryCircular, .accessoryInline]
+        #endif
+        #if os(watchOS)
+        return [.accessoryRectangular, .accessoryCircular, .accessoryInline]
+        #endif
     }
 }
 

@@ -39,12 +39,8 @@ class OTPTableViewCell: SPTableViewCell {
     
     func updateCell(model: AccountModel) {
         loginLabel.text = model.login
-        websiteLabel.text = model.website
-        guard let url = URL(string: model.oneTimePassword) else { return }
-        guard let token = url.valueOf("secret") else { return }
-        guard let secret = base32DecodeToData(token) else { return }
-        password = OTP.generateOTP(secret: secret)
-        codeView.setup(code: password ?? "XXXXXX")
+        websiteLabel.text = model.issuer
+        codeView.setup(code: model.getCode(for: .now) ?? "XXXXXX")
     }
     
     // MARK: - Layout

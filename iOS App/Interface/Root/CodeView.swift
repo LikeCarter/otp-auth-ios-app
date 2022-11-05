@@ -55,7 +55,7 @@ class CodeView: SPView {
                 width: biggestWidth + 10,
                 height: view.numberLabel.frame.height + 10
             )
-            xPosition = counter == 3 ? view.frame.maxX + 20 : view.frame.maxX + 4
+            xPosition = counter == 3 ? view.frame.maxX + 14 : view.frame.maxX + 4
             view.layoutSubviews()
         }
         xPosition = 0

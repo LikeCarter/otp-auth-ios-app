@@ -19,18 +19,9 @@ class WatchSync: NSObject, WCSessionDelegate {
         
         var context: [String : Any] = [:]
         
-        var decodedAccounts: [[String : Any]] = []
-        for account in AppSettings.getAllFromKeychain() {
-            
-            guard let url = URL(string: account.oneTimePassword) else { continue }
-            guard let secret = url.valueOf("secret") else { continue }
-            
-            let decodedAccount = [
-                "secret" : secret,
-                "login" : account.login,
-                "website" : account.website,
-            ]
-            decodedAccounts.append(decodedAccount)
+        var decodedAccounts: [String] = []
+        for url in KeychainStorage.getRawURLs() {
+            decodedAccounts.append(url.absoluteString)
         }
         
         context["accounts"] = decodedAccounts

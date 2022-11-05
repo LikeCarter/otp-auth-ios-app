@@ -110,24 +110,19 @@ class SettingsAboutAppController: SPDiffableTableController, SFSafariViewControl
                 title: "Add Fake Data",
                 style: UIAlertAction.Style.destructive,
                 handler: { _ in
+                    
                     let fakeData = [
-                        "otpauth://totp/ivan@sparrowcode.io?secret=JBSWY3DPEHPK3PXP&issuer=SparrowCode",
-                        "otpauth://totp/nikolay@sparrowcode.io?secret=JBSWY3DPEHPK3PFD&issuer=OTPAuth",
-                        "otpauth://totp/alexa@example.com?secret=JBSWY3DPEHPK3PKD&issuer=Amazon",
-                        "otpauth://totp/dmitry@example.com?secret=JBSWY3DPEHPK3XRD&issuer=Google"
+                        "otpauth://totp/hello@sparrowcode.io?secret=JBSWY3DPEHPK3PXP&issuer=SparrowCode",
+                        "otpauth://totp/ivanvorobei@sparrowcode.io?secret=JBSWY3DPEHPK3PFD&issuer=Sketch",
+                        "otpauth://totp/hello@ivanvorobei.io?secret=JBSWY3DPEHPK3PKD&issuer=DigitalOcean"
                     ]
                     
-                    for fakeAccount in fakeData {
-                        AppSettings.removeFromKeychain(id: fakeAccount)
-                    }
-                    
-                    for fakeAccount in fakeData {
-                        AppSettings.saveToKeychain(id: fakeAccount)
-                    }
+                    KeychainStorage.remove(rawURLs: fakeData)
+                    KeychainStorage.save(rawURLs: fakeData)
                     
                     let alert = UIAlertController(
                         title: "Fake Data Added",
-                        message: "Now restart the application so that they appear on the main screen. You can delete them like any other account.",
+                        message: "You can delete them like any other account.",
                         preferredStyle: UIAlertController.Style.alert
                     )
                     
@@ -165,10 +160,11 @@ class SettingsAboutAppController: SPDiffableTableController, SFSafariViewControl
                                 
                                 let keychain = Keychain(service: Constants.Keychain.service)
                                 try! keychain.removeAll()
+                                NotificationCenter.default.post(name: .changedAccounts)
                                 
                                 let alert = UIAlertController(
                                     title: "Keychain Cleaned",
-                                    message: "All your accounts were permamently deleted. They cannot be restored anymore.\n\nNow restart the application so that they disappear from the main screen",
+                                    message: "All your accounts were permamently deleted. They cannot be restored anymore.",
                                     preferredStyle: UIAlertController.Style.alert
                                 )
                                 

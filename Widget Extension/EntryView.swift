@@ -12,6 +12,7 @@ struct EntryView : View {
     
     var body: some View {
         switch family {
+        #if os(iOS)
         case .systemSmall, .systemMedium:
             ZStack {
                 Rectangle()
@@ -28,12 +29,12 @@ struct EntryView : View {
                         .font(.caption)
                         Spacer()
                     }
-                    if let website = entry.website {
+                    if let issuer = entry.issuer {
                         VStack(spacing: 0) {
                             HStack {
                                 VStack(alignment: .leading, spacing: 0) {
                                     Spacer()
-                                    Text(website)
+                                    Text(issuer)
                                         .foregroundColor(.black)
                                         .opacity(0.8)
                                         .fontWeight(.medium)
@@ -93,11 +94,12 @@ struct EntryView : View {
                 }
                 .padding()
             }
+        #endif
         case .accessoryRectangular:
             ZStack {
                 VStack(alignment: .center, spacing: 2) {
-                    if let data = entry.configuration.website {
-                        Text(data.website ?? "")
+                    if let account = entry.configuration.account {
+                        Text(account.issuer ?? .empty)
                             .foregroundColor(.secondary)
                             .opacity(0.8)
                             .fontWeight(.semibold)
@@ -149,8 +151,8 @@ struct EntryView : View {
                 .progressViewStyle(.circular)
             }
         case .accessoryInline:
-            if let website = entry.website {
-                Text(website + .space + entry.otpCode)
+            if let issuer = entry.issuer {
+                Text(issuer + .space + entry.otpCode)
             } else {
                 Text(Texts.no_any_accounts)
             }
@@ -164,14 +166,7 @@ struct EntryView : View {
 struct OTPWidgetEntryView_Preview: PreviewProvider {
     
     static var previews: some View {
-        EntryView(
-            entry: .init(
-                otpCode: "123 456",
-                website: "sparrowcode.io",
-                date: Date(),
-                configuration: SelectWebsiteIntent()
-            )
-        )
-        .previewContext(WidgetPreviewContext(family: .accessoryCircular))
+        EntryView(entry: .init(otpCode: "123 456", issuer: "sparrowcode.io", date: .now, configuration: SelectAccountIntent()))
+            .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }

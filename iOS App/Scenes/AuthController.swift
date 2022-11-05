@@ -20,7 +20,7 @@ class AuthController: SPDiffableTableController {
     func auth() {
         let rootController = RootController()
         
-        if AppSettings.isPasswordEnabled {
+        if Settings.isPasswordEnabled {
             AppLocalAuthentication.request(reason: Texts.Auth.logic_description) { (state) in
                 if state {
                     AppService.set(rootController: rootController, animatable: false)

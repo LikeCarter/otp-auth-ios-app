@@ -19,7 +19,7 @@ class SettingsSoundsController: SPDiffableTableController {
     // MARK: - Actions
     
     func updateSounds(state: String) {
-        AppSettings.isSoundsEnabled = state
+        Settings.isSoundsEnabled = state
         UIFeedbackGenerator.impactOccurred(.selectionChanged)
         self.diffableDataSource?.set(self.content, animated: true)
     }
@@ -40,7 +40,7 @@ class SettingsSoundsController: SPDiffableTableController {
                     text: Texts.SettingsController.Sounds.enabled,
                     detail: nil,
                     icon: nil,
-                    accessoryType: AppSettings.isSoundsEnabled == "1" ? .checkmark : .none,
+                    accessoryType: Settings.isSoundsEnabled == "1" ? .checkmark : .none,
                     selectionStyle: .none,
                     action: { item, indexPath in
                         self.updateSounds(state: "1")
@@ -51,7 +51,7 @@ class SettingsSoundsController: SPDiffableTableController {
                     text: Texts.SettingsController.Sounds.disabled,
                     detail: nil,
                     icon: nil,
-                    accessoryType: AppSettings.isSoundsEnabled == "2" ? .checkmark : .none,
+                    accessoryType: Settings.isSoundsEnabled == "2" ? .checkmark : .none,
                     selectionStyle: .none,
                     action: { item, indexPath in
                         self.updateSounds(state: "2")
@@ -62,7 +62,7 @@ class SettingsSoundsController: SPDiffableTableController {
                     text: Texts.SettingsController.Sounds.during_day,
                     detail: nil,
                     icon: nil,
-                    accessoryType: AppSettings.isSoundsEnabled == "3" ? .checkmark : .none,
+                    accessoryType: Settings.isSoundsEnabled == "3" ? .checkmark : .none,
                     selectionStyle: .none,
                     action: { item, indexPath in
                         self.updateSounds(state: "3")

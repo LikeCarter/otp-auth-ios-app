@@ -22,23 +22,25 @@ struct CodeView: View {
         HStack {
             VStack(alignment: .leading, spacing: 2) {
                 HStack(spacing: 2) {
-                    let prefix = account.oneTimePassword.prefix(3)
-                    ForEach(prefix.map { String($0) }, id: \.self) { value in
-                        NumberView(number: value)
-                    }
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 2)
-                    let suffix = account.oneTimePassword.suffix(3)
-                    ForEach(suffix.map { String($0) }, id: \.self) { value in
-                        NumberView(number: value)
+                    if let code = account.getCode(for: .now) {
+                        let prefix = code.prefix(3)
+                        ForEach(prefix.map { String($0) }, id: \.self) { value in
+                            NumberView(number: value)
+                        }
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 2)
+                        let suffix = code.suffix(3)
+                        ForEach(suffix.map { String($0) }, id: \.self) { value in
+                            NumberView(number: value)
+                        }
                     }
                 }
                 .font(.title3)
                 .fontWeight(.semibold)
                 .fontDesign(.monospaced)
                 VStack(alignment: .leading, spacing: 0) {
-                    Text(account.website)
+                    Text(account.issuer)
                         .foregroundColor(.secondary)
                         .font(.footnote)
                     if enabledProfile {
@@ -76,9 +78,9 @@ struct CodeView_Previews: PreviewProvider {
     static var previews: some View {
         CodeView(
             account: .init(
-                oneTimePassword: "JBSWY3DPEHPK3XRD",
-                website: "fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds",
-                login: "fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds"),
+                login: "fdsfds",
+                secret: "JBSWY3DPEHPK3XRD",
+                issuer: "fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds fdsfsfds"),
             fromDate: .constant(Date())
         )
     }

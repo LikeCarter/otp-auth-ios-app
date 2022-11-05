@@ -28,11 +28,11 @@ class SettingsPasswordController: SPDiffableTableController {
                     id: "password",
                     text: Texts.SettingsController.Password.cell,
                     icon: nil,
-                    isOn: AppSettings.isPasswordEnabled,
+                    isOn: Settings.isPasswordEnabled,
                     action: { currentState in
                         AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
                             if state {
-                                AppSettings.isPasswordEnabled = currentState
+                                Settings.isPasswordEnabled = currentState
                                 self.diffableDataSource?.set(self.content, animated: true)
                             } else {
                                 self.diffableDataSource?.set(self.content, animated: true)
@@ -54,11 +54,11 @@ class SettingsPasswordController: SPDiffableTableController {
                     id: "allow-widget",
                     text: Texts.SettingsController.Password.allow_widget,
                     icon: nil,
-                    isOn: !AppSettings.hideWidgetData,
+                    isOn: !Settings.hideWidgetData,
                     action: { currentState in
                         AppLocalAuthentication.request(reason: Texts.Auth.change_description) { (state) in
                             if state {
-                                AppSettings.hideWidgetData = !AppSettings.hideWidgetData
+                                Settings.hideWidgetData = !Settings.hideWidgetData
                                 
                             }
                             self.diffableDataSource?.set(self.content, animated: true)

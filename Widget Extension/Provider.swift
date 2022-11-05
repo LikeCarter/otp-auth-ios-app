@@ -5,15 +5,18 @@ import Intents
 import SwiftBoost
 import OTP
 
-struct Entry: TimelineEntry {
-    
-    let otpCode: String
-    let website: String?
-    let date: Date
-    let configuration: SelectWebsiteIntent
-}
-
 struct Provider: IntentTimelineProvider {
+    
+    func recommendations() -> [IntentRecommendation<SelectAccountIntent>] {
+        var recommendations: [IntentRecommendation<SelectAccountIntent>] = []
+        for account in KeychainStorage.getAccounts() {
+            let intent = SelectAccountIntent()
+            intent.account = convertToIntentAccount(account)
+            let recomendation = IntentRecommendation(intent: intent, description: "Text Description \(account.issuer)")
+            recommendations.append(recomendation)
+        }
+        return recommendations
+    }
     
     var dataHidden: Bool {
         return (UserDefaults(suiteName: "group.io.sparrowcode.apps.otp-auth")?.bool(forKey: "hideWidgetData") ?? false)
@@ -22,33 +25,32 @@ struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> Entry {
         Entry(
             otpCode: defaultCode,
-            website: "sparrowcode.io",
+            issuer: "sparrowcode.io",
             date: Date(),
-            configuration: SelectWebsiteIntent()
+            configuration: SelectAccountIntent()
         )
     }
     
-    func getSnapshot(for configuration: SelectWebsiteIntent, in context: Context, completion: @escaping (Entry) -> ()) {
-        //let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: Date()) ?? defaultCode
+    func getSnapshot(for configuration: SelectAccountIntent, in context: Context, completion: @escaping (Entry) -> ()) {
         let entry = Entry(
             otpCode: defaultCode,
-            website: configuration.website?.website,
-            date: Date(),
+            issuer: "sparrowcode.io",
+            date: .now,
             configuration: configuration
         )
         completion(entry)
     }
     
-    func getTimeline(for configuration: SelectWebsiteIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: SelectAccountIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [Entry] = []
         let currentDate = Date().start(of: .minute)
         for codeIndex in 0...60 {
             let offset = TimeInterval(30 * codeIndex)
             let date = currentDate.addingTimeInterval(offset)
-            let otpCode = getCodeBySecret(secret: configuration.website?.secret ?? defaultCode, for: date) ?? defaultCode
+            let otpCode = getCodeBySecret(secret: configuration.account?.secret ?? .empty, for: date) ?? defaultCode
             let entry = Entry(
                 otpCode: dataHidden ? hidenCode : otpCode,
-                website: configuration.website?.website,
+                issuer: configuration.account?.issuer,
                 date: date,
                 configuration: configuration
             )
@@ -59,9 +61,8 @@ struct Provider: IntentTimelineProvider {
     }
     
     private func getCodeBySecret(secret: String, for date: Date) -> String? {
-        guard let token = URL(string: secret)?.valueOf("secret") else { return nil }
-        guard let tokenBase32 = base32DecodeToData(token) else { return nil }
-        guard let otp = OTPExtended.generateOTP(secret: tokenBase32, for: date) else { return nil }
+        guard let decodedSecret = base32DecodeToData(secret) else { return nil }
+        guard let otp = OTPExtended.generateOTP(secret: decodedSecret, for: date) else { return nil }
         return otp.prefix(3) + " " + otp.suffix(3)
     }
     
@@ -71,6 +72,17 @@ struct Provider: IntentTimelineProvider {
     
     private var hidenCode: String {
         return "••• •••"
+    }
+    
+    private func convertToIntentAccount(_ account: AccountModel) -> IntentAccount {
+        let intentAccount = IntentAccount(
+            identifier: account.url.absoluteString,
+            display: account.issuer + " (\(account.login))"
+        )
+        intentAccount.login = account.login
+        intentAccount.issuer = account.issuer
+        intentAccount.secret = account.secret
+        return intentAccount
     }
 }
 
@@ -132,7 +144,7 @@ public enum OTPExtended {
 }
 
 extension UInt64 {
-
+    
     var data: Data {
         var int = self
         let intData = Data(bytes: &int, count: MemoryLayout.size(ofValue: self))
