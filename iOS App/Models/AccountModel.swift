@@ -11,6 +11,14 @@ class AccountModel: NSObject, Codable {
     var secret: String
     var issuer: String
     
+    static func getByURL(_ url: URL) -> AccountModel? {
+        let login = url.lastPathComponent
+        guard let issuer = url.valueOf("issuer") else { return nil }
+        guard let secret = url.valueOf("secret") else { return nil }
+        let model = AccountModel(login: login, secret: secret, issuer: issuer)
+        return model
+    }
+    
     init(login: String, secret: String, issuer: String) {
         self.login = login
         self.secret = secret

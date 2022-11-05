@@ -5,14 +5,15 @@ struct ContentView: View {
     @ObservedObject var dataProvider = DataProvider()
     
     @State private var showingAddCodeSheet = false
+    @State private var showDeleteAlert = false
     
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    if !dataProvider.accounts.isEmpty {
+                    if !dataProvider.syncedAccounts.isEmpty {
                         Section {
-                            ForEach(dataProvider.accounts, id: \.self) { account in
+                            ForEach(dataProvider.syncedAccounts, id: \.self) { account in
                                 CodeView(
                                     account: account,
                                     fromDate: $dataProvider.fromDate
@@ -22,6 +23,35 @@ struct ContentView: View {
                             
                         } footer: {
                             Text(Texts.HomeController.account_section_footer)
+                        }
+                    }
+                    if !dataProvider.localAccounts.isEmpty {
+                        Section {
+                            ForEach(dataProvider.localAccounts, id: \.self) { account in
+                                Button(action: {
+                                    showDeleteAlert = true
+                                }, label: {
+                                    CodeView(
+                                        account: account,
+                                        fromDate: $dataProvider.fromDate
+                                    )
+                                })
+                                .alert("Confirm", isPresented: $showDeleteAlert, presenting: account, actions: { account in
+                                    Button("Delete", role: .destructive, action: {
+                                        KeychainStorage.remove(rawURLs: [account.url.absoluteString], with: Constants.WatchKeychain.service)
+                                        showDeleteAlert = false
+                                    })
+                                    Button("Cancel", role: .cancel, action: {
+                                        showDeleteAlert = false
+                                    })
+                                }) { account in
+                                    Text("Comfirm deleting \(account.login)")
+                                }
+                            }
+                        } header: {
+                            Text("Only at watch")
+                        } footer: {
+                            Text("Here local accounts.")
                         }
                     }
                     Section {

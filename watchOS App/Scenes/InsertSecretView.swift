@@ -2,18 +2,24 @@ import SwiftUI
 
 struct InsertSecretView: View {
     
-    @State private var insertText = ""
-    @State private var isValidSecret = false
+    @State private var insertedText = ""
+    @State private var saveEnabled = false
     
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         List {
             Section {
-                TextField("Secret", text: $insertText)
-                    .onChange(of: insertText) { newValue in
-                        // fix it later
-                        self.isValidSecret = !newValue.isEmpty
+                TextField("Secret", text: $insertedText)
+                    .autocorrectionDisabled()
+                    .textCase(.lowercase)
+                    .onChange(of: insertedText) { newValue in
+                        self.insertedText = newValue.trim
+                        if let url = URL(string: self.insertedText) {
+                            self.saveEnabled = AccountModel.getByURL(url) != nil
+                        } else {
+                            self.saveEnabled = false
+                        }
                     }
             } header: {
                 VStack(alignment: .leading, spacing: 0) {
@@ -30,6 +36,7 @@ struct InsertSecretView: View {
                     Text("Description about insert here. You must to insert secrent or any data of QR provided code.")
                     VStack(spacing: 6) {
                         Button(action: {
+                            KeychainStorage.save(rawURLs: [self.insertedText], with: Constants.WatchKeychain.service)
                             presentationMode.wrappedValue.dismiss()
                         }, label: {
                             HStack {
@@ -38,7 +45,7 @@ struct InsertSecretView: View {
                             }
                             .fontWeight(.medium)
                         })
-                        .disabled(!isValidSecret)
+                        .disabled(!saveEnabled)
                         .buttonStyle(.borderedProminent)
                         .tint(.accentColor)
                     }

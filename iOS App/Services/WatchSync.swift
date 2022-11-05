@@ -14,20 +14,10 @@ class WatchSync: NSObject, WCSessionDelegate {
     }
     
     static func updateContext() {
-        
         guard WCSession.default.activationState == .activated else { return }
-        
         var context: [String : Any] = [:]
-        
-        var decodedAccounts: [String] = []
-        for url in KeychainStorage.getRawURLs() {
-            decodedAccounts.append(url.absoluteString)
-        }
-        
-        context["accounts"] = decodedAccounts
-        
+        context["accounts"] = KeychainStorage.getRawURLs()
         print("WatchSync: \(#function)")
-        
         do {
             try WCSession.default.updateApplicationContext(context)
         } catch {
@@ -50,6 +40,11 @@ class WatchSync: NSObject, WCSessionDelegate {
         // Activate the new session after having switched to a new watch.
         // There is in the Apple's example.
         session.activate()
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        // Got message. All mesages its trigger for update, so just update context.
+        WatchSync.updateContext()
     }
     
     // MARK: - Singltone

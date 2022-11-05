@@ -112,6 +112,7 @@
 		F438F2D82915871500AD403E /* OTPCodeVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2D72915871500AD403E /* OTPCodeVisibility.swift */; };
 		F438F2D92915892C00AD403E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FDB494284A7539006C79A1 /* Localizable.strings */; };
 		F438F2DA2915893900AD403E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E712D28270A160039A4C0 /* Texts.swift */; };
+		F465604C2916BFB4007C203C /* Widget watchOS Extension Intent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4CBBEF2291662DC00FF955E /* Widget watchOS Extension Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F47CD2FD2865B064006367E9 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 		F4CBBECD291662D100FF955E /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA0FD291653B50060C876 /* Entry.swift */; };
 		F4CBBECE291662D100FF955E /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
@@ -135,7 +136,6 @@
 		F4CBBEEA291662DC00FF955E /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
 		F4CBBEEC291662DC00FF955E /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE47828ED757500097440 /* Intents.framework */; };
 		F4CBBEED291662DC00FF955E /* widgetExtensionImport in Frameworks */ = {isa = PBXBuildFile; productRef = F4CBBEE2291662DC00FF955E /* widgetExtensionImport */; };
-		F4CBBEF62916637E00FF955E /* Widget watchOS Extension Intent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4CBBEF2291662DC00FF955E /* Widget watchOS Extension Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F4CBBEF92916637E00FF955E /* Widget watchOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4CBBEDF291662D100FF955E /* Widget watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F4CBBEFF29166D9D00FF955E /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E713328270BC80039A4C0 /* KeychainStorage.swift */; };
 		F4CBBF0029166D9E00FF955E /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E713328270BC80039A4C0 /* KeychainStorage.swift */; };
@@ -174,7 +174,7 @@
 			remoteGlobalIDString = F438F2A329150B0B00AD403E;
 			remoteInfo = "watchOS App";
 		};
-		F4CBBEF72916637E00FF955E /* PBXContainerItemProxy */ = {
+		F465604D2916BFB4007C203C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EB4041462826F6E700C0BBCF /* Project object */;
 			proxyType = 1;
@@ -221,7 +221,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				F4CBBEF92916637E00FF955E /* Widget watchOS Extension.appex in Embed Foundation Extensions */,
-				F4CBBEF62916637E00FF955E /* Widget watchOS Extension Intent.appex in Embed Foundation Extensions */,
+				F465604C2916BFB4007C203C /* Widget watchOS Extension Intent.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,6 +760,7 @@
 				F438F2C829150B8600AD403E /* Resources */,
 				F438F2B229150B7200AD403E /* Scenes */,
 				F438F2B829150B7200AD403E /* Views */,
+				F46560FA2916CDB2007C203C /* Services */,
 				F438F2AC29150B0C00AD403E /* Preview Content */,
 			);
 			path = "watchOS App";
@@ -847,6 +848,13 @@
 				F4CBBEF42916632200FF955E /* watchOS-Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F46560FA2916CDB2007C203C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F4CBBF102916752B00FF955E /* Localisation */ = {
@@ -937,8 +945,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				F4CBBEF82916637E00FF955E /* PBXTargetDependency */,
 				F4CBBEFB2916637F00FF955E /* PBXTargetDependency */,
+				F465604E2916BFB4007C203C /* PBXTargetDependency */,
 			);
 			name = "watchOS App";
 			packageProductDependencies = (
@@ -1273,10 +1281,10 @@
 			target = F438F2A329150B0B00AD403E /* watchOS App */;
 			targetProxy = F438F2CB29150DD900AD403E /* PBXContainerItemProxy */;
 		};
-		F4CBBEF82916637E00FF955E /* PBXTargetDependency */ = {
+		F465604E2916BFB4007C203C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4CBBEE1291662DC00FF955E /* Widget watchOS Extension Intent */;
-			targetProxy = F4CBBEF72916637E00FF955E /* PBXContainerItemProxy */;
+			targetProxy = F465604D2916BFB4007C203C /* PBXContainerItemProxy */;
 		};
 		F4CBBEFB2916637F00FF955E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1501,10 +1509,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app need access to your camera to scan QR Code.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1533,10 +1542,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app need access to your camera to scan QR Code.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1565,11 +1575,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/iOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1595,11 +1605,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/iOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1623,11 +1633,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/iOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Intent;
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1651,11 +1661,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/iOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Intent;
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1682,13 +1692,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "watchOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOS App/Preview Content\"";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchOS App/Resources/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "watchOS App";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "io.sparrowcode.apps.otp-auth";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
@@ -1717,13 +1727,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "watchOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOS App/Preview Content\"";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchOS App/Resources/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "watchOS App";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "io.sparrowcode.apps.otp-auth";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
@@ -1751,11 +1761,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/watchOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1782,11 +1792,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/watchOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1811,11 +1821,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/watchOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Intent;
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1841,11 +1851,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/watchOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Intent;
+				INFOPLIST_KEY_CFBundleDisplayName = "OTP Auth";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -4,13 +4,17 @@ import OTP
 
 class DataProvider: ObservableObject {
     
-    @Published var accounts: [AccountModel] = []
+    @Published var syncedAccounts: [AccountModel] = []
+    @Published var localAccounts: [AccountModel] = []
     @Published var fromDate = Date()
     
     init() {
+        NotificationCenter.default.addObserver(self, selector: #selector(syncWithMainApp), name: .applicationContextDidReload, object: nil)
+        NotificationCenter.default.addObserver(forName: .changedAccounts, object: nil, queue: nil) { notification in
+            self.setAccountsToObservableProperties()
+        }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(syncData), name: .applicationContextDidReload, object: nil)
-        syncData()
+        setAccountsToObservableProperties()
         
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             let startMinuteDate = Date().start(of: .minute)
@@ -34,31 +38,35 @@ class DataProvider: ObservableObject {
         NotificationCenter.default.removeObserver(self)
     }
     
-    @objc func syncData() {
+    @objc func syncWithMainApp() {
         let context = WatchSync.getApplicationContext()
         let json = JSON(context)
         print("current is \(json)")
-        var newURLs: [URL] = []
+        var newURLs: [String] = []
         for value in json["accounts"].arrayValue {
-            if let string = value.string, let url = URL(string: string) {
-                newURLs.append(url)
+            if let string = value.string, let _ = URL(string: string) {
+                newURLs.append(string)
             }
         }
         
         // 1. Clean old values if it now present already
         let storageURLs = KeychainStorage.getRawURLs()
-        var urlsToDelete: [URL] = []
+        var urlsToDelete: [String] = []
         for url in storageURLs {
             if !newURLs.contains(url) {
                 urlsToDelete.append(url)
             }
         }
-        KeychainStorage.remove(rawURLs: urlsToDelete.map({ $0.absoluteString }))
+        KeychainStorage.remove(rawURLs: urlsToDelete)
         
         // 2. Adding new data
-        KeychainStorage.save(rawURLs: newURLs.map({ $0.absoluteString }))
+        KeychainStorage.save(rawURLs: newURLs)
         
-        // 3. Update data in app
-        self.accounts = KeychainStorage.getAccounts()
+        // 3. Both action trigger notification and update observable properties.
+    }
+    
+    private func setAccountsToObservableProperties() {
+        self.syncedAccounts = KeychainStorage.getAccounts(with: Constants.Keychain.service)
+        self.localAccounts = KeychainStorage.getAccounts(with: Constants.WatchKeychain.service)
     }
 }

@@ -19,6 +19,10 @@ class WatchSync: NSObject, WCSessionDelegate {
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         debug("WatchSync: \(#function) activationState: \(activationState.rawValue) error: \(String(describing: error?.localizedDescription))")
+        
+        // Trigger for update.
+        debug("WatchSync: Send empty message for trigger update data.")
+        session.sendMessage([:], replyHandler: nil)
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {

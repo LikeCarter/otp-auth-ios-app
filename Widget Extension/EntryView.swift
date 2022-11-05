@@ -166,7 +166,7 @@ struct EntryView : View {
 struct OTPWidgetEntryView_Preview: PreviewProvider {
     
     static var previews: some View {
-        EntryView(entry: .init(otpCode: "123 456", issuer: "sparrowcode.io", date: .now, configuration: SelectAccountIntent()))
+        EntryView(entry: .init(otpCode: "123456", issuer: "sparrowcode.io", date: .now, configuration: SelectAccountIntent()))
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }

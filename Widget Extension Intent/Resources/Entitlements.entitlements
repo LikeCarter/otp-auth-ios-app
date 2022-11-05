@@ -9,6 +9,7 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)io.sparrowcode.apps.otp-auth.keychain</string>
+		<string>$(AppIdentifierPrefix)io.sparrowcode.apps.otp-auth.watch.keychain</string>
 	</array>
 </dict>
 </plist>
