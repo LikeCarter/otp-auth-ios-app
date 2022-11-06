@@ -12,7 +12,6 @@ struct InsertSecretView: View {
             Section {
                 TextField(Texts.Shared.secret_code, text: $insertedText)
                     .autocorrectionDisabled()
-                    .textCase(.lowercase)
                     .onChange(of: insertedText) { newValue in
                         self.insertedText = newValue.trim
                         if let url = URL(string: self.insertedText) {

@@ -2,8 +2,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @AppStorage(Constants.ud_account_visible_id) var codeVisibleID = OTPCodeVisibility.all
     @ObservedObject var dataProvider = DataProvider()
-    
     @State private var showingAddCodeSheet = false
     @State private var showDeleteAlert = false
     
@@ -11,7 +11,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 List {
-                    if !dataProvider.syncedAccounts.isEmpty {
+                    if !dataProvider.syncedAccounts.isEmpty && (codeVisibleID != .onlyLocal) {
                         Section {
                             ForEach(dataProvider.syncedAccounts, id: \.self) { account in
                                 CodeView(
@@ -25,7 +25,7 @@ struct ContentView: View {
                             Text(Texts.HomeController.account_section_footer)
                         }
                     }
-                    if !dataProvider.localAccounts.isEmpty {
+                    if !dataProvider.localAccounts.isEmpty && (codeVisibleID != .onlySync) {
                         Section {
                             ForEach(dataProvider.localAccounts, id: \.self) { account in
                                 Button(action: {
@@ -52,6 +52,21 @@ struct ContentView: View {
                             Text(Texts.Watch.local_accounts_header)
                         } footer: {
                             Text(Texts.Watch.local_accounts_header)
+                        }
+                    }
+                    if dataProvider.syncedAccounts.isEmpty && dataProvider.localAccounts.isEmpty && codeVisibleID == .all {
+                        Section {} footer: {
+                            Text(Texts.Watch.no_any_accounts)
+                        }
+                    }
+                    if dataProvider.syncedAccounts.isEmpty && codeVisibleID == .onlySync {
+                        Section {} footer: {
+                            Text(Texts.Watch.no_any_sync_accounts)
+                        }
+                    }
+                    if dataProvider.localAccounts.isEmpty && codeVisibleID == .onlyLocal {
+                        Section {} footer: {
+                            Text(Texts.Watch.no_any_local_accounts)
                         }
                     }
                     Section {

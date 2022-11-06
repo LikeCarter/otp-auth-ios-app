@@ -3,7 +3,8 @@ import SwiftUI
 struct SettingsView: View {
     
     @AppStorage(Constants.ud_progress_show_key) var enabledProgress = true
-    @AppStorage(Constants.ud_progress_show_profile) var enabledProfile = false
+    @AppStorage(Constants.ud_show_profile) var enabledProfile = false
+    @AppStorage(Constants.ud_account_visible_id) var codeVisibleID = OTPCodeVisibility.all
     
     @State private var showCleanKeychainAlert = false
     
@@ -18,7 +19,20 @@ struct SettingsView: View {
             } header: {
                 
             } footer: {
-                Text(Texts.SettingsController.Password.cell)
+                Text(Texts.Watch.settings_accounts_show_in_complications_footer)
+            }
+            Section {
+                Picker(selection: $codeVisibleID) {
+                    ForEach(OTPCodeVisibility.allCases, id: \.self) {
+                        Text($0.localized)
+                    }
+                } label: {
+                    Text(Texts.Watch.settings_accounts_visible_title)
+                }
+            } header: {
+                
+            } footer: {
+                Text(Texts.Watch.settings_accounts_visible_footer)
             }
             Section {
                 HStack {

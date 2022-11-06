@@ -319,3 +319,77 @@
 /* No comment provided by engineer. */
 "shared unknown" = "Unbekannt";
 
+/* No comment provided by engineer. */
+"shared secret code" = "";
+
+/* No comment provided by engineer. */
+"watch add account" = "";
+
+/* No comment provided by engineer. */
+"watch code visible all" = "";
+
+/* No comment provided by engineer. */
+"watch code visible only local" = "";
+
+/* No comment provided by engineer. */
+"watch code visible only sync" = "";
+
+/* No comment provided by engineer. */
+"watch insert secret" = "";
+
+/* No comment provided by engineer. */
+"watch insert secret description" = "";
+
+/* No comment provided by engineer. */
+"watch local accounts description" = "";
+
+/* No comment provided by engineer. */
+"watch local accounts header" = "";
+
+/* No comment provided by engineer. */
+"watch no any accounts" = "";
+
+/* No comment provided by engineer. */
+"watch no any local accounts" = "";
+
+/* No comment provided by engineer. */
+"watch no any sync accounts" = "";
+
+/* No comment provided by engineer. */
+"watch settings accounts show in complications footer" = "";
+
+/* No comment provided by engineer. */
+"watch settings accounts show in complications title" = "";
+
+/* No comment provided by engineer. */
+"watch settings accounts visible footer" = "";
+
+/* No comment provided by engineer. */
+"watch settings accounts visible title" = "";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts action" = "";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts confirm description" = "";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts confirm title" = "";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts footer" = "";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts title" = "";
+
+/* No comment provided by engineer. */
+"watch settings progress footer" = "";
+
+/* No comment provided by engineer. */
+"watch settings progress title" = "";
+
+/* No comment provided by engineer. */
+"watch settings show profile footer" = "";
+
+/* No comment provided by engineer. */
+"watch settings show profile title" = "";

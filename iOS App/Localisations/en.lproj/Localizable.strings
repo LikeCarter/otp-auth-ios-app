@@ -314,8 +314,82 @@
 "shared ok" = "OK";
 
 /* No comment provided by engineer. */
+"shared secret code" = "Secret Code";
+
+/* No comment provided by engineer. */
 "shared try again" = "Try Again";
 
 /* No comment provided by engineer. */
 "shared unknown" = "Unknown";
 
+/* No comment provided by engineer. */
+"watch add account" = "Add Account";
+
+/* No comment provided by engineer. */
+"watch code visible all" = "All";
+
+/* No comment provided by engineer. */
+"watch code visible only local" = "Only Local";
+
+/* No comment provided by engineer. */
+"watch code visible only sync" = "Only Sync";
+
+/* No comment provided by engineer. */
+"watch insert secret" = "Insert Secret";
+
+/* No comment provided by engineer. */
+"watch insert secret description" = "Insert your url for parsing OTP code.";
+
+/* No comment provided by engineer. */
+"watch local accounts description" = "This accounts storage only localy and don't appear on other devices.";
+
+/* No comment provided by engineer. */
+"watch local accounts header" = "Local";
+
+/* No comment provided by engineer. */
+"watch no any accounts" = "No any accounts";
+
+/* No comment provided by engineer. */
+"watch no any local accounts" = "No any local accounts";
+
+/* No comment provided by engineer. */
+"watch no any sync accounts" = "No any sync accounts";
+
+/* No comment provided by engineer. */
+"watch settings accounts show in complications footer" = "If disabled, complication hide all OTP codes.";
+
+/* No comment provided by engineer. */
+"watch settings accounts show in complications title" = "Show in Complications";
+
+/* No comment provided by engineer. */
+"watch settings accounts visible footer" = "You can hide accounts from main app or local.";
+
+/* No comment provided by engineer. */
+"watch settings accounts visible title" = "Visible Accounts";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts action" = "Clean";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts confirm description" = "Will delete all local accounts.";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts confirm title" = "Clean All Local Accounts";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts footer" = "Will delete all local accounts.";
+
+/* No comment provided by engineer. */
+"watch settings clean local accounts title" = "Clean Local Accounts";
+
+/* No comment provided by engineer. */
+"watch settings progress footer" = "You can hide progress on home screen for all OTP codes.";
+
+/* No comment provided by engineer. */
+"watch settings progress title" = "Show Progress";
+
+/* No comment provided by engineer. */
+"watch settings show profile footer" = "You can add profile info to home screen cell.";
+
+/* No comment provided by engineer. */
+"watch settings show profile title" = "Show Profile";

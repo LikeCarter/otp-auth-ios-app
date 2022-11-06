@@ -8,7 +8,7 @@ struct CodeView: View {
     @State var progressColor: Color
     
     @AppStorage(Constants.ud_progress_show_key) var enabledProgress = true
-    @AppStorage(Constants.ud_progress_show_profile) var enabledProfile = false
+    @AppStorage(Constants.ud_show_profile) var enabledProfile = false
     
     private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     

@@ -4,7 +4,7 @@ tasks = ["code", "normalize"]
 [update.code]
 codePaths = ["iOS App/Data"]
 localizablePaths = ["iOS App/Localisations"]
-defaultToKeys = true
+defaultToKeys = false
 additive = false
 unstripped = false
 plistArguments = true

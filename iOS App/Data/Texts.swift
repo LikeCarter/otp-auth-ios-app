@@ -42,6 +42,14 @@ enum Texts {
         
         static var settings_accounts_show_in_complications_title: String { NSLocalizedString("watch settings accounts show in complications title", comment: "") }
         static var settings_accounts_show_in_complications_footer: String { NSLocalizedString("watch settings accounts show in complications footer", comment: "") }
+        
+        static var code_visible_all: String { NSLocalizedString("watch code visible all", comment: "") }
+        static var code_visible_only_local: String { NSLocalizedString("watch code visible only local", comment: "") }
+        static var code_visible_only_sync: String { NSLocalizedString("watch code visible only sync", comment: "") }
+        
+        static var no_any_local_accounts: String { NSLocalizedString("watch no any local accounts", comment: "") }
+        static var no_any_sync_accounts: String { NSLocalizedString("watch no any sync accounts", comment: "") }
+        static var no_any_accounts: String { NSLocalizedString("watch no any accounts", comment: "") }
     }
     
     enum Auth {
