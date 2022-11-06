@@ -13,6 +13,35 @@ enum Texts {
         static var OK: String { NSLocalizedString("shared ok", comment: "") }
         static var unknown: String { NSLocalizedString("shared unknown", comment: "") }
         static var try_again: String { NSLocalizedString("shared try again", comment: "") }
+        static var secret_code: String { NSLocalizedString("shared secret code", comment: "") }
+    }
+    
+    enum Watch {
+        
+        static var insert_secret: String { NSLocalizedString("watch insert secret", comment: "") }
+        static var insert_secret_description: String { NSLocalizedString("watch insert secret description", comment: "") }
+        static var add_account: String { NSLocalizedString("watch add account", comment: "") }
+        
+        static var local_accounts_header: String { NSLocalizedString("watch local accounts header", comment: "") }
+        static var local_accounts_description: String { NSLocalizedString("watch local accounts description", comment: "") }
+        
+        static var settings_progress_title: String { NSLocalizedString("watch settings progress title", comment: "") }
+        static var settings_progress_footer: String { NSLocalizedString("watch settings progress footer", comment: "") }
+        
+        static var settings_show_profile_title: String { NSLocalizedString("watch settings show profile title", comment: "") }
+        static var settings_show_profile_footer: String { NSLocalizedString("watch settings show profile footer", comment: "") }
+        
+        static var settings_clean_local_accounts_title: String { NSLocalizedString("watch settings clean local accounts title", comment: "") }
+        static var settings_clean_local_accounts_footer: String { NSLocalizedString("watch settings clean local accounts footer", comment: "") }
+        static var settings_clean_local_accounts_action: String { NSLocalizedString("watch settings clean local accounts action", comment: "") }
+        static var settings_clean_local_accounts_confirm_title: String { NSLocalizedString("watch settings clean local accounts confirm title", comment: "") }
+        static var settings_clean_local_accounts_confirm_description: String { NSLocalizedString("watch settings clean local accounts confirm description", comment: "") }
+        
+        static var settings_accounts_visible_title: String { NSLocalizedString("watch settings accounts visible title", comment: "") }
+        static var settings_accounts_visible_footer: String { NSLocalizedString("watch settings accounts visible footer", comment: "") }
+        
+        static var settings_accounts_show_in_complications_title: String { NSLocalizedString("watch settings accounts show in complications title", comment: "") }
+        static var settings_accounts_show_in_complications_footer: String { NSLocalizedString("watch settings accounts show in complications footer", comment: "") }
     }
     
     enum Auth {

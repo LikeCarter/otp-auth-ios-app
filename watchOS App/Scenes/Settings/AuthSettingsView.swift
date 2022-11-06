@@ -13,24 +13,24 @@ struct AuthSettingsView: View {
                         Text($0.rawValue)
                     }
                 } label: {
-                    Text("OTP Codes Visible")
+                    Text(Texts.Watch.settings_accounts_visible_title)
                 }
             } header: {
                 
             } footer: {
-                Text("Will hide a rpogress on main screen.")
+                Text(Texts.Watch.settings_accounts_visible_footer)
             }
             Section {
                 HStack {
-                    Toggle("Show in Complications", isOn: $showInComplications)
+                    Toggle(Texts.Watch.settings_accounts_show_in_complications_title, isOn: $showInComplications)
                 }
             } header: {
                 
             } footer: {
-                Text("Will hide a rpogress on main screen.")
+                Text(Texts.Watch.settings_accounts_show_in_complications_footer)
             }
         }
-        .navigationBarTitle("Authorisation")
+        .navigationBarTitle(Texts.SettingsController.Password.cell)
     }
 }
 

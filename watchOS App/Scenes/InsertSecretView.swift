@@ -10,7 +10,7 @@ struct InsertSecretView: View {
     var body: some View {
         List {
             Section {
-                TextField("Secret", text: $insertedText)
+                TextField(Texts.Shared.secret_code, text: $insertedText)
                     .autocorrectionDisabled()
                     .textCase(.lowercase)
                     .onChange(of: insertedText) { newValue in
@@ -26,14 +26,14 @@ struct InsertSecretView: View {
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(height: 8)
-                    Text("Insert Code")
+                    Text(Texts.Watch.insert_secret)
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(height: 0)
                 }
             } footer: {
                 VStack(spacing: 16) {
-                    Text("Description about insert here. You must to insert secrent or any data of QR provided code.")
+                    Text(Texts.Watch.insert_secret_description)
                     VStack(spacing: 6) {
                         Button(action: {
                             KeychainStorage.save(rawURLs: [self.insertedText], with: Constants.WatchKeychain.service)
@@ -41,7 +41,7 @@ struct InsertSecretView: View {
                         }, label: {
                             HStack {
                                 Image(systemName: "plus.circle.fill")
-                                Text("Add Code")
+                                Text(Texts.Watch.add_account)
                             }
                             .fontWeight(.medium)
                         })

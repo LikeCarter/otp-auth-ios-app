@@ -42,7 +42,7 @@ enum Settings {
     static var appTheme: AppTheme {
         get {
             let id = UserDefaults.standard.string(forKey: "app_theme") ?? .space
-            return AppTheme(rawValue: id) ?? .light
+            return AppTheme(rawValue: id) ?? .automatic
         }
         set {
             UserDefaults.standard.setValue(newValue.id, forKey: "app_theme")

@@ -14,10 +14,8 @@ enum AppThemeService {
         switch id {
         case AppTheme.automatic:
             sharedApp.delegate?.window??.overrideUserInterfaceStyle = .unspecified
-            
         case AppTheme.light:
             sharedApp.delegate?.window??.overrideUserInterfaceStyle = .light
-            
         case AppTheme.dark:
             sharedApp.delegate?.window??.overrideUserInterfaceStyle = .dark
             

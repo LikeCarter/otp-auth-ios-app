@@ -18,51 +18,51 @@ struct SettingsView: View {
             } header: {
                 
             } footer: {
-                Text("Will hide a rpogress on main screen.")
+                Text(Texts.SettingsController.Password.cell)
             }
             Section {
                 HStack {
-                    Toggle("Show Progress", isOn: $enabledProgress)
+                    Toggle(Texts.Watch.settings_progress_title, isOn: $enabledProgress)
                 }
             } header: {
                 
             } footer: {
-                Text("Will hide a rpogress on main screen.")
+                Text(Texts.Watch.settings_progress_footer)
             }
             Section {
                 HStack {
-                    Toggle("Show Progile", isOn: $enabledProfile)
+                    Toggle(Texts.Watch.settings_show_profile_title, isOn: $enabledProfile)
                 }
             } header: {
                 
             } footer: {
-                Text("Will hide a rpogress on main screen.")
+                Text(Texts.Watch.settings_show_profile_footer)
             }
             Section {
                 Button {
                     showCleanKeychainAlert = true
                 } label: {
-                    SettingsRowView(title: "Clean all local Keychain", systemName: "trash.circle.fill", backgroundIconColor: .red)
+                    SettingsRowView(title: Texts.Watch.settings_clean_local_accounts_title, systemName: "trash.circle.fill", backgroundIconColor: .red)
                 }
-                .alert("Confirm", isPresented: $showCleanKeychainAlert, actions: {
-                    Button("Clean All", role: .destructive, action: {
+                .alert(Texts.Watch.settings_clean_local_accounts_confirm_title, isPresented: $showCleanKeychainAlert, actions: {
+                    Button(Texts.Watch.settings_clean_local_accounts_action, role: .destructive, action: {
                         let urls = KeychainStorage.getRawURLs(with: Constants.WatchKeychain.service)
                         KeychainStorage.remove(rawURLs: urls, with: Constants.WatchKeychain.service)
                         showCleanKeychainAlert = false
                     })
-                    Button("Cancel", role: .cancel, action: {
+                    Button(Texts.Shared.cancel, role: .cancel, action: {
                         showCleanKeychainAlert = false
                     })
                 }) {
-                    Text("Comfirm deleting all accounts")
+                    Text(Texts.Watch.settings_clean_local_accounts_confirm_description)
                 }
 
             } header: {
                 
             } footer: {
-                Text("Will hide a rpogress on main screen.")
+                Text(Texts.Watch.settings_clean_local_accounts_footer)
             }
         }
-        .navigationTitle("Settings")
+        .navigationTitle(Texts.SettingsController.title)
     }
 }

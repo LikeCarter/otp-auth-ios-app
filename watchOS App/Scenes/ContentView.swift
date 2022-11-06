@@ -36,22 +36,22 @@ struct ContentView: View {
                                         fromDate: $dataProvider.fromDate
                                     )
                                 })
-                                .alert("Confirm", isPresented: $showDeleteAlert, presenting: account, actions: { account in
-                                    Button("Delete", role: .destructive, action: {
+                                .alert(Texts.HomeController.delete_alert_title, isPresented: $showDeleteAlert, presenting: account, actions: { account in
+                                    Button(Texts.Shared.delete, role: .destructive, action: {
                                         KeychainStorage.remove(rawURLs: [account.url.absoluteString], with: Constants.WatchKeychain.service)
                                         showDeleteAlert = false
                                     })
-                                    Button("Cancel", role: .cancel, action: {
+                                    Button(Texts.Shared.cancel, role: .cancel, action: {
                                         showDeleteAlert = false
                                     })
                                 }) { account in
-                                    Text("Comfirm deleting \(account.login)")
+                                    Text(Texts.HomeController.delete_alert_title)
                                 }
                             }
                         } header: {
-                            Text("Only at watch")
+                            Text(Texts.Watch.local_accounts_header)
                         } footer: {
-                            Text("Here local accounts.")
+                            Text(Texts.Watch.local_accounts_header)
                         }
                     }
                     Section {
