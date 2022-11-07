@@ -1489,7 +1489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1522,7 +1522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1555,7 +1555,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/iOS-Info.plist";
@@ -1585,7 +1585,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/iOS-Info.plist";
@@ -1613,7 +1613,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/iOS-Info.plist";
@@ -1641,7 +1641,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/iOS-Info.plist";
@@ -1672,7 +1672,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "watchOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
@@ -1707,7 +1707,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "watchOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
@@ -1741,7 +1741,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/watchOS-Info.plist";
@@ -1772,7 +1772,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/watchOS-Info.plist";
@@ -1801,7 +1801,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/watchOS-Info.plist";
@@ -1831,7 +1831,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/watchOS-Info.plist";

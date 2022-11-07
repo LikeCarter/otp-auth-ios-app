@@ -5,7 +5,6 @@ struct ContentView: View {
     @AppStorage(Constants.ud_account_visible_id) var codeVisibleID = OTPCodeVisibility.all
     @ObservedObject var dataProvider = DataProvider()
     @State private var showingAddCodeSheet = false
-    @State private var showDeleteAlert = false
     
     var body: some View {
         NavigationView {
@@ -28,25 +27,22 @@ struct ContentView: View {
                     if !dataProvider.localAccounts.isEmpty && (codeVisibleID != .onlySync) {
                         Section {
                             ForEach(dataProvider.localAccounts, id: \.self) { account in
-                                Button(action: {
-                                    showDeleteAlert = true
-                                }, label: {
-                                    CodeView(
-                                        account: account,
-                                        fromDate: $dataProvider.fromDate
-                                    )
-                                })
-                                .alert(Texts.HomeController.delete_alert_title, isPresented: $showDeleteAlert, presenting: account, actions: { account in
-                                    Button(Texts.Shared.delete, role: .destructive, action: {
-                                        KeychainStorage.remove(rawURLs: [account.url.absoluteString], with: Constants.WatchKeychain.service)
-                                        showDeleteAlert = false
-                                    })
-                                    Button(Texts.Shared.cancel, role: .cancel, action: {
-                                        showDeleteAlert = false
-                                    })
-                                }) { account in
-                                    Text(Texts.HomeController.delete_alert_title)
+                                CodeView(
+                                    account: account,
+                                    fromDate: $dataProvider.fromDate
+                                )
+                            }
+                            .onDelete { indexSet in
+                                var toDeleteAccounts: [AccountModel] = []
+                                indexSet.forEach { index in
+                                    if let account = dataProvider.localAccounts[safe: index] {
+                                        toDeleteAccounts.append(account)
+                                    }
                                 }
+                                KeychainStorage.remove(
+                                    rawURLs: toDeleteAccounts.map({ $0.url.absoluteString }),
+                                    with: Constants.WatchKeychain.service
+                                )
                             }
                         } header: {
                             Text(Texts.Watch.local_accounts_header)
