@@ -2,6 +2,10 @@ import XCTest
 
 final class iOSAppLaunchTests: XCTestCase {
 
+    override class var runsForEachTargetApplicationUIConfiguration: Bool {
+        true
+    }
+    
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
