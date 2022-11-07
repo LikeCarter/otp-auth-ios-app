@@ -314,82 +314,83 @@
 "shared ok" = "OK";
 
 /* No comment provided by engineer. */
+"shared secret code" = "Geheim Code";
+
+/* No comment provided by engineer. */
 "shared try again" = "Noch einmal versuchen";
 
 /* No comment provided by engineer. */
 "shared unknown" = "Unbekannt";
 
 /* No comment provided by engineer. */
-"shared secret code" = "";
+"watch add account" = "Konto hinzufügen";
 
 /* No comment provided by engineer. */
-"watch add account" = "";
+"watch code visible all" = "Alle";
 
 /* No comment provided by engineer. */
-"watch code visible all" = "";
+"watch code visible only local" = "Nur lokal";
 
 /* No comment provided by engineer. */
-"watch code visible only local" = "";
+"watch code visible only sync" = "Nur Sync";
 
 /* No comment provided by engineer. */
-"watch code visible only sync" = "";
+"watch insert secret" = "Geheimnis einfügen";
 
 /* No comment provided by engineer. */
-"watch insert secret" = "";
+"watch insert secret description" = "Fügen Sie Ihre Url für das Parsen des OTP-Codes ein.";
 
 /* No comment provided by engineer. */
-"watch insert secret description" = "";
+"watch local accounts description" = "Diese Konten werden nur lokal gespeichert und erscheinen nicht auf anderen Geräten.";
 
 /* No comment provided by engineer. */
-"watch local accounts description" = "";
+"watch local accounts header" = "Lokal";
 
 /* No comment provided by engineer. */
-"watch local accounts header" = "";
+"watch no any accounts" = "Keine Konten";
 
 /* No comment provided by engineer. */
-"watch no any accounts" = "";
+"watch no any local accounts" = "Keine lokalen Konten";
 
 /* No comment provided by engineer. */
-"watch no any local accounts" = "";
+"watch no any sync accounts" = "Keine Konten synchronisieren";
 
 /* No comment provided by engineer. */
-"watch no any sync accounts" = "";
+"watch settings accounts show in complications footer" = "Wenn deaktiviert, werden alle OTP-Codes ausgeblendet.";
 
 /* No comment provided by engineer. */
-"watch settings accounts show in complications footer" = "";
+"watch settings accounts show in complications title" = "In Komplikationen anzeigen";
 
 /* No comment provided by engineer. */
-"watch settings accounts show in complications title" = "";
+"watch settings accounts visible footer" = "Sie können Konten aus der Hauptanwendung oder lokal ausblenden.";
 
 /* No comment provided by engineer. */
-"watch settings accounts visible footer" = "";
+"watch settings accounts visible title" = "Sichtbare Konten";
 
 /* No comment provided by engineer. */
-"watch settings accounts visible title" = "";
+"watch settings clean local accounts action" = "Sauber";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts action" = "";
+"watch settings clean local accounts confirm description" = "Löscht alle lokalen Konten.";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts confirm description" = "";
+"watch settings clean local accounts confirm title" = "Alle lokalen Konten bereinigen";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts confirm title" = "";
+"watch settings clean local accounts footer" = "Löscht alle lokalen Konten.";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts footer" = "";
+"watch settings clean local accounts title" = "Lokale Konten bereinigen";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts title" = "";
+"watch settings progress footer" = "Sie können den Fortschritt auf dem Startbildschirm für alle OTP-Codes ausblenden.";
 
 /* No comment provided by engineer. */
-"watch settings progress footer" = "";
+"watch settings progress title" = "Fortschritt anzeigen";
 
 /* No comment provided by engineer. */
-"watch settings progress title" = "";
+"watch settings show profile footer" = "Sie können der Startbildschirmzelle Profilinformationen hinzufügen.";
 
 /* No comment provided by engineer. */
-"watch settings show profile footer" = "";
+"watch settings show profile title" = "Profil Arbeitgebern anzeigen";
 
-/* No comment provided by engineer. */
-"watch settings show profile title" = "";

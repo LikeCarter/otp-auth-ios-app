@@ -314,82 +314,83 @@
 "shared ok" = "ДОБРЕ";
 
 /* No comment provided by engineer. */
+"shared secret code" = "Секретний код";
+
+/* No comment provided by engineer. */
 "shared try again" = "Спробуйте ще раз";
 
 /* No comment provided by engineer. */
 "shared unknown" = "Невідомо";
 
 /* No comment provided by engineer. */
-"shared secret code" = "";
+"watch add account" = "Додати обліковий запис";
 
 /* No comment provided by engineer. */
-"watch add account" = "";
+"watch code visible all" = "Всі";
 
 /* No comment provided by engineer. */
-"watch code visible all" = "";
+"watch code visible only local" = "Тільки місцевий";
 
 /* No comment provided by engineer. */
-"watch code visible only local" = "";
+"watch code visible only sync" = "Тільки синхронізація";
 
 /* No comment provided by engineer. */
-"watch code visible only sync" = "";
+"watch insert secret" = "Вставити секрет";
 
 /* No comment provided by engineer. */
-"watch insert secret" = "";
+"watch insert secret description" = "Вставте свій url для розбору OTP коду.";
 
 /* No comment provided by engineer. */
-"watch insert secret description" = "";
+"watch local accounts description" = "Ці облікові записи зберігаються тільки локально і не відображаються на інших пристроях.";
 
 /* No comment provided by engineer. */
-"watch local accounts description" = "";
+"watch local accounts header" = "Локальний";
 
 /* No comment provided by engineer. */
-"watch local accounts header" = "";
+"watch no any accounts" = "Відсутні будь-які рахунки";
 
 /* No comment provided by engineer. */
-"watch no any accounts" = "";
+"watch no any local accounts" = "Немає жодних місцевих рахунків";
 
 /* No comment provided by engineer. */
-"watch no any local accounts" = "";
+"watch no any sync accounts" = "Відсутність будь-яких синхронізованих рахунків";
 
 /* No comment provided by engineer. */
-"watch no any sync accounts" = "";
+"watch settings accounts show in complications footer" = "Якщо відключено, ускладнення приховує всі коди OTP.";
 
 /* No comment provided by engineer. */
-"watch settings accounts show in complications footer" = "";
+"watch settings accounts show in complications title" = "Показати в Ускладненнях";
 
 /* No comment provided by engineer. */
-"watch settings accounts show in complications title" = "";
+"watch settings accounts visible footer" = "Ви можете приховати облікові записи з основного або локального додатку.";
 
 /* No comment provided by engineer. */
-"watch settings accounts visible footer" = "";
+"watch settings accounts visible title" = "Видимі рахунки";
 
 /* No comment provided by engineer. */
-"watch settings accounts visible title" = "";
+"watch settings clean local accounts action" = "Чисті";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts action" = "";
+"watch settings clean local accounts confirm description" = "Видалить всі локальні облікові записи.";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts confirm description" = "";
+"watch settings clean local accounts confirm title" = "Очистити всі локальні облікові записи";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts confirm title" = "";
+"watch settings clean local accounts footer" = "Видалить всі локальні облікові записи.";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts footer" = "";
+"watch settings clean local accounts title" = "Чисті місцеві рахунки";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts title" = "";
+"watch settings progress footer" = "Ви можете приховати прогрес на головному екрані для всіх OTP-кодів.";
 
 /* No comment provided by engineer. */
-"watch settings progress footer" = "";
+"watch settings progress title" = "Показати прогрес";
 
 /* No comment provided by engineer. */
-"watch settings progress title" = "";
+"watch settings show profile footer" = "Ви можете додати інформацію про профіль в комірку домашнього екрану.";
 
 /* No comment provided by engineer. */
-"watch settings show profile footer" = "";
+"watch settings show profile title" = "Показати профіль";
 
-/* No comment provided by engineer. */
-"watch settings show profile title" = "";

@@ -314,82 +314,83 @@
 "shared ok" = "OK";
 
 /* No comment provided by engineer. */
+"shared secret code" = "Секретный код";
+
+/* No comment provided by engineer. */
 "shared try again" = "Попробовать снова";
 
 /* No comment provided by engineer. */
 "shared unknown" = "Неизвестно";
 
 /* No comment provided by engineer. */
-"shared secret code" = "";
+"watch add account" = "Добавить аккаунт";
 
 /* No comment provided by engineer. */
-"watch add account" = "";
+"watch code visible all" = "Все";
 
 /* No comment provided by engineer. */
-"watch code visible all" = "";
+"watch code visible only local" = "Локальные";
 
 /* No comment provided by engineer. */
-"watch code visible only local" = "";
+"watch code visible only sync" = "Синхронизируемые";
 
 /* No comment provided by engineer. */
-"watch code visible only sync" = "";
+"watch insert secret" = "Введите секретный код";
 
 /* No comment provided by engineer. */
-"watch insert secret" = "";
+"watch insert secret description" = "Введите ваш URL для получения OTP кода.";
 
 /* No comment provided by engineer. */
-"watch insert secret description" = "";
+"watch local accounts description" = "Эти аккаунты хранятся локально и не отображаются на других устройствах.";
 
 /* No comment provided by engineer. */
-"watch local accounts description" = "";
+"watch local accounts header" = "Локальные";
 
 /* No comment provided by engineer. */
-"watch local accounts header" = "";
+"watch no any accounts" = "Нет Аккаунтов";
 
 /* No comment provided by engineer. */
-"watch no any accounts" = "";
+"watch no any local accounts" = "Нет локальных аккаунтов";
 
 /* No comment provided by engineer. */
-"watch no any local accounts" = "";
+"watch no any sync accounts" = "Нет синхронизированных аккаунтов";
 
 /* No comment provided by engineer. */
-"watch no any sync accounts" = "";
+"watch settings accounts show in complications footer" = "Если отслеживание выключено, все OTP коды будут скрыты.";
 
 /* No comment provided by engineer. */
-"watch settings accounts show in complications footer" = "";
+"watch settings accounts show in complications title" = "Показывать в разделе «Отслеживаемое»";
 
 /* No comment provided by engineer. */
-"watch settings accounts show in complications title" = "";
+"watch settings accounts visible footer" = "Вы можете скрыть локальные аккаунты или аккаунты из основного приложения.";
 
 /* No comment provided by engineer. */
-"watch settings accounts visible footer" = "";
+"watch settings accounts visible title" = "Отображаемые Аккаунты";
 
 /* No comment provided by engineer. */
-"watch settings accounts visible title" = "";
+"watch settings clean local accounts action" = "Очистить";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts action" = "";
+"watch settings clean local accounts confirm description" = "Все локальные аккаунты будут удалены.";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts confirm description" = "";
+"watch settings clean local accounts confirm title" = "Удалить все локальные аккаунты";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts confirm title" = "";
+"watch settings clean local accounts footer" = "Все локальные аккаунты будут удалены.";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts footer" = "";
+"watch settings clean local accounts title" = "Удалить локальные аккаунты";
 
 /* No comment provided by engineer. */
-"watch settings clean local accounts title" = "";
+"watch settings progress footer" = "Вы можете скрыть время для всех OTP-кодов на главном экране.";
 
 /* No comment provided by engineer. */
-"watch settings progress footer" = "";
+"watch settings progress title" = "Показать Таймер";
 
 /* No comment provided by engineer. */
-"watch settings progress title" = "";
+"watch settings show profile footer" = "Отобразите информацию о профиле в ячейке на главном экране.";
 
 /* No comment provided by engineer. */
-"watch settings show profile footer" = "";
+"watch settings show profile title" = "Показать Профиль";
 
-/* No comment provided by engineer. */
-"watch settings show profile title" = "";
