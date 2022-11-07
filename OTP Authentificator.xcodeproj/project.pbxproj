@@ -92,6 +92,8 @@
 		F42361722914F99B00313B1E /* iOSAppImport in Frameworks */ = {isa = PBXBuildFile; productRef = F42361712914F99B00313B1E /* iOSAppImport */; };
 		F42361762914FA0400313B1E /* widgetExtensionImport in Frameworks */ = {isa = PBXBuildFile; productRef = F42361752914FA0400313B1E /* widgetExtensionImport */; };
 		F42361782914FA0A00313B1E /* widgetExtensionImport in Frameworks */ = {isa = PBXBuildFile; productRef = F42361772914FA0A00313B1E /* widgetExtensionImport */; };
+		F42A0268291949A700409B61 /* iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A0267291949A700409B61 /* iOSAppTests.swift */; };
+		F42A026A291949A700409B61 /* iOSAppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A0269291949A700409B61 /* iOSAppLaunchTests.swift */; };
 		F438F2A729150B0B00AD403E /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2A629150B0B00AD403E /* WatchApp.swift */; };
 		F438F2AB29150B0C00AD403E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F438F2AA29150B0C00AD403E /* Assets.xcassets */; };
 		F438F2BD29150B7200AD403E /* InsertSecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438F2B329150B7200AD403E /* InsertSecretView.swift */; };
@@ -165,6 +167,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F41FE48728ED758F00097440;
 			remoteInfo = Intent;
+		};
+		F42A026B291949A700409B61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4041462826F6E700C0BBCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB40414D2826F6E700C0BBCF;
+			remoteInfo = "iOS App";
 		};
 		F438F2CB29150DD900AD403E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -319,6 +328,9 @@
 		F41FE4BB28ED8F9300097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F423616B2914F01D00313B1E /* WatchSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSync.swift; sourceTree = "<group>"; };
 		F42361702914F95500313B1E /* Imports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Imports; sourceTree = "<group>"; };
+		F42A0265291949A700409B61 /* iOS App Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS App Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42A0267291949A700409B61 /* iOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppTests.swift; sourceTree = "<group>"; };
+		F42A0269291949A700409B61 /* iOSAppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppLaunchTests.swift; sourceTree = "<group>"; };
 		F435FA8528F6D46800F664A0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F438F2A429150B0B00AD403E /* watchOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F438F2A629150B0B00AD403E /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
@@ -397,6 +409,13 @@
 			files = (
 				F41FE48928ED758F00097440 /* Intents.framework in Frameworks */,
 				F42361762914FA0400313B1E /* widgetExtensionImport in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42A0262291949A600409B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +581,7 @@
 			children = (
 				F42361702914F95500313B1E /* Imports */,
 				EB4041502826F6E700C0BBCF /* iOS App */,
+				F42A0266291949A700409B61 /* iOS App Tests */,
 				F438F2A529150B0B00AD403E /* watchOS App */,
 				F41FE45E28ED677600097440 /* Widget Extension */,
 				F41FE48A28ED758F00097440 /* Widget Extension Intent */,
@@ -579,6 +599,7 @@
 				F438F2A429150B0B00AD403E /* watchOS App.app */,
 				F4CBBEDF291662D100FF955E /* Widget watchOS Extension.appex */,
 				F4CBBEF2291662DC00FF955E /* Widget watchOS Extension Intent.appex */,
+				F42A0265291949A700409B61 /* iOS App Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -744,6 +765,15 @@
 				F4CBBF0B2916751B00FF955E /* InfoPlist.strings */,
 			);
 			path = Localisation;
+			sourceTree = "<group>";
+		};
+		F42A0266291949A700409B61 /* iOS App Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F42A0267291949A700409B61 /* iOSAppTests.swift */,
+				F42A0269291949A700409B61 /* iOSAppLaunchTests.swift */,
+			);
+			path = "iOS App Tests";
 			sourceTree = "<group>";
 		};
 		F438F2A529150B0B00AD403E /* watchOS App */ = {
@@ -914,6 +944,24 @@
 			productReference = F41FE48828ED758F00097440 /* Widget iOS Extension Intent.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F42A0264291949A600409B61 /* iOS App Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42A026F291949A700409B61 /* Build configuration list for PBXNativeTarget "iOS App Tests" */;
+			buildPhases = (
+				F42A0261291949A600409B61 /* Sources */,
+				F42A0262291949A600409B61 /* Frameworks */,
+				F42A0263291949A600409B61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42A026C291949A700409B61 /* PBXTargetDependency */,
+			);
+			name = "iOS App Tests";
+			productName = "iOS App Tests";
+			productReference = F42A0265291949A700409B61 /* iOS App Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F438F2A329150B0B00AD403E /* watchOS App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F438F2B129150B0C00AD403E /* Build configuration list for PBXNativeTarget "watchOS App" */;
@@ -996,6 +1044,10 @@
 					F41FE48728ED758F00097440 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
+					F42A0264291949A600409B61 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EB40414D2826F6E700C0BBCF;
+					};
 					F438F2A329150B0B00AD403E = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -1026,6 +1078,7 @@
 				F438F2A329150B0B00AD403E /* watchOS App */,
 				F4CBBECA291662D100FF955E /* Widget watchOS Extension */,
 				F4CBBEE1291662DC00FF955E /* Widget watchOS Extension Intent */,
+				F42A0264291949A600409B61 /* iOS App Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -1057,6 +1110,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F41FE48628ED758F00097440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42A0263291949A600409B61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1186,6 +1246,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F42A0261291949A600409B61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42A026A291949A700409B61 /* iOSAppLaunchTests.swift in Sources */,
+				F42A0268291949A700409B61 /* iOSAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F438F2A029150B0B00AD403E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1255,6 +1324,11 @@
 			isa = PBXTargetDependency;
 			target = F41FE48728ED758F00097440 /* Widget iOS Extension Intent */;
 			targetProxy = F41FE49528ED75E400097440 /* PBXContainerItemProxy */;
+		};
+		F42A026C291949A700409B61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB40414D2826F6E700C0BBCF /* iOS App */;
+			targetProxy = F42A026B291949A700409B61 /* PBXContainerItemProxy */;
 		};
 		F438F2CC29150DD900AD403E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1663,6 +1737,44 @@
 			};
 			name = Release;
 		};
+		F42A026D291949A700409B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SMW75QLFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.iOS-App-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS App";
+			};
+			name = Debug;
+		};
+		F42A026E291949A700409B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SMW75QLFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.iOS-App-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS App";
+			};
+			name = Release;
+		};
 		F438F2AF29150B0C00AD403E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1890,6 +2002,15 @@
 			buildConfigurations = (
 				F41FE49228ED758F00097440 /* Debug */,
 				F41FE49328ED758F00097440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42A026F291949A700409B61 /* Build configuration list for PBXNativeTarget "iOS App Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42A026D291949A700409B61 /* Debug */,
+				F42A026E291949A700409B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
