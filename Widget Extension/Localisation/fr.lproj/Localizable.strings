@@ -6,6 +6,6 @@
 
 "configuration description" = "Vous verrez les codes de la logique sans exécuter l'application.";
 
-"widget open app title" = "Open App";
+"widget open app title" = "Ouvrir l'application";
 
-"widget open app description" = "Show OTP codes shortcut.";
+"widget open app description" = "Raccourci Afficher les codes OTP.";

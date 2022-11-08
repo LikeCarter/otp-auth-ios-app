@@ -6,6 +6,6 @@
 
 "configuration description" = "Коди видно без запуску програми.";
 
-"widget open app title" = "Open App";
+"widget open app title" = "Відкрити Додаток";
 
-"widget open app description" = "Show OTP codes shortcut.";
+"widget open app description" = "Швидкий доступ до кодів OTP.";
