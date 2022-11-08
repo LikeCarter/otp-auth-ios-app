@@ -11,12 +11,12 @@ struct OTPCodeWidget: Widget {
         IntentConfiguration(
             kind: kind,
             intent: SelectAccountIntent.self,
-            provider: Provider()
+            provider: OTPCodeProvider()
         ) { entry in
-            EntryView(entry: entry)
+            OTPCodeEntryView(entry: entry)
         }
-        .configurationDisplayName(Texts.widget_title)
-        .description(Texts.widget_description)
+        .configurationDisplayName(Texts.widget_otp_code_title)
+        .description(Texts.widget_otp_code_description)
         .supportedFamilies(supportedFamilies)
     }
     
@@ -27,14 +27,5 @@ struct OTPCodeWidget: Widget {
         #if os(watchOS)
         return [.accessoryRectangular, .accessoryCircular, .accessoryInline]
         #endif
-    }
-}
-
-@main
-struct SwiftWidgetsBundle: WidgetBundle {
-    
-    @WidgetBundleBuilder
-    var body: some Widget {
-        OTPCodeWidget()
     }
 }

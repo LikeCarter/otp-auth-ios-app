@@ -2,6 +2,10 @@
 
 "not supported" = "Nicht unterstützt";
 
-"configuration name" = "OTP Codes";
+"configuration name" = "OTP Code";
 
 "configuration description" = "Sie werden Codes für die Logik sehen, ohne dass die Anwendung läuft.";
+
+"widget open app title" = "Open App";
+
+"widget open app description" = "Show OTP codes shortcut.";

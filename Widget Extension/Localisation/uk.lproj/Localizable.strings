@@ -2,6 +2,10 @@
 
 "not supported" = "Не підтримується";
 
-"configuration name" = "OTP Коди";
+"configuration name" = "OTP Код";
 
 "configuration description" = "Коди видно без запуску програми.";
+
+"widget open app title" = "Open App";
+
+"widget open app description" = "Show OTP codes shortcut.";

@@ -5,24 +5,26 @@ import Intents
 import SwiftBoost
 import OTP
 
-struct Provider: IntentTimelineProvider {
+struct OTPCodeProvider: IntentTimelineProvider {
     
     func recommendations() -> [IntentRecommendation<SelectAccountIntent>] {
-        var recommendations: [IntentRecommendation<SelectAccountIntent>] = []
+        return []
+        // Widget not appear immidiatly on iOS if it enabled.
+        /*var recommendations: [IntentRecommendation<SelectAccountIntent>] = []
         for account in KeychainStorage.getAccounts() {
             let intent = SelectAccountIntent()
             intent.account = convertToIntentAccount(account)
             let recomendation = IntentRecommendation(intent: intent, description: "Text Description \(account.issuer)")
             recommendations.append(recomendation)
         }
-        return recommendations
+        return recommendations*/
     }
     
     var dataHidden: Bool {
         return (UserDefaults(suiteName: "group.io.sparrowcode.apps.otp-auth")?.bool(forKey: "hideWidgetData") ?? false)
     }
     
-    func placeholder(in context: Context) -> Entry {
+    func placeholder(in context: Context) -> OTPCodeEntry {
         Entry(
             otpCode: defaultCode,
             issuer: "sparrowcode.io",
@@ -31,7 +33,7 @@ struct Provider: IntentTimelineProvider {
         )
     }
     
-    func getSnapshot(for configuration: SelectAccountIntent, in context: Context, completion: @escaping (Entry) -> ()) {
+    func getSnapshot(for configuration: SelectAccountIntent, in context: Context, completion: @escaping (OTPCodeEntry) -> ()) {
         let entry = Entry(
             otpCode: defaultCode,
             issuer: "sparrowcode.io",
@@ -41,7 +43,7 @@ struct Provider: IntentTimelineProvider {
         completion(entry)
     }
     
-    func getTimeline(for configuration: SelectAccountIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: SelectAccountIntent, in context: Context, completion: @escaping (Timeline<OTPCodeEntry>) -> ()) {
         var entries: [Entry] = []
         let currentDate = Date().start(of: .minute)
         for codeIndex in 0...60 {

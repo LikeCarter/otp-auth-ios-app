@@ -71,10 +71,10 @@
 		EBE84F43283590850079771F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE84F42283590850079771F /* SettingsController.swift */; };
 		F41FE45B28ED677600097440 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE45A28ED677600097440 /* WidgetKit.framework */; };
 		F41FE45D28ED677600097440 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE45C28ED677600097440 /* SwiftUI.framework */; };
-		F41FE46028ED677600097440 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE45F28ED677600097440 /* Widget.swift */; };
+		F41FE46028ED677600097440 /* OTPCodeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE45F28ED677600097440 /* OTPCodeWidget.swift */; };
 		F41FE46328ED677700097440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41FE46228ED677700097440 /* Assets.xcassets */; };
 		F41FE46928ED677700097440 /* Widget iOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F41FE45928ED677600097440 /* Widget iOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F41FE47028ED67AC00097440 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE46E28ED678600097440 /* Provider.swift */; };
+		F41FE47028ED67AC00097440 /* OTPCodeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE46E28ED678600097440 /* OTPCodeProvider.swift */; };
 		F41FE48928ED758F00097440 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE47828ED757500097440 /* Intents.framework */; };
 		F41FE48C28ED758F00097440 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE48B28ED758F00097440 /* IntentHandler.swift */; };
 		F41FE49428ED75E400097440 /* Widget iOS Extension Intent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F41FE48828ED758F00097440 /* Widget iOS Extension Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -85,13 +85,23 @@
 		F41FE4A428ED7C7300097440 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4A228ED7C6800097440 /* Settings.swift */; };
 		F41FE4A828ED814B00097440 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 		F41FE4A928ED81AB00097440 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
-		F41FE4AB28ED871700097440 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AA28ED871700097440 /* EntryView.swift */; };
+		F41FE4AB28ED871700097440 /* OTPCodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AA28ED871700097440 /* OTPCodeEntryView.swift */; };
 		F41FE4B628ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
 		F41FE4B728ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
 		F423616F2914F87500313B1E /* WatchSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423616B2914F01D00313B1E /* WatchSync.swift */; };
 		F42361722914F99B00313B1E /* iOSAppImport in Frameworks */ = {isa = PBXBuildFile; productRef = F42361712914F99B00313B1E /* iOSAppImport */; };
 		F42361762914FA0400313B1E /* widgetExtensionImport in Frameworks */ = {isa = PBXBuildFile; productRef = F42361752914FA0400313B1E /* widgetExtensionImport */; };
 		F42361782914FA0A00313B1E /* widgetExtensionImport in Frameworks */ = {isa = PBXBuildFile; productRef = F42361772914FA0A00313B1E /* widgetExtensionImport */; };
+		F423E4BC291AC78000991EBE /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4BB291AC78000991EBE /* WidgetsBundle.swift */; };
+		F423E4BD291AC78000991EBE /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4BB291AC78000991EBE /* WidgetsBundle.swift */; };
+		F423E4BF291AC7A500991EBE /* OpenAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4BE291AC7A500991EBE /* OpenAppWidget.swift */; };
+		F423E4C0291AC7A500991EBE /* OpenAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4BE291AC7A500991EBE /* OpenAppWidget.swift */; };
+		F423E4C4291ACA4300991EBE /* OpenAppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4C3291ACA4300991EBE /* OpenAppEntry.swift */; };
+		F423E4C5291ACA4300991EBE /* OpenAppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4C3291ACA4300991EBE /* OpenAppEntry.swift */; };
+		F423E4C7291ACB4000991EBE /* OpenAppEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4C6291ACB4000991EBE /* OpenAppEntryView.swift */; };
+		F423E4C8291ACB4000991EBE /* OpenAppEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4C6291ACB4000991EBE /* OpenAppEntryView.swift */; };
+		F423E4CA291ACBAB00991EBE /* OpenAppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4C9291ACBAB00991EBE /* OpenAppProvider.swift */; };
+		F423E4CB291ACBAB00991EBE /* OpenAppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423E4C9291ACBAB00991EBE /* OpenAppProvider.swift */; };
 		F42A0268291949A700409B61 /* iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A0267291949A700409B61 /* iOSAppTests.swift */; };
 		F42A026A291949A700409B61 /* iOSAppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A0269291949A700409B61 /* iOSAppLaunchTests.swift */; };
 		F42A02772919872700409B61 /* watchOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A02762919872700409B61 /* watchOSAppTests.swift */; };
@@ -117,13 +127,13 @@
 		F438F2DA2915893900AD403E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E712D28270A160039A4C0 /* Texts.swift */; };
 		F465604C2916BFB4007C203C /* Widget watchOS Extension Intent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4CBBEF2291662DC00FF955E /* Widget watchOS Extension Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F47CD2FD2865B064006367E9 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
-		F4CBBECD291662D100FF955E /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA0FD291653B50060C876 /* Entry.swift */; };
+		F4CBBECD291662D100FF955E /* OTPCodeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA0FD291653B50060C876 /* OTPCodeEntry.swift */; };
 		F4CBBECE291662D100FF955E /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
 		F4CBBECF291662D100FF955E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AC28ED8BDB00097440 /* Texts.swift */; };
 		F4CBBED0291662D100FF955E /* WidgetIndents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4B928ED8F8F00097440 /* WidgetIndents.intentdefinition */; };
-		F4CBBED1291662D100FF955E /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE46E28ED678600097440 /* Provider.swift */; };
-		F4CBBED2291662D100FF955E /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AA28ED871700097440 /* EntryView.swift */; };
-		F4CBBED3291662D100FF955E /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE45F28ED677600097440 /* Widget.swift */; };
+		F4CBBED1291662D100FF955E /* OTPCodeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE46E28ED678600097440 /* OTPCodeProvider.swift */; };
+		F4CBBED2291662D100FF955E /* OTPCodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE4AA28ED871700097440 /* OTPCodeEntryView.swift */; };
+		F4CBBED3291662D100FF955E /* OTPCodeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FE45F28ED677600097440 /* OTPCodeWidget.swift */; };
 		F4CBBED4291662D100FF955E /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
 		F4CBBED6291662D100FF955E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE45C28ED677600097440 /* SwiftUI.framework */; };
 		F4CBBED7291662D100FF955E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41FE45A28ED677600097440 /* WidgetKit.framework */; };
@@ -152,7 +162,7 @@
 		F4DFA0FA291646BC0060C876 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E713128270A6C0039A4C0 /* Constants.swift */; };
 		F4DFA0FB29164AEA0060C876 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DC4D2857F02100BD6F4C /* URLExtension.swift */; };
 		F4DFA0FC291653780060C876 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CD2FC2865B064006367E9 /* Base32.swift */; };
-		F4DFA0FE291653B50060C876 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA0FD291653B50060C876 /* Entry.swift */; };
+		F4DFA0FE291653B50060C876 /* OTPCodeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA0FD291653B50060C876 /* OTPCodeEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -318,10 +328,10 @@
 		F41FE45928ED677600097440 /* Widget iOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget iOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41FE45A28ED677600097440 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F41FE45C28ED677600097440 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		F41FE45F28ED677600097440 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		F41FE45F28ED677600097440 /* OTPCodeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeWidget.swift; sourceTree = "<group>"; };
 		F41FE46228ED677700097440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41FE46428ED677700097440 /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
-		F41FE46E28ED678600097440 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		F41FE46E28ED678600097440 /* OTPCodeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeProvider.swift; sourceTree = "<group>"; };
 		F41FE47828ED757500097440 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		F41FE48828ED758F00097440 /* Widget iOS Extension Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget iOS Extension Intent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41FE48B28ED758F00097440 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -330,13 +340,18 @@
 		F41FE49C28ED7B8E00097440 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		F41FE49D28ED7BC400097440 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		F41FE4A228ED7C6800097440 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		F41FE4AA28ED871700097440 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		F41FE4AA28ED871700097440 /* OTPCodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeEntryView.swift; sourceTree = "<group>"; };
 		F41FE4AC28ED8BDB00097440 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		F41FE4B228ED8C6F00097440 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F41FE4B428ED8C7100097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F41FE4BB28ED8F9300097440 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F423616B2914F01D00313B1E /* WatchSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSync.swift; sourceTree = "<group>"; };
 		F42361702914F95500313B1E /* Imports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Imports; sourceTree = "<group>"; };
+		F423E4BB291AC78000991EBE /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
+		F423E4BE291AC7A500991EBE /* OpenAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppWidget.swift; sourceTree = "<group>"; };
+		F423E4C3291ACA4300991EBE /* OpenAppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppEntry.swift; sourceTree = "<group>"; };
+		F423E4C6291ACB4000991EBE /* OpenAppEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppEntryView.swift; sourceTree = "<group>"; };
+		F423E4C9291ACBAB00991EBE /* OpenAppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppProvider.swift; sourceTree = "<group>"; };
 		F42A0265291949A700409B61 /* iOS App Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS App Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42A0267291949A700409B61 /* iOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppTests.swift; sourceTree = "<group>"; };
 		F42A0269291949A700409B61 /* iOSAppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppLaunchTests.swift; sourceTree = "<group>"; };
@@ -393,7 +408,7 @@
 		F4D41EA52900302B00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4D41EA82900303A00DA4979 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
 		F4D41EAA2900303C00DA4979 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/WidgetIndents.strings; sourceTree = "<group>"; };
-		F4DFA0FD291653B50060C876 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		F4DFA0FD291653B50060C876 /* OTPCodeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -758,13 +773,12 @@
 		F41FE45E28ED677600097440 /* Widget Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F423E4BB291AC78000991EBE /* WidgetsBundle.swift */,
+				F423E4C2291AC7D000991EBE /* OTPCode */,
+				F423E4C1291AC7AC00991EBE /* OpenApp */,
 				F438F2DE2915B62D00AD403E /* Resources */,
 				F41FE4AE28ED8C6300097440 /* Localisation */,
-				F41FE45F28ED677600097440 /* Widget.swift */,
-				F41FE4AA28ED871700097440 /* EntryView.swift */,
-				F41FE46E28ED678600097440 /* Provider.swift */,
 				F41FE4AC28ED8BDB00097440 /* Texts.swift */,
-				F4DFA0FD291653B50060C876 /* Entry.swift */,
 			);
 			path = "Widget Extension";
 			sourceTree = "<group>";
@@ -786,6 +800,28 @@
 				F4CBBF0B2916751B00FF955E /* InfoPlist.strings */,
 			);
 			path = Localisation;
+			sourceTree = "<group>";
+		};
+		F423E4C1291AC7AC00991EBE /* OpenApp */ = {
+			isa = PBXGroup;
+			children = (
+				F423E4BE291AC7A500991EBE /* OpenAppWidget.swift */,
+				F423E4C6291ACB4000991EBE /* OpenAppEntryView.swift */,
+				F423E4C9291ACBAB00991EBE /* OpenAppProvider.swift */,
+				F423E4C3291ACA4300991EBE /* OpenAppEntry.swift */,
+			);
+			path = OpenApp;
+			sourceTree = "<group>";
+		};
+		F423E4C2291AC7D000991EBE /* OTPCode */ = {
+			isa = PBXGroup;
+			children = (
+				F41FE45F28ED677600097440 /* OTPCodeWidget.swift */,
+				F41FE4AA28ED871700097440 /* OTPCodeEntryView.swift */,
+				F41FE46E28ED678600097440 /* OTPCodeProvider.swift */,
+				F4DFA0FD291653B50060C876 /* OTPCodeEntry.swift */,
+			);
+			path = OTPCode;
 			sourceTree = "<group>";
 		};
 		F42A0266291949A700409B61 /* iOS App Tests */ = {
@@ -1278,16 +1314,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DFA0FE291653B50060C876 /* Entry.swift in Sources */,
+				F4DFA0FE291653B50060C876 /* OTPCodeEntry.swift in Sources */,
 				F41FE4A928ED81AB00097440 /* URLExtension.swift in Sources */,
 				A3DC863028F644970030F276 /* Texts.swift in Sources */,
+				F423E4BC291AC78000991EBE /* WidgetsBundle.swift in Sources */,
 				F41FE4B628ED8F8F00097440 /* WidgetIndents.intentdefinition in Sources */,
-				F41FE47028ED67AC00097440 /* Provider.swift in Sources */,
+				F41FE47028ED67AC00097440 /* OTPCodeProvider.swift in Sources */,
 				F4CBBF0229166DB300FF955E /* Constants.swift in Sources */,
-				F41FE4AB28ED871700097440 /* EntryView.swift in Sources */,
-				F41FE46028ED677600097440 /* Widget.swift in Sources */,
+				F423E4BF291AC7A500991EBE /* OpenAppWidget.swift in Sources */,
+				F41FE4AB28ED871700097440 /* OTPCodeEntryView.swift in Sources */,
+				F41FE46028ED677600097440 /* OTPCodeWidget.swift in Sources */,
+				F423E4C7291ACB4000991EBE /* OpenAppEntryView.swift in Sources */,
+				F423E4C4291ACA4300991EBE /* OpenAppEntry.swift in Sources */,
 				F4CBBF0429166E0C00FF955E /* AccountModel.swift in Sources */,
 				F41FE4A828ED814B00097440 /* Base32.swift in Sources */,
+				F423E4CA291ACBAB00991EBE /* OpenAppProvider.swift in Sources */,
 				F4CBBF0029166D9E00FF955E /* KeychainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1353,16 +1394,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4CBBECD291662D100FF955E /* Entry.swift in Sources */,
+				F4CBBECD291662D100FF955E /* OTPCodeEntry.swift in Sources */,
 				F4CBBECE291662D100FF955E /* URLExtension.swift in Sources */,
 				F4CBBECF291662D100FF955E /* Texts.swift in Sources */,
+				F423E4BD291AC78000991EBE /* WidgetsBundle.swift in Sources */,
 				F4CBBED0291662D100FF955E /* WidgetIndents.intentdefinition in Sources */,
-				F4CBBED1291662D100FF955E /* Provider.swift in Sources */,
+				F4CBBED1291662D100FF955E /* OTPCodeProvider.swift in Sources */,
 				F4CBBF0129166DB300FF955E /* Constants.swift in Sources */,
-				F4CBBED2291662D100FF955E /* EntryView.swift in Sources */,
-				F4CBBED3291662D100FF955E /* Widget.swift in Sources */,
+				F423E4C0291AC7A500991EBE /* OpenAppWidget.swift in Sources */,
+				F4CBBED2291662D100FF955E /* OTPCodeEntryView.swift in Sources */,
+				F4CBBED3291662D100FF955E /* OTPCodeWidget.swift in Sources */,
+				F423E4C8291ACB4000991EBE /* OpenAppEntryView.swift in Sources */,
+				F423E4C5291ACA4300991EBE /* OpenAppEntry.swift in Sources */,
 				F4CBBF0329166E0B00FF955E /* AccountModel.swift in Sources */,
 				F4CBBED4291662D100FF955E /* Base32.swift in Sources */,
+				F423E4CB291ACBAB00991EBE /* OpenAppProvider.swift in Sources */,
 				F4CBBEFF29166D9D00FF955E /* KeychainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1637,7 +1683,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1653,7 +1699,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1670,7 +1716,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
@@ -1686,7 +1732,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1703,7 +1749,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/iOS-Info.plist";
@@ -1715,7 +1761,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1733,7 +1779,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/iOS-Info.plist";
@@ -1745,7 +1791,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1761,7 +1807,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/iOS-Info.plist";
@@ -1773,7 +1819,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1789,7 +1835,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/iOS-Info.plist";
@@ -1801,7 +1847,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1816,11 +1862,11 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1835,11 +1881,11 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1854,10 +1900,10 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch.tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1874,10 +1920,10 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch.tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1898,7 +1944,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "watchOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
@@ -1912,7 +1958,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1933,7 +1979,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "watchOS App/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				ENABLE_PREVIEWS = YES;
@@ -1947,7 +1993,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1967,7 +2013,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/watchOS-Info.plist";
@@ -1979,7 +2025,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1998,7 +2044,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension/Resources/watchOS-Info.plist";
@@ -2010,7 +2056,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2027,7 +2073,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/watchOS-Info.plist";
@@ -2039,7 +2085,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2057,7 +2103,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Widget Extension Intent/Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 7SMW75QLFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widget Extension Intent/Resources/watchOS-Info.plist";
@@ -2069,7 +2115,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.sparrowcode.apps.otp-auth.watch.intent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;

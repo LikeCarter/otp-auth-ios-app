@@ -2,12 +2,20 @@ import Foundation
 
 enum Texts {
     
-    static var widget_title: String {
+    static var widget_otp_code_title: String {
         return NSLocalizedString("configuration name", comment: "")
     }
     
-    static var widget_description: String {
+    static var widget_otp_code_description: String {
         return NSLocalizedString("configuration description", comment: "")
+    }
+    
+    static var widget_open_app_title: String {
+        return NSLocalizedString("widget open app title", comment: "")
+    }
+    
+    static var widget_open_app_description: String {
+        return NSLocalizedString("widget open app description", comment: "")
     }
     
     static var no_any_accounts: String {

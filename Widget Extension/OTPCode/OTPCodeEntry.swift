@@ -1,7 +1,7 @@
 import Foundation
 import WidgetKit
 
-struct Entry: TimelineEntry {
+struct OTPCodeEntry: TimelineEntry {
     
     let otpCode: String
     let issuer: String?

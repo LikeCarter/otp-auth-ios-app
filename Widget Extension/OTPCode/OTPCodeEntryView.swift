@@ -4,11 +4,11 @@ import SwiftUI
 import Intents
 import OTP
 
-struct EntryView : View {
+struct OTPCodeEntryView : View {
     
     @Environment(\.widgetFamily) var family: WidgetFamily
     
-    var entry: Provider.Entry
+    var entry: OTPCodeProvider.Entry
     
     var body: some View {
         switch family {
@@ -166,7 +166,7 @@ struct EntryView : View {
 struct OTPWidgetEntryView_Preview: PreviewProvider {
     
     static var previews: some View {
-        EntryView(entry: .init(otpCode: "123456", issuer: "sparrowcode.io", date: .now, configuration: SelectAccountIntent()))
+        OTPCodeEntryView(entry: .init(otpCode: "123456", issuer: "sparrowcode.io", date: .now, configuration: SelectAccountIntent()))
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }
