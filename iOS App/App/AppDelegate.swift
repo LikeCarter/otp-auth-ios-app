@@ -32,8 +32,9 @@ class AppDelegate: SPAppWindowDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         if let code = processCopyOTPCode {
-            AlertService.copied()x
+            AlertService.copied()
             UIPasteboard.general.string = code
+            processCopyOTPCode = nil
         }
     }
     
