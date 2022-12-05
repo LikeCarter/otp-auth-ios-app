@@ -10,7 +10,7 @@ unstripped = false
 plistArguments = true
 
 [update.normalize]
-paths = ["iOS App/Localisations"]
+paths = ["iOS App/Localisations", "Widget Extension/Localisation"]
 sourceLocale = "en"
 harmonizeWithSource = true
 sortByKeys = true
