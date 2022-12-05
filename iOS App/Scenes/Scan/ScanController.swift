@@ -74,6 +74,11 @@ class ScanController: SPController {
         
     }
     
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        self.captureSession.stopRunning()
+        super.dismiss(animated: flag, completion: completion)
+    }
+    
     // MARK: Layout
     
     override func viewDidLayoutSubviews() {

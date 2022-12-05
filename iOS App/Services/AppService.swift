@@ -6,7 +6,7 @@ enum AppService {
      Get current root controller.
      */
     static var rootController: UIViewController? {
-        return UIApplication.shared.windows[0].rootViewController
+        return UIApplication.shared.windows.first?.rootViewController
     }
     
     /**

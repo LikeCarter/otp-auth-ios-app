@@ -148,8 +148,7 @@ class HomeController: SPDiffableTableController {
                 let item = SPDiffableWrapperItem(
                     id: "\(model.url)",
                     model: model) { item, indexPath in
-                        let indicatorView = SPIndicatorView(title: Texts.Shared.copied, preset: .done)
-                        indicatorView.present(duration: 3)
+                        AlertService.copied()
                         guard let cell = self.tableView.cellForRow(at: indexPath) as? OTPTableViewCell else { return }
                         cell.copyButton.isHighlighted = true
                         UIPasteboard.general.string = cell.password

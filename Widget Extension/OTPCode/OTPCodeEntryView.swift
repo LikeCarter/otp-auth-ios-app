@@ -6,13 +6,17 @@ import OTP
 
 struct OTPCodeEntryView : View {
     
+    static func getURL(for entry: OTPCodeProvider.Entry) -> URL? {
+        return URL(string: "otpauth://copycode?code=\(entry.otpCode.replacingOccurrences(of: " ", with: ""))")
+    }
+    
     @Environment(\.widgetFamily) var family: WidgetFamily
     
     var entry: OTPCodeProvider.Entry
     
     var body: some View {
         switch family {
-        #if os(iOS)
+#if os(iOS)
         case .systemSmall, .systemMedium:
             ZStack {
                 Rectangle()
@@ -94,7 +98,8 @@ struct OTPCodeEntryView : View {
                 }
                 .padding()
             }
-        #endif
+            .widgetURL(OTPCodeEntryView.getURL(for: entry))
+#endif
         case .accessoryRectangular:
             ZStack {
                 VStack(alignment: .center, spacing: 2) {
@@ -131,6 +136,7 @@ struct OTPCodeEntryView : View {
                     }
                 }
             }
+            .widgetURL(OTPCodeEntryView.getURL(for: entry))
         case .accessoryCircular:
             ZStack {
                 AccessoryWidgetBackground()
@@ -150,9 +156,11 @@ struct OTPCodeEntryView : View {
                 )
                 .progressViewStyle(.circular)
             }
+            .widgetURL(OTPCodeEntryView.getURL(for: entry))
         case .accessoryInline:
             if let issuer = entry.issuer {
                 Text(issuer + .space + entry.otpCode)
+                    .widgetURL(OTPCodeEntryView.getURL(for: entry))
             } else {
                 Text(Texts.no_any_accounts)
             }

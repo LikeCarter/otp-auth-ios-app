@@ -16,6 +16,5 @@ public class QRCode {
         qrController.modalPresentationStyle = .overFullScreen
         qrController.modalTransitionStyle = .crossDissolve
         controller.present(qrController)
-        print("Attempt to present")
     }
 }

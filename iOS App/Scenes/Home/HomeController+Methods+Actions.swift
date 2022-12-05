@@ -101,37 +101,37 @@ extension HomeController {
     }
     
     private func scaning() {
-        
         QRCode.scanning(
             detect: { [self] data, controller in
                 let tranformedData = self.cutSymbols(model: data!)
                 if !scannedData.contains(tranformedData) {
                     scannedData.append(tranformedData)
-                    checkType(dataQR: data!)
+                    checkType(dataQR: data!, controller: controller)
                 }
-                
                 return data
             },
-            handled: { data, controller in },
+            handled: { data, controller in
+                
+            },
             on: self
         )
     }
     
-    func checkType(dataQR: QRCodeData) {
+    func checkType(dataQR: QRCodeData, controller: ScanController) {
         let tranformedData = self.cutSymbols(model: dataQR)
         guard let url = URL(string: tranformedData) else {
             AlertService.alertIncorrectURL()
             return
         }
         if url.scheme == "otpauth-migration" {
-            handledGoogleParser(tranformedData: tranformedData, url: url, dataQR: dataQR)
+            handledGoogleParser(tranformedData: tranformedData, url: url, dataQR: dataQR, controller: controller)
         } else {
-           handledQR(tranformedData: tranformedData, url: url, dataQR: dataQR)
+           handledQR(tranformedData: tranformedData, url: url, dataQR: dataQR, controller: controller)
         }
         
     }
     
-    func handledGoogleParser(tranformedData: String, url: URL, dataQR: QRCodeData) {
+    func handledGoogleParser(tranformedData: String, url: URL, dataQR: QRCodeData, controller: ScanController) {
         let accounts = GAuthSwiftParser.getAccounts(code: tranformedData)
         for account in accounts {
             if account.name == "" && account.issuer == "" && account.secret == "" {
@@ -142,10 +142,10 @@ extension HomeController {
             KeychainStorage.save(rawURLs: [account.getLink()])
         }
         AlertService.code_added()
-        self.dismiss(animated: true)
+        controller.dismissAnimated()
     }
     
-    func handledQR(tranformedData: String, url: URL, dataQR: QRCodeData) {
+    func handledQR(tranformedData: String, url: URL, dataQR: QRCodeData, controller: ScanController) {
         
         let name = url.lastPathComponent
         let issuer = url.valueOf("issuer")
@@ -210,8 +210,8 @@ extension HomeController {
             KeychainStorage.save(rawURLs: [tranformedData])
             passwordsData = KeychainStorage.getAccounts()
             AlertService.code_added()
+            controller.dismissAnimated()
             diffableDataSource?.set(content, animated: true)
-            dismiss(animated: true)
         } else {
             AlertService.alertIncorrectURL()
         }
